@@ -281,6 +281,37 @@
     }
   }
 }
+.body-reivew {
+  .container {
+    .body-review-text {
+      text-align: center;
+      h4 {
+        color: gray;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      h3 {
+        color: black;
+        line-height: 23px;
+        font-size: 36px;
+      }
+    }
+  }
+}
+.body-scheme {
+  .container {
+    margin: auto;
+    .scheme-text {
+      align-items: center;
+      h3 {
+        color: black;
+      }
+      p {
+        color: gray;
+      }
+    }
+  }
+}
 // STYLE CSS ALL
 @media only screen and (max-width: 376px) {
   .body-ship-item {

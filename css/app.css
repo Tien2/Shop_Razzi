@@ -817,6 +817,33 @@
   font-weight: 500;
 }
 
+.body-reivew .container .body-review-text {
+  text-align: center;
+}
+.body-reivew .container .body-review-text h4 {
+  color: gray;
+  font-weight: 500;
+  font-size: 15px;
+}
+.body-reivew .container .body-review-text h3 {
+  color: black;
+  line-height: 23px;
+  font-size: 36px;
+}
+
+.body-scheme .container {
+  margin: auto;
+}
+.body-scheme .container .scheme-text {
+  align-items: center;
+}
+.body-scheme .container .scheme-text h3 {
+  color: black;
+}
+.body-scheme .container .scheme-text p {
+  color: gray;
+}
+
 @media only screen and (max-width: 376px) {
   .body-ship-item {
     display: block !important;
