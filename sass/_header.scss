@@ -1,0 +1,323 @@
+#header {
+  // CSS HEADER PHẦN TRÊN CÙNG
+  .header-top {
+    box-shadow: 0px -3px 9px 0px gray;
+    height: 50px;
+    background-color: #f5f5f5;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .header-top-left {
+        padding-top: 10px;
+        display: flex;
+        .header-top-left-shipping {
+          display: flex;
+          i {
+            color: black;
+            font-size: 17px;
+            font-weight: 700;
+            margin-right: 10px;
+            margin-top: 6px;
+          }
+          p {
+            color: black;
+            font-size: 11px;
+            margin-top: 6px;
+            font-weight: 500;
+          }
+        }
+        .header-top-left-money {
+          position: relative;
+          margin-left: 30px;
+          .dropdown-content {
+            left: -17px;
+            width: 70px;
+            &::after {
+              content: "";
+              position: absolute;
+              top: -27px;
+              width: 70px;
+              height: 40px;
+              background: transparent;
+            }
+          }
+        }
+        .header-top-left-language {
+          position: relative;
+          margin-left: 30px;
+          .dropdown-content {
+            left: -16px;
+            &::after {
+              content: "";
+              position: absolute;
+              top: -27px;
+              width: 92px;
+              height: 40px;
+              background: transparent;
+            }
+          }
+        }
+        // CSS DROPDOWN HEADER-TOP-LEFT
+        .dropdown {
+          .dropbtn {
+            position: relative;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+            i {
+              position: absolute;
+              font-size: 10px;
+              top: 6px;
+            }
+          }
+          position: relative;
+          display: inline-block;
+          .dropdown-content {
+            display: none;
+            top: 38px;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            a {
+              text-align: center;
+              font-size: 14px;
+              color: black;
+              padding: 11px 18px;
+              text-decoration: none;
+              display: block;
+              &:hover {
+                background-color: #ddd;
+              }
+            }
+          }
+
+          &:hover .dropdown-content {
+            display: block;
+          }
+        }
+      }
+      .header-top-right {
+        padding-top: 10px;
+        ul {
+          margin: unset;
+          padding: unset;
+          list-style: none;
+          li {
+            float: left;
+            margin: 0px 15px;
+            a {
+              text-decoration: none;
+              color: black;
+              font-size: 15px;
+              font-weight: 500;
+              &:hover {
+                color: #f08080;
+              }
+            }
+            ul {
+              margin: unset;
+              padding: unset;
+              list-style: none;
+              li {
+                float: left;
+                margin: 0px 10px;
+                i {
+                  font-size: 12px;
+                  color: gray;
+                  &:hover {
+                    color: black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //   CSS HEADER PHẦN PHÍA DƯỚI
+  .header-bottom {
+    .container {
+      padding: 10px 0px;
+      display: flex;
+      justify-content: space-between;
+      .header-bottom-logo {
+        h2 {
+          color: black;
+          font-weight: 700;
+          font-size: 50px;
+        }
+      }
+      .header-bottom-item {
+        ul {
+          list-style: none;
+          display: flex;
+          padding: unset;
+          margin-top: 23px;
+          li {
+            margin: 0px 20px;
+            .header-bottom-item-home {
+              position: relative;
+              margin-left: 30px;
+              .dropdown-content {
+                left: -16px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: -42px;
+                  width: 75px;
+                  height: 67px;
+                  background: transparent;
+                }
+              }
+            }
+            .header-bottom-item-shop {
+              position: relative;
+              margin-left: 30px;
+              .dropdown-content {
+                left: -16px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: -42px;
+                  width: 75px;
+                  height: 67px;
+                  background: transparent;
+                }
+              }
+            }
+            .header-bottom-item-pages {
+              position: relative;
+              margin-left: 30px;
+              .dropdown-content {
+                left: -16px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: -42px;
+                  width: 75px;
+                  height: 67px;
+                  background: transparent;
+                }
+              }
+            }
+            .header-bottom-item-blog {
+              position: relative;
+              margin-left: 30px;
+              .dropdown-content {
+                left: -16px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: -42px;
+                  width: 75px;
+                  height: 67px;
+                  background: transparent;
+                }
+              }
+            }
+            .header-bottom-item-features {
+              position: relative;
+              margin-left: 30px;
+              .dropdown-content {
+                left: -16px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: -42px;
+                  width: 75px;
+                  height: 67px;
+                  background: transparent;
+                }
+              }
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+              .dropbtn {
+                position: relative;
+                color: black;
+                font-size: 15px;
+                font-weight: 600;
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 15px;
+                  font-weight: 500;
+                  &:hover {
+                    color: #f08080;
+                    text-decoration: underline;
+                  }
+                }
+              }
+              .dropdown-content {
+                display: block;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                top: 55px;
+                padding: 20px 10px;
+                width: 600px;
+                .dropdown-content-list {
+                  ul {
+                    display: unset;
+                    li {
+                      line-height: 30px;
+                      p {
+                        color: black;
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin: unset;
+                        &:hover {
+                          color: #f08080;
+                        }
+                      }
+                      a {
+                        color: black;
+                        text-decoration: none;
+                        &:hover {
+                          color: #f08080;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &:hover .dropdown-content {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .header-bottom-icon {
+        ul {
+          list-style: none;
+          display: flex;
+          padding: unset;
+          margin-top: 23px;
+          li {
+            float: left;
+            margin: 0px 15px;
+            i {
+              color: gray;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//  RESPONSIVE HEADER TOP LEFT
+@media only screen and (max-width: 769px) {
+  .header-top-left-shipping {
+    display: none !important;
+  }
+
+  .header-top-right {
+    display: none;
+  }
+}
