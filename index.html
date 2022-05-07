@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./css/app.css" />
+    <!-- IMPORT SLICK SLIDER -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <!-- IMPORT BOOTRAP 5  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
@@ -23,19 +29,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- IMPORT ANIMATE CSS  -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' integrity='sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==' crossorigin='anonymous'/>
+    <!-- IMPORT FONT - ICON   -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
     />
+    <!-- IMPORT JQUERY  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
       integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/app.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/app.css" />
     <script>
       $(function () {
         $("#header").load("./include/header.html");
@@ -53,7 +63,21 @@
         <div class="body-sale-text">
           <p>GET 20% SALE WITH COUPONE CODE CGBNJKI25</p>
         </div>
-        <div class="body-sale-item"></div>
+        <div class="body-sale-content">
+          <div class="body-sale-item">
+            <div class="sale-img">
+              <img
+                src="./images/img_razzi/home1-banner-carousels-1.webp"
+                alt=""
+              />
+            </div>
+            <div class="sale-text">
+              <h2>Womens</h2>
+              <button>
+                <p>Shop Womens <i class="fa-solid fa-arrow-right"></i></p>
+              </button>
+          </div>
+        </div>
       </div>
       <div class="body-ship">
         <div class="row container">
@@ -666,7 +690,146 @@
             <h4>WHAT BUYERS SAY</h4>
             <h3>Latest Buyers Reviews</h3>
           </div>
-          <div class="body-review-content"></div>
+          <div class="body-review-content">
+            <ul class="review-image-slider">
+              <li>
+                <div iv class="review-content-item">
+                  <div class="content-item-header">
+                    <div class="content-item-header-img">
+                      <img
+                        src="./images/img_razzi/review/home1-testi-2.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content-item-header-text">
+                      <h5>Dresses</h5>
+                      <h4>Cotton print Dress</h4>
+                      <div class="item-star">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-item-bottom">
+                    <div class="content-item-bottom-text">
+                      <h5>
+                        God every fill great replenish darkness unto. Very open.
+                        Likeness their that light.Given under image to. Subdue
+                        of shall cattle dat fish form saw spirit and given
+                        stars, us you whales may, land, saw fill unto.
+                      </h5>
+                      <p>jane jefferson, 29 May 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div iv class="review-content-item">
+                  <div class="content-item-header">
+                    <div class="content-item-header-img">
+                      <img
+                        src="./images/img_razzi/review/home1-testi-1.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content-item-header-text">
+                      <h5>Dresses</h5>
+                      <h4>Cotton print Dress</h4>
+                      <div class="item-star">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-item-bottom">
+                    <div class="content-item-bottom-text">
+                      <h5>
+                        God every fill great replenish darkness unto. Very open.
+                        Likeness their that light.Given under image to. Subdue
+                        of shall cattle dat fish form saw spirit and given
+                        stars, us you whales may, land, saw fill unto.
+                      </h5>
+                      <p>jane jefferson, 29 May 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div iv class="review-content-item">
+                  <div class="content-item-header">
+                    <div class="content-item-header-img">
+                      <img
+                        src="./images/img_razzi/review/home1-testi-3.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content-item-header-text">
+                      <h5>Dresses</h5>
+                      <h4>Cotton print Dress</h4>
+                      <div class="item-star">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-item-bottom">
+                    <div class="content-item-bottom-text">
+                      <h5>
+                        God every fill great replenish darkness unto. Very open.
+                        Likeness their that light.Given under image to. Subdue
+                        of shall cattle dat fish form saw spirit and given
+                        stars, us you whales may, land, saw fill unto.
+                      </h5>
+                      <p>jane jefferson, 29 May 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div iv class="review-content-item">
+                  <div class="content-item-header">
+                    <div class="content-item-header-img">
+                      <img
+                        src="./images/img_razzi/review/home1-testi-1.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content-item-header-text">
+                      <h5>Dresses</h5>
+                      <h4>Cotton print Dress</h4>
+                      <div class="item-star">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-item-bottom">
+                    <div class="content-item-bottom-text">
+                      <h5>
+                        God every fill great replenish darkness unto. Very open.
+                        Likeness their that light.Given under image to. Subdue
+                        of shall cattle dat fish form saw spirit and given
+                        stars, us you whales may, land, saw fill unto.
+                      </h5>
+                      <p>jane jefferson, 29 May 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="body-scheme">
@@ -697,6 +860,61 @@
           </ul>
         </div>
       </div>
+      <div class="body-branch">
+        <div class="container">
+          <ul class="body-branch-slider">
+            <li>
+              <div class="branch-img">
+                <img src="./images/img_razzi/branch/brand-1.webp" alt="" />
+              </div>
+            </li>
+            <li>
+              <div class="branch-img">
+                <img src="./images/img_razzi/branch/brand-2.webp" alt="" />
+              </div>
+            </li>
+            <li>
+              <div class="branch-img">
+                <img src="./images/img_razzi/branch/brand-3.webp" alt="" />
+              </div>
+            </li>
+            <li>
+              <div class="branch-img">
+                <img src="./images/img_razzi/branch/brand-4.webp" alt="" />
+              </div>
+            </li>
+            <li>
+              <div class="branch-img">
+                <img src="./images/img_razzi/branch/brand-5.webp" alt="" />
+              </div>
+            </li>
+            <li>
+              <div class="branch-img">
+                <img src="./images/img_razzi/branch/brand-6.webp" alt="" />
+              </div>
+            </li>
+            <li>
+              <div class="branch-img">
+                <img src="./images/img_razzi/branch/brand-7.webp" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <!-- SCRIPT SLICK SLIDE  -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./css/app.js"></script>
   </body>
 </html>

@@ -281,33 +281,196 @@
     }
   }
 }
-.body-reivew {
+.body-review {
+  margin-bottom: 60px;
   .container {
     .body-review-text {
       text-align: center;
+      margin: 90px 0px 80px 0px;
       h4 {
-        color: gray;
+        color: #a0a0a0;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 13px;
+        line-height: 13px;
+        margin-bottom: 20px;
       }
       h3 {
         color: black;
         line-height: 23px;
-        font-size: 36px;
+        font-size: 35px;
+      }
+    }
+    .body-review-content {
+      .review-image-slider {
+        padding: unset;
+        display: flex;
+        padding-bottom: 90px;
+        li {
+          list-style: none;
+          padding: 20px;
+          .review-content-item {
+            border: 2px solid gray;
+            border-radius: 10px;
+            padding: 20px;
+            .content-item-header {
+              margin-bottom: 10px;
+              display: flex;
+              .content-item-header-img {
+                img {
+                  width: 100%;
+                }
+              }
+              .content-item-header-text {
+                margin-top: 15px;
+                margin-left: 20px;
+                h5 {
+                  color: gray;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 12px;
+                  margin-bottom: unset;
+                }
+                h4 {
+                  color: black;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  margin-bottom: unset;
+                }
+                .item-star {
+                  .fa-star {
+                    color: #f8b86d;
+                    font-size: 10px;
+                    line-height: 21px;
+                  }
+                  .checked {
+                    color: #cdcdcd;
+                    font-size: 10px;
+                    line-height: 21px;
+                  }
+                }
+              }
+            }
+            .content-item-bottom {
+              .content-item-bottom-text {
+                h5 {
+                  font-size: 16px;
+                  color: #525252;
+                  line-height: 24px;
+                  font-weight: 400;
+                }
+                p {
+                  color: #767676;
+                  font-size: 14px;
+                  line-height: 15px;
+                }
+              }
+            }
+          }
+        }
+        // STYLE SLICK SLIDE
+        .slick-dots {
+          padding: unset;
+          position: absolute;
+          left: 46%;
+          bottom: 40px;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          button {
+            font-size: 0px;
+            padding: 0px;
+            width: 13px;
+            height: 13px;
+            border-radius: 100px;
+            border: none;
+            outline: none;
+          }
+          .slick-active {
+            button {
+              background-color: #ff6f61;
+              transition: all 0.2 linear;
+            }
+          }
+        }
       }
     }
   }
 }
 .body-scheme {
+  background: #f5f5f5;
+  height: 359px;
   .container {
     margin: auto;
     .scheme-text {
-      align-items: center;
+      padding: 70px 0px 40px 0px;
+      text-align: center;
       h3 {
-        color: black;
+        color: #ff6f61;
+        font-size: 40px;
+        margin-bottom: 18px;
       }
       p {
         color: gray;
+        font-weight: 400;
+      }
+    }
+    ul {
+      padding: unset;
+      li {
+        list-style: none;
+        padding: 10px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.body-branch {
+  padding: 150px 0px 50px 0px;
+  .container {
+    margin: auto;
+    .body-branch-slider {
+      padding: unset;
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style: none;
+        transition: transform 350ms;
+        .branch-img {
+          img {
+            width: 100%;
+          }
+        }
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+      // STYLE SLICK SLIDE
+      .slick-dots {
+        padding: unset;
+        position: absolute;
+        left: 46%;
+        bottom: 40px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        button {
+          font-size: 0px;
+          padding: 0px;
+          width: 13px;
+          height: 13px;
+          border-radius: 100px;
+          border: none;
+          outline: none;
+        }
+        .slick-active {
+          button {
+            background-color: #ff6f61;
+            transition: all 0.2 linear;
+          }
+        }
       }
     }
   }
