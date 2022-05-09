@@ -571,7 +571,83 @@
   color: #fff;
   padding-top: 14px;
 }
+.body-sale .body-sale-content {
+  display: flex;
+}
+.body-sale .body-sale-content .body-sale-item {
+  position: relative;
+}
+.body-sale .body-sale-content .body-sale-item .sale-img img {
+  filter: brightness(60%);
+  width: 100%;
+}
+.body-sale .body-sale-content .body-sale-item .sale-img img:hover {
+  filter: brightness(80%);
+}
+.body-sale .body-sale-content .body-sale-item .sale-text h2 {
+  position: absolute;
+  top: 40%;
+  left: 37%;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+.body-sale .body-sale-content .body-sale-item .sale-text button {
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10%;
+  left: 23%;
+  background: #fff;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  color: #fff;
+}
+.body-sale .body-sale-content .body-sale-item .sale-text button p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+  color: black;
+  margin: unset;
+}
+.body-sale .body-sale-content .body-sale-item .sale-text button p i {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.body-sale .body-sale-content .body-sale-item .sale-text button p i:hover {
+  transform: translateX(5px);
+}
+.body-sale .body-sale-content .slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #c7c1bc;
+  color: white;
+  border: none;
+  z-index: 10;
+}
+.body-sale .body-sale-content .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #c7c1bc;
+  color: white;
+  border: none;
+  z-index: 10;
+}
+.body-sale .body-sale-content button {
+  height: 50px;
+  width: 20px;
+}
+.body-sale .body-sale-content button i {
+  color: gray;
+}
 
+.body-ship {
+  padding-top: 30px;
+}
 .body-ship .container {
   border-bottom: 1px solid gray;
   margin: auto;
@@ -627,10 +703,26 @@
   font-weight: 400;
 }
 .body-collection .container .body-collection-content .collection-content-item {
-  height: 400px;
+  padding: 15px;
+  position: relative;
 }
-.body-collection .container .body-collection-content .collection-content-item .collection-content-item-img img {
+.body-collection .container .body-collection-content .collection-content-item .collection-content-item-img-1 {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.body-collection .container .body-collection-content .collection-content-item .collection-content-item-img-1 img {
   width: 100%;
+}
+.body-collection .container .body-collection-content .collection-content-item .collection-content-item-img-2 {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.body-collection .container .body-collection-content .collection-content-item .collection-content-item-img-2 img {
+  width: 100%;
+}
+.body-collection .container .body-collection-content .collection-content-item .collection-content-item-text {
+  position: absolute;
+  top: 40%;
 }
 .body-collection .container .body-collection-content .collection-content-item .collection-content-item-text h3 {
   color: #fff;
@@ -646,6 +738,14 @@
   color: #fff;
   font-size: 10px;
   margin-left: 10px;
+}
+.body-collection .container .body-collection-content .collection-content-item:hover img {
+  transform: scale(1.05);
+  transition: all 0.2s linear;
+}
+.body-collection .container .body-collection-content .collection-content-item:hover i {
+  transform: translateX(5px);
+  transition: all 0.2s linear;
 }
 
 .body-sellers {
@@ -666,13 +766,29 @@
   justify-content: center;
   margin-bottom: 40px;
 }
+.body-sellers .container .mt-3 ul li {
+  position: relative;
+}
 .body-sellers .container .mt-3 ul li a {
   font-size: 17px;
   font-weight: 500;
   color: black;
 }
+.body-sellers .container .mt-3 ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1;
+  background: #ff6f61;
+  width: 0%;
+  height: 3%;
+  transition: all 0.4s ease-in-out;
+}
 .body-sellers .container .mt-3 ul li a:hover {
   color: #ff6f61;
+}
+.body-sellers .container .mt-3 ul li a:hover::before {
+  width: 70%;
 }
 .body-sellers .container .mt-3 .nav-tabs .nav-link {
   border: unset;
@@ -794,32 +910,48 @@
   font-size: 13px;
   font-weight: 500;
 }
-.body-sellers .container p {
+.body-sellers .container .textmore p {
+  text-align: center;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
+  position: relative;
+}
+.body-sellers .container .textmore p::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+  background: black;
+  width: 10%;
+  height: 3%;
+  transition: all 0.1s ease-out;
+}
+.body-sellers .container .textmore p:hover::before {
+  width: 0%;
 }
 
-.body-droptime .carousel-inner .carousel-item .body-droptime-img1 {
-  background-image: url(../images/img_razzi/droptime/home1-deal-carousel-b1.jpg);
-  height: 550px;
+.body-time {
+  margin-top: 100px;
 }
-.body-droptime .carousel-inner .carousel-item .body-droptime-img2 {
-  background-image: url(../images/img_razzi/droptime/home_2_slider_2.jpg);
-  height: 550px;
+.body-time .body-time-content .time-content-img {
+  position: relative;
 }
-.body-droptime .carousel-inner .carousel-item .body-droptime-content {
-  margin-left: 50%;
+.body-time .body-time-content .time-content-img img {
+  width: 100%;
 }
-.body-droptime .carousel-inner .carousel-item .body-droptime-content strong {
-  font-size: 40px;
+.body-time .body-time-content .time-content-text h2 {
   color: black;
+  font-size: 40px;
+  line-height: 30px;
   font-weight: 500;
 }
-
-.body-review {
-  margin-bottom: 60px;
+.body-time .body-time-content .time-content-text h2 .droptime p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
 }
+
 .body-review .container .body-review-text {
   text-align: center;
   margin: 90px 0px 80px 0px;
@@ -957,9 +1089,11 @@
   margin: auto;
 }
 .body-branch .container .body-branch-slider {
+  z-index: 10;
   padding: unset;
   display: flex;
   justify-content: space-around;
+  margin: unset;
 }
 .body-branch .container .body-branch-slider li {
   list-style: none;
@@ -1079,6 +1213,14 @@
     color: #fff;
     font-size: 10px !important;
     font-weight: 500;
+  }
+
+  .body-branch {
+    margin-top: 330px !important;
+  }
+
+  .body-review {
+    margin-bottom: unset !important;
   }
 }
 
