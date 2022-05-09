@@ -391,26 +391,108 @@
 .body-time {
   margin-top: 100px;
   .body-time-content {
+    position: relative;
     .time-content-img {
-      position: relative;
       img {
         width: 100%;
       }
     }
-    .time-content-text {
-      h2 {
-        color: black;
-        font-size: 40px;
-        line-height: 30px;
-        font-weight: 500;
-        .droptime {
-          p {
-            text-align: center;
-            font-size: 60px;
-            margin-top: 0px;
+    .time-content-content {
+      .time-content-item {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        h2 {
+          color: black;
+          font-size: 30px;
+          line-height: 35px;
+          font-weight: 500;
+          line-height: 35px;
+        }
+      }
+      .droptime {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        p {
+          margin: unset;
+          color: #ff6f61;
+          text-align: center;
+          font-size: 60px;
+          margin-top: 0px;
+          font-weight: 700;
+        }
+      }
+      .droptime-update {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        ul {
+          margin: unset;
+          padding: unset;
+          display: flex;
+          li {
+            list-style: none;
+            margin: 0px 30px;
+            p {
+              margin: unset;
+              color: gray;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 20px;
+            }
           }
         }
       }
+      .time-content-shop {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        width: 185px;
+        height: 55px;
+        background: #1f1f1f;
+        p {
+          text-align: center;
+          margin-bottom: unset;
+          margin-top: 15px;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 500;
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  // STYLE BUTTON NEXT
+  .slick-prev {
+    position: absolute;
+    top: 47%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    z-index: 10;
+  }
+  .slick-next {
+    position: absolute;
+    top: 47%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    z-index: 10;
+  }
+  button {
+    height: 40px;
+    width: 40px;
+    i {
+      font-size: 20px;
+      color: gray;
+    }
+    &:hover {
+      background: #fff;
     }
   }
 }

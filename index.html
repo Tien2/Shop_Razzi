@@ -723,10 +723,12 @@
               alt=""
             />
           </div>
-          <div class="time-content-item">
-            <h2>Get -50% From</h2>
-            <br />
-            <h2>Summer Collection</h2>
+          <div class="time-content-content">
+            <div class="time-content-item">
+              <h2>Get -50% From</h2>
+              <br />
+              <h2>Summer Collection</h2>
+            </div>
             <div class="droptime">
               <p id="demo"></p>
               <script>
@@ -769,6 +771,105 @@
                   }
                 }, 1000);
               </script>
+            </div>
+            <div class="droptime-update">
+              <ul>
+                <li>
+                  <p>DAYS</p>
+                </li>
+                <li>
+                  <p>HOURS</p>
+                </li>
+                <li>
+                  <p>MINUTES</p>
+                </li>
+                <li>
+                  <p>SECONDS</p>
+                </li>
+              </ul>
+            </div>
+            <div class="time-content-shop">
+              <p>
+                Shop Now
+                <i style="margin-left: 5px" class="fa-solid fa-arrow-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="body-time-content">
+          <div class="time-content-img">
+            <img src="./images/img_razzi/droptime/home_2_slider_2.jpg" alt="" />
+          </div>
+          <div class="time-content-content">
+            <div class="time-content-item">
+              <h2>Get -70% From</h2>
+              <br />
+              <h2>Spring Collection</h2>
+            </div>
+            <div class="droptime">
+              <p id="demo"></p>
+              <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+                  // Get today's date and time
+                  var now = new Date().getTime();
+
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                  );
+                  var minutes = Math.floor(
+                    (distance % (1000 * 60 * 60)) / (1000 * 60)
+                  );
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Output the result in an element with id="demo"
+                  document.getElementById("demo").innerHTML =
+                    days +
+                    " : " +
+                    hours +
+                    " : " +
+                    minutes +
+                    " : " +
+                    seconds +
+                    "";
+
+                  // If the count down is over, write some text
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+              </script>
+            </div>
+            <div class="droptime-update">
+              <ul>
+                <li>
+                  <p>DAYS</p>
+                </li>
+                <li>
+                  <p>HOURS</p>
+                </li>
+                <li>
+                  <p>MINUTES</p>
+                </li>
+                <li>
+                  <p>SECONDS</p>
+                </li>
+              </ul>
+            </div>
+            <div class="time-content-shop">
+              <p>
+                Shop Now
+                <i style="margin-left: 5px" class="fa-solid fa-arrow-right"></i>
+              </p>
             </div>
           </div>
         </div>

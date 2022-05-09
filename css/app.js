@@ -59,24 +59,12 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: false,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 2,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 668,
-        settings: {
-          slidesToShow: 1,
-          dots: false,
-        },
-      },
-    ],
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   });
 });
 // STYLE BODY-BRANCH
