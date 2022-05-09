@@ -54,6 +54,7 @@ $(document).ready(function () {
     ],
   });
 });
+// STLE BODY-TIME
 $(document).ready(function () {
   $(".body-time").slick({
     infinite: false,
@@ -69,25 +70,24 @@ $(document).ready(function () {
 });
 // STYLE BODY-BRANCH
 // $(document).ready(function () {
-//   $(".body-branch-slider").slick({
-//     infinite: false,
+//   $(".branch-item").slick({
 //     slidesToShow: 7,
-//     arrows: false,
 //     dots: false,
+//     arrows: false,
 //     responsive: [
 //       {
 //         breakpoint: 1025,
 //         settings: {
 //           slidesToShow: 2,
-//           arrows: true,
 //           slidesToScroll: 4,
+//           dots: true,
 //         },
 //       },
 //       {
 //         breakpoint: 668,
 //         settings: {
 //           slidesToShow: 2,
-//           arrows: true,
+//           dots: true,
 //           slidesToScroll: 2,
 //         },
 //       },

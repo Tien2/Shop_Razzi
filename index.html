@@ -245,6 +245,159 @@
                         <img src="./images/img_razzi/woment/w42.webp" alt="" />
                       </div>
                     </div>
+                    <div class="seller-hover">
+                      <ul>
+                        <li>
+                          <div id="myBtn" class="seller-hover-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="seller-hover-icon-name">
+                              <p>Add to cart</p>
+                            </div>
+                          </div>
+                          <div id="myModalLock" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <div class="modal-content-cart">
+                                <div class="cart-top-left">
+                                  <div class="cart-top-left-img">
+                                    <img
+                                      src="./images/img_razzi/woment/w101.webp"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="cart-top-left-text">
+                                    <h5>Wide Cotton Tunic</h5>
+                                    <h4>$250.00</h4>
+                                    <p>QTY:2</p>
+                                  </div>
+                                </div>
+                                <div class="cart-top-right">
+                                  <p>There are 2 items in your cart</p>
+                                  <div class="cart-top-right-pay">
+                                    <p>Subtotal</p>
+                                    <p>$500.00</p>
+                                  </div>
+                                  <div class="cart-top-right-button">
+                                    <div class="cart-top-right-button-1">
+                                      <p>View cart</p>
+                                    </div>
+                                    <div class="cart-top-right-button-2">
+                                      <p>Checkout</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModalLock");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the modal
+                            var span =
+                              document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal
+                            btn.onclick = function () {
+                              modal.style.display = "block";
+                            };
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function () {
+                              modal.style.display = "none";
+                            };
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            };
+                          </script>
+                        </li>
+                        <li>
+                          <div id="myBtn" class="seller-hover-icon">
+                            <i class="fa-solid fa-eye"></i>
+                          </div>
+                          <div id="myModalLock" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <p>1</p>
+                            </div>
+                          </div>
+                          <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModalLock");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the modal
+                            var span =
+                              document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal
+                            btn.onclick = function () {
+                              modal.style.display = "block";
+                            };
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function () {
+                              modal.style.display = "none";
+                            };
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            };
+                          </script>
+                        </li>
+                        <li>
+                          <div id="myBtn" class="seller-hover-icon">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                          <div id="myModalLock" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <p>1</p>
+                            </div>
+                          </div>
+                          <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModalLock");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the modal
+                            var span =
+                              document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal
+                            btn.onclick = function () {
+                              modal.style.display = "block";
+                            };
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function () {
+                              modal.style.display = "none";
+                            };
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            };
+                          </script>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="sellers-content-text">
                       <p>T-Shirts</p>
                       <h4>Wide Cotton Tunic</h4>
@@ -733,7 +886,7 @@
               <p id="demo"></p>
               <script>
                 // Set the date we're counting down to
-                var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+                var countDownDate = new Date("July 5, 2022 15:37:25").getTime();
 
                 // Update the count down every 1 second
                 var x = setInterval(function () {
@@ -756,13 +909,13 @@
                   // Output the result in an element with id="demo"
                   document.getElementById("demo").innerHTML =
                     days +
-                    "d " +
+                    "  :  " +
                     hours +
-                    "h " +
+                    "  :  " +
                     minutes +
-                    "m " +
+                    "  :  " +
                     seconds +
-                    "s ";
+                    "  ";
 
                   // If the count down is over, write some text
                   if (distance < 0) {
@@ -806,7 +959,7 @@
               <br />
               <h2>Spring Collection</h2>
             </div>
-            <div class="droptime">
+            <!-- <div class="droptime">
               <p id="demo"></p>
               <script>
                 // Set the date we're counting down to
@@ -848,7 +1001,7 @@
                   }
                 }, 1000);
               </script>
-            </div>
+            </div> -->
             <div class="droptime-update">
               <ul>
                 <li>
@@ -1052,41 +1205,27 @@
       </div>
       <div class="body-branch">
         <div class="container">
-          <ul class="body-branch-slider">
+          <ul class="branch-item">
             <li>
-              <div class="branch-img">
-                <img src="./images/img_razzi/branch/brand-1.webp" alt="" />
-              </div>
+              <img src="./images/img_razzi/branch/brand-1.webp" alt="" />
             </li>
             <li>
-              <div class="branch-img">
-                <img src="./images/img_razzi/branch/brand-2.webp" alt="" />
-              </div>
+              <img src="./images/img_razzi/branch/brand-2.webp" alt="" />
             </li>
             <li>
-              <div class="branch-img">
-                <img src="./images/img_razzi/branch/brand-3.webp" alt="" />
-              </div>
+              <img src="./images/img_razzi/branch/brand-3.webp" alt="" />
             </li>
             <li>
-              <div class="branch-img">
-                <img src="./images/img_razzi/branch/brand-4.webp" alt="" />
-              </div>
+              <img src="./images/img_razzi/branch/brand-4.webp" alt="" />
             </li>
             <li>
-              <div class="branch-img">
-                <img src="./images/img_razzi/branch/brand-5.webp" alt="" />
-              </div>
+              <img src="./images/img_razzi/branch/brand-5.webp" alt="" />
             </li>
             <li>
-              <div class="branch-img">
-                <img src="./images/img_razzi/branch/brand-6.webp" alt="" />
-              </div>
+              <img src="./images/img_razzi/branch/brand-6.webp" alt="" />
             </li>
             <li>
-              <div class="branch-img">
-                <img src="./images/img_razzi/branch/brand-7.webp" alt="" />
-              </div>
+              <img src="./images/img_razzi/branch/brand-7.webp" alt="" />
             </li>
           </ul>
         </div>
