@@ -63,7 +63,7 @@
   <body style="overflow-x: hidden">
     <!-- IMPORT ELEMENT  -->
     <!-- <div id="header"></div> -->
-    <!-- <div id="fixed"></div> -->
+    <div id="fixed"></div>
 
     <!-- CODE BODY  -->
     <div class="body-razzi">
@@ -1308,6 +1308,24 @@
         </div>
       </div>
     </div>
+    <!-- MODULE ON TOP  -->
+    <button id="myBtn" title="Lên đầu trang"><img style="width: 70%;" src="./images/Screenshot_2022-05-10_182743-removebg-preview.png" title='lên đầu trang' width='14px'/></button>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+     
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("myBtn").style.display = "block";
+    } else {
+    document.getElementById("myBtn").style.display = "none";
+    }
+    }
+     
+    document.getElementById('myBtn').addEventListener("click", function(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    });
+    </script>
     <!-- SCRIPT SLICK SLIDE  -->
     <script
       type="text/javascript"

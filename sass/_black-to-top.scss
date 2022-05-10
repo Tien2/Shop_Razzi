@@ -1,0 +1,19 @@
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  opacity: 0.7;
+}
+
+#myBtn:hover {
+  background-color: #f1f1f1;
+}
