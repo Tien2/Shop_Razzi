@@ -55,13 +55,16 @@
       $(function () {
         $("#header").load("./include/header.html");
         $("#footer").load("./include/footer.html");
+        $("#fixed").load("./include/fixed.html");
+
       });
     </script>
   </head>
   <body style="overflow-x: hidden">
     <!-- IMPORT ELEMENT  -->
     <!-- <div id="header"></div> -->
-    <!-- <div id="footer"></div> -->
+    <!-- <div id="fixed"></div> -->
+
     <!-- CODE BODY  -->
     <div class="body-razzi">
       <div class="body-sale">
@@ -247,154 +250,35 @@
                     </div>
                     <div class="seller-hover">
                       <ul>
-                        <li>
-                          <div id="myBtn" class="seller-hover-icon">
+                        <li
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <div class="seller-hover-icon">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <div class="seller-hover-icon-name">
                               <p>Add to cart</p>
                             </div>
                           </div>
-                          <div id="myModalLock" class="modal">
-                            <div class="modal-content">
-                              <span class="close">&times;</span>
-                              <div class="modal-content-cart">
-                                <div class="cart-top-left">
-                                  <div class="cart-top-left-img">
-                                    <img
-                                      src="./images/img_razzi/woment/w101.webp"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div class="cart-top-left-text">
-                                    <h5>Wide Cotton Tunic</h5>
-                                    <h4>$250.00</h4>
-                                    <p>QTY:2</p>
-                                  </div>
-                                </div>
-                                <div class="cart-top-right">
-                                  <p>There are 2 items in your cart</p>
-                                  <div class="cart-top-right-pay">
-                                    <p>Subtotal</p>
-                                    <p>$500.00</p>
-                                  </div>
-                                  <div class="cart-top-right-button">
-                                    <div class="cart-top-right-button-1">
-                                      <p>View cart</p>
-                                    </div>
-                                    <div class="cart-top-right-button-2">
-                                      <p>Checkout</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModalLock");
-
-                            // Get the button that opens the modal
-                            var btn = document.getElementById("myBtn");
-
-                            // Get the <span> element that closes the modal
-                            var span =
-                              document.getElementsByClassName("close")[0];
-
-                            // When the user clicks the button, open the modal
-                            btn.onclick = function () {
-                              modal.style.display = "block";
-                            };
-
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function () {
-                              modal.style.display = "none";
-                            };
-
-                            // When the user clicks anywhere outside of the modal, close it
-                            window.onclick = function (event) {
-                              if (event.target == modal) {
-                                modal.style.display = "none";
-                              }
-                            };
-                          </script>
                         </li>
-                        <li>
-                          <div id="myBtn" class="seller-hover-icon">
+                        <li
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModalView"
+                        >
+                          <div class="seller-hover-icon">
                             <i class="fa-solid fa-eye"></i>
-                          </div>
-                          <div id="myModalLock" class="modal">
-                            <div class="modal-content">
-                              <span class="close">&times;</span>
-                              <p>1</p>
+                            <div class="seller-hover-icon-name">
+                              <p>Quick view</p>
                             </div>
                           </div>
-                          <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModalLock");
-
-                            // Get the button that opens the modal
-                            var btn = document.getElementById("myBtn");
-
-                            // Get the <span> element that closes the modal
-                            var span =
-                              document.getElementsByClassName("close")[0];
-
-                            // When the user clicks the button, open the modal
-                            btn.onclick = function () {
-                              modal.style.display = "block";
-                            };
-
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function () {
-                              modal.style.display = "none";
-                            };
-
-                            // When the user clicks anywhere outside of the modal, close it
-                            window.onclick = function (event) {
-                              if (event.target == modal) {
-                                modal.style.display = "none";
-                              }
-                            };
-                          </script>
                         </li>
                         <li>
-                          <div id="myBtn" class="seller-hover-icon">
+                          <div class="seller-hover-icon">
                             <i class="fa-solid fa-heart"></i>
-                          </div>
-                          <div id="myModalLock" class="modal">
-                            <div class="modal-content">
-                              <span class="close">&times;</span>
-                              <p>1</p>
+                            <div class="seller-hover-icon-name">
+                              <p>Browse</p>
                             </div>
                           </div>
-                          <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModalLock");
-
-                            // Get the button that opens the modal
-                            var btn = document.getElementById("myBtn");
-
-                            // Get the <span> element that closes the modal
-                            var span =
-                              document.getElementsByClassName("close")[0];
-
-                            // When the user clicks the button, open the modal
-                            btn.onclick = function () {
-                              modal.style.display = "block";
-                            };
-
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function () {
-                              modal.style.display = "none";
-                            };
-
-                            // When the user clicks anywhere outside of the modal, close it
-                            window.onclick = function (event) {
-                              if (event.target == modal) {
-                                modal.style.display = "none";
-                              }
-                            };
-                          </script>
                         </li>
                       </ul>
                     </div>
@@ -1231,6 +1115,199 @@
         </div>
       </div>
     </div>
+    <!-- MODAL CART SELLERS -->
+    <div class="modal-cart-sellers">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="row modal-body">
+              <div class="col-12 col-md-6 modal-body-cart-content">
+                <h4>Successfully added to your cart</h4>
+                <div class="modal-body-cart-content-item">
+                  <img src="./images/img_razzi/woment/w61.webp" alt="" />
+                  <span>
+                    <h4 style="color: black; margin-bottom: 15px">
+                      Wide Cotton Tunic
+                    </h4>
+                    <h4 style="color: gray">$250.00</h4>
+                    <h5>QTY: 4</h5>
+                  </span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 modal-body-cart-payment">
+                <h4>There are 6 items in your cart</h4>
+                <div class="modal-body-cart-payment-money">
+                  <h5>Subtotal</h5>
+                  <h5>$1,500.00</h5>
+                </div>
+                <div class="modal-body-cart-payment-button">
+                  <div
+                    class="cart-payment-button"
+                    style="background: black; margin-bottom: 10px"
+                  >
+                    <p style="color: #fff">View cart</p>
+                  </div>
+                  <div class="cart-payment-button" style="background: #fff">
+                    <p style="color: black">Check out</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <h4>You may also like</h4>
+              <div class="modal-footer-cart-slick">
+                <div class="modal-footer-cart-slick-item">
+                  <div class="modal-footer-cart-slick-item-img">
+                    <img src="./images/img_razzi/woment/w101.webp" alt="" />
+                  </div>
+                  <div class="modal-footer-cart-slick-item-text">
+                    <h4 style="color: black">Gina Dress Sandal</h4>
+                    <h4 style="color: gray">$79.00</h4>
+                  </div>
+                </div>
+                <div class="modal-footer-cart-slick-item">
+                  <div class="modal-footer-cart-slick-item-img">
+                    <img src="./images/img_razzi/woment/w102.webp" alt="" />
+                  </div>
+                  <div class="modal-footer-cart-slick-item-text">
+                    <h4 style="color: black">Gina Dress Sandal</h4>
+                    <h4 style="color: gray">$79.00</h4>
+                  </div>
+                </div>
+                <div class="modal-footer-cart-slick-item">
+                  <div class="modal-footer-cart-slick-item-img">
+                    <img src="./images/img_razzi/woment/w31.webp" alt="" />
+                  </div>
+                  <div class="modal-footer-cart-slick-item-text">
+                    <h4 style="color: black">Gina Dress Sandal</h4>
+                    <h4 style="color: gray">$79.00</h4>
+                  </div>
+                </div>
+                <div class="modal-footer-cart-slick-item">
+                  <div class="modal-footer-cart-slick-item-img">
+                    <img src="./images/img_razzi/woment/w71.webp" alt="" />
+                  </div>
+                  <div class="modal-footer-cart-slick-item-text">
+                    <h4 style="color: black">Gina Dress Sandal</h4>
+                    <h4 style="color: gray">$79.00</h4>
+                  </div>
+                </div>
+                <div class="modal-footer-cart-slick-item">
+                  <div class="modal-footer-cart-slick-item-img">
+                    <img src="./images/img_razzi/woment/w131.webp" alt="" />
+                  </div>
+                  <div class="modal-footer-cart-slick-item-text">
+                    <h4 style="color: black">Gina Dress Sandal</h4>
+                    <h4 style="color: gray">$79.00</h4>
+                  </div>
+                </div>
+                <div class="modal-footer-cart-slick-item">
+                  <div class="modal-footer-cart-slick-item-img">
+                    <img src="./images/img_razzi/woment/w41.webp" alt="" />
+                  </div>
+                  <div class="modal-footer-cart-slick-item-text">
+                    <h4 style="color: black">Gina Dress Sandal</h4>
+                    <h4 style="color: gray">$79.00</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL VIEW SELLERS  -->
+    <div class="modal-view-sellers">
+      <div
+        class="modal fade"
+        id="exampleModalView"
+        tabindex="-1"
+        aria-labelledby="exampleModalViewLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="padding: unset">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" style="padding: unset">
+              <div class="row modal-body-view">
+                <div class="col-12 col-md-12 col-lg-4 modal-view-img">
+                  <div class="body-view-img-slick">
+                    <div class="body-view-img-item">
+                      <img src="./images/img_razzi/modal-img/w41.webp" alt="" />
+                    </div>
+                    <div class="body-view-img-item">
+                      <img src="./images/img_razzi/modal-img/w42.webp" alt="" />
+                    </div>
+                    <div class="body-view-img-item">
+                      <img src="./images/img_razzi/modal-img/w43.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="body-view-img-text">
+                    <p>
+                      More Product Info <i class="fa-brands fa-instagram"></i>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-8 modal-view-content">
+                  <div class="modal-view-content-start">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Review (1)</p>
+                  </div>
+                  <div class="modal-view-content-name">
+                    <h3>Wide Cotton Tunic</h3>
+                    <h3>$250.00</h3>
+                    <p>
+                      Designed for simplicity and made from hight quality
+                      materials . Its sleek geometry and material combinations
+                      created a modern look.
+                    </p>
+                  </div>
+                  <div class="modal-view-content-button">
+                    <button style="background: black;">
+                      <p style="color: #fff;">Add To Cart</p>
+                    </button>
+                    <button style="background: #fff;">
+                      <p style="color: black;">Buy Now</p>
+                    </button>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="modal-view-content-name2">
+                    <p>SKU: <p>B01DOMX8SJ</p></p>
+                    <p>Categories: <p>T-Shirts, Tops, Womens</p></p>
+                    <p>Tags: <p>Fashion,T-Shirts , Womens</p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- SCRIPT SLICK SLIDE  -->
     <script
       type="text/javascript"
@@ -1245,5 +1322,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./css/app.js"></script>
+        <div id="footer"></div>
   </body>
 </html>
