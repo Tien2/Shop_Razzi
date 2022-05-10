@@ -1,0 +1,108 @@
+#fixed {
+  position: fixed;
+  bottom: 30%;
+  right: 0;
+  z-index: 999;
+  width: 4.5%;
+  font-weight: 100;
+  .fixed-2 {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    background: rgb(128, 181, 65);
+    border-radius: 5px;
+    img {
+      margin-top: 8px;
+      color: #fff;
+      width: 40px;
+    }
+    p {
+      font-size: 16px;
+      color: #fff;
+      margin: unset;
+      font-weight: 400;
+    }
+  }
+}
+@-webkit-keyframes my {
+  0% {
+    color: gray;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: gray;
+  }
+}
+@-moz-keyframes my {
+  0% {
+    color: gray;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: gray;
+  }
+}
+@-o-keyframes my {
+  0% {
+    color: gray;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: gray;
+  }
+}
+@keyframes my {
+  0% {
+    color: gray;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: gray;
+  }
+}
+.test {
+  font-size: 15px;
+  -webkit-animation: my 2000ms infinite;
+  -moz-animation: my 2000ms infinite;
+  -o-animation: my 2000ms infinite;
+  animation: my 2000ms infinite;
+}
+.fixed-1 {
+  background: #333;
+  text-align: center;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  .fx-text {
+    padding-top: 9px;
+    p {
+      color: #fff;
+      margin: unset;
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  #fixed {
+    height: 37%;
+    width: 7%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #fixed {
+    display: none;
+  }
+}
+@media only screen and (max-width: 376px) {
+  #fixed {
+    display: none;
+  }
+}
