@@ -782,7 +782,7 @@
   background: #ff6f61;
   width: 0%;
   height: 3%;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .body-sellers .container .mt-3 ul li a:hover {
   color: #ff6f61;
@@ -804,11 +804,16 @@
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-img {
   position: relative;
 }
+.body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-img .sellers-content-imga {
+  position: absolute;
+  opacity: 1;
+  top: 0%;
+}
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-img .sellers-content-imga img {
   width: 100%;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-img .sellers-content-imgb {
-  display: none;
+  opacity: 0;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-img .sellers-content-imgb img {
   width: 100%;
@@ -878,6 +883,7 @@
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .seller-hover ul li .seller-hover-icon:hover .seller-hover-icon-name {
   opacity: 1;
+  transition: all 0.3s ease-in;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-text {
   margin-top: 15px;
@@ -974,16 +980,15 @@
   font-weight: 500;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .sellers-content-img .sellers-content-imga {
-  display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .sellers-content-img .sellers-content-imgb {
-  display: block;
-}
-.body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .seller-hover {
-  display: block;
+  opacity: 1;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .seller-hover {
   opacity: 1;
+  transition: all 0.3s ease-in;
 }
 .body-sellers .container .textmore p {
   text-align: center;
@@ -1507,7 +1512,7 @@
 .modal-view-sellers .modal-dialog .modal-content .modal-body .modal-body-view .modal-view-content .modal-view-content-start p {
   position: absolute;
   top: -5px;
-  left: 12%;
+  left: 16%;
   font-style: 15px;
   font-weight: 400;
   margin-bottom: unset;
@@ -1764,19 +1769,6 @@
   font-weight: 500;
 }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 60px;
-  right: 10px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 1px;
-  opacity: 1;
-}
-
 @media only screen and (max-width: 1025px) {
   #fixed {
     height: 37%;
@@ -1792,6 +1784,147 @@
   #fixed {
     display: none;
   }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  opacity: 0.7;
+}
+
+#myBtn:hover {
+  background-color: #f1f1f1;
+}
+
+.page-shop {
+  padding-top: 80px;
+}
+.page-shop .container {
+  margin: auto;
+}
+.page-shop .container .page-shop-content {
+  padding-bottom: 40px;
+}
+.page-shop .container .page-shop-content .shop-content-header img {
+  width: 100%;
+}
+.page-shop .container .page-shop-content .shop-content-selection {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-left h3 {
+  color: black;
+  font-style: 15px;
+  font-weight: 500;
+  margin: unset;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-left p {
+  color: gray;
+  font-style: 10px;
+  margin: unset;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-right .dropdown button {
+  border: 1px solid #d8d8d8;
+  width: 239px;
+  height: 50px;
+  background: #fff;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-right .dropdown ul {
+  padding: unset;
+  width: 100%;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-right .dropdown ul li {
+  background: #fff;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-right .dropdown ul li a {
+  color: black;
+  font-style: 14px;
+  text-decoration: none;
+  font-weight: 400;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-right .dropdown ul li:hover a {
+  color: #fff;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item {
+  padding-bottom: 10px;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-img {
+  position: relative;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imga {
+  position: absolute;
+  opacity: 1;
+  top: 0%;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imga img {
+  width: 100%;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imgb {
+  opacity: 0;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imgb img {
+  width: 100%;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text {
+  padding-top: 10px;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text p {
+  font-style: 13px;
+  color: gray;
+  margin: unset;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text span {
+  display: flex;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item:hover .shop-content-item-imga {
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item:hover .shop-content-item-imgb {
+  opacity: 1;
+}
+.page-shop .container .page-shop-content .shop-content-content-text {
+  padding-top: 20px;
+  text-align: center;
+}
+.page-shop .container .page-shop-content .shop-content-content-text p {
+  color: gray;
+  font-size: 18px;
+  font-weight: 400;
+}
+.page-shop .container .page-shop-content .shop-content-content-text button {
+  width: 170px;
+  height: 48px;
+  border: 1px solid black;
+}
+.page-shop .container .page-shop-content .shop-content-content-text button p {
+  padding-top: 6px;
+  color: black;
+  margin: unset;
+  font-style: 15px;
+  font-weight: 500;
+}
+.page-shop .container .page-shop-content .shop-content-content-text button:hover {
+  background: black;
+}
+.page-shop .container .page-shop-content .shop-content-content-text button:hover p {
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */

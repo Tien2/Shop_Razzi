@@ -1,0 +1,133 @@
+.page-shop {
+  padding-top: 80px;
+  .container {
+    margin: auto;
+    .page-shop-content {
+      padding-bottom: 40px;
+      .shop-content-header {
+        img {
+          width: 100%;
+        }
+      }
+      .shop-content-selection {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        .shop-content-selection-left {
+          h3 {
+            color: black;
+            font-style: 15px;
+            font-weight: 500;
+            margin: unset;
+          }
+          p {
+            color: gray;
+            font-style: 10px;
+            margin: unset;
+          }
+        }
+        .shop-content-selection-right {
+          .dropdown {
+            button {
+              border: 1px solid #d8d8d8;
+              width: 239px;
+              height: 50px;
+              background: #fff;
+            }
+            ul {
+              padding: unset;
+              width: 100%;
+              li {
+                background: #fff;
+                a {
+                  color: black;
+                  font-style: 14px;
+                  text-decoration: none;
+                  font-weight: 400;
+                }
+                &:hover {
+                  a {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .shop-content-content {
+        .shop-content-item {
+          padding-bottom: 10px;
+          .shop-content-item-img {
+            position: relative;
+            .shop-content-item-imga {
+              position: absolute;
+              opacity: 1;
+              top: 0%;
+              img {
+                width: 100%;
+              }
+            }
+            .shop-content-item-imgb {
+              opacity: 0;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .shop-content-item-text {
+            padding-top: 10px;
+            p {
+              font-style: 13px;
+              color: gray;
+              margin: unset;
+            }
+            h5 {
+              color: black;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            span {
+              display: flex;
+            }
+          }
+          &:hover .shop-content-item-imga {
+            opacity: 0;
+            transition: all 0.4s ease-in;
+          }
+          &:hover .shop-content-item-imgb {
+            opacity: 1;
+          }
+        }
+      }
+      .shop-content-content-text {
+        padding-top: 20px;
+        text-align: center;
+        p {
+          color: gray;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        button {
+          width: 170px;
+          height: 48px;
+          border: 1px solid black;
+          p {
+            padding-top: 6px;
+            color: black;
+            margin: unset;
+            font-style: 15px;
+            font-weight: 500;
+          }
+          &:hover {
+            background: black;
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
