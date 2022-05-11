@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/app.css" />
     <!-- IMPORT SLICK SLIDER -->
     <link
       rel="stylesheet"
@@ -56,15 +55,13 @@
         $("#header").load("./include/header.html");
         $("#footer").load("./include/footer.html");
         $("#fixed").load("./include/fixed.html");
-
       });
     </script>
   </head>
   <body style="overflow-x: hidden">
     <!-- IMPORT ELEMENT  -->
     <!-- <div id="header"></div> -->
-    <div id="fixed"></div>
-
+    <!-- <div id="fixed"></div> -->
     <!-- CODE BODY  -->
     <div class="body-razzi">
       <div class="body-sale">
@@ -1251,7 +1248,7 @@
             </div>
             <div class="modal-body" style="padding: unset">
               <div class="row modal-body-view">
-                <div class="col-12 col-md-12 col-lg-4 modal-view-img">
+                <div class="col-12 col-md-12 col-lg-5 modal-view-img">
                   <div class="body-view-img-slick">
                     <div class="body-view-img-item">
                       <img src="./images/img_razzi/modal-img/w41.webp" alt="" />
@@ -1269,7 +1266,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-8 modal-view-content">
+                <div class="col-12 col-md-12 col-lg-7 modal-view-content">
                   <div class="modal-view-content-start">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -1288,6 +1285,9 @@
                     </p>
                   </div>
                   <div class="modal-view-content-button">
+                    <button style="background: #fff; width: 125px;">
+                      <p style="color: gray;"> -   1    + </p>
+                    </button>
                     <button style="background: black;">
                       <p style="color: #fff;">Add To Cart</p>
                     </button>
@@ -1309,23 +1309,7 @@
       </div>
     </div>
     <!-- MODULE ON TOP  -->
-    <button id="myBtn" title="Lên đầu trang"><img style="width: 70%;" src="./images/Screenshot_2022-05-10_182743-removebg-preview.png" title='lên đầu trang' width='14px'/></button>
-    <script>
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-     
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    document.getElementById("myBtn").style.display = "block";
-    } else {
-    document.getElementById("myBtn").style.display = "none";
-    }
-    }
-     
-    document.getElementById('myBtn').addEventListener("click", function(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    });
-    </script>
+
     <!-- SCRIPT SLICK SLIDE  -->
     <script
       type="text/javascript"
