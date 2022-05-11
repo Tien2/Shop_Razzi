@@ -1,0 +1,25 @@
+#t-shirts {
+  .container {
+    margin: auto;
+    .header-navbar {
+      p {
+        color: gray;
+        font-style: 14px;
+        margin-bottom: unset;
+      }
+    }
+    .header-content {
+      .row {
+        .header-content-left {
+          .header-content-img {
+            .content-img {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

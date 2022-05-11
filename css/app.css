@@ -1814,8 +1814,38 @@
 .page-shop .container .page-shop-content {
   padding-bottom: 40px;
 }
-.page-shop .container .page-shop-content .shop-content-header img {
+.page-shop .container .page-shop-content .shop-content-header .shop-content-header-img img {
   width: 100%;
+}
+.page-shop .container .page-shop-content .shop-content-header .slick-dots {
+  padding: unset;
+  position: absolute;
+  left: 40%;
+  bottom: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: unset;
+}
+.page-shop .container .page-shop-content .shop-content-header .slick-dots li {
+  padding: 0px 10px;
+}
+.page-shop .container .page-shop-content .shop-content-header .slick-dots li button {
+  font-size: 0px;
+  padding: 0px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+.page-shop .container .page-shop-content .shop-content-header .slick-dots .slick-active button {
+  background-color: #ff6f61;
+  transition: all 0.2 linear;
+}
+.page-shop .container .page-shop-content .shop-content-header .slick-dots .slick-active::marker {
+  display: none !important;
 }
 .page-shop .container .page-shop-content .shop-content-selection {
   padding-bottom: 30px;
@@ -1894,7 +1924,7 @@
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item:hover .shop-content-item-imga {
   opacity: 0;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item:hover .shop-content-item-imgb {
   opacity: 1;
@@ -1912,9 +1942,9 @@
   width: 170px;
   height: 48px;
   border: 1px solid black;
+  background: #fff;
 }
 .page-shop .container .page-shop-content .shop-content-content-text button p {
-  padding-top: 6px;
   color: black;
   margin: unset;
   font-style: 15px;
@@ -1925,6 +1955,48 @@
 }
 .page-shop .container .page-shop-content .shop-content-content-text button:hover p {
   color: #fff;
+}
+.page-shop .container .page-shop-selection .accordion .accordion-item {
+  border: unset;
+}
+.page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button {
+  border-bottom: 2px solid gray;
+  padding: 20px 0px 5px 0px;
+}
+.page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #fff;
+  box-shadow: unset;
+}
+.page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  border: unset;
+}
+.page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button p {
+  color: black;
+  font-style: 20px;
+  margin-bottom: unset;
+}
+.page-shop .container .page-shop-selection .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 0px 25px;
+}
+.page-shop .container .page-shop-selection .accordion .accordion-item .accordion-collapse .accordion-body li p {
+  margin: unset;
+}
+
+.stick-selection {
+  display: flex;
+  padding: 15px 0px;
+}
+.stick-selection .stick-selection-icon i {
+  margin-right: 10px;
+}
+.stick-selection .stick-selection-icon:hover {
+  color: red;
+}
+.stick-selection .stick-selection-name p {
+  color: gray;
+  margin: unset;
 }
 
 /*# sourceMappingURL=app.css.map */

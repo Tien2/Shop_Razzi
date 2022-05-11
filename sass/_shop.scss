@@ -5,8 +5,43 @@
     .page-shop-content {
       padding-bottom: 40px;
       .shop-content-header {
-        img {
-          width: 100%;
+        .shop-content-header-img {
+          img {
+            width: 100%;
+          }
+        }
+        // STYLE SLICK SLIDE
+        .slick-dots {
+          padding: unset;
+          position: absolute;
+          left: 40%;
+          bottom: 40px;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          margin: unset;
+          li {
+            padding: 0px 10px;
+            button {
+              font-size: 0px;
+              padding: 0px;
+              width: 13px;
+              height: 13px;
+              border-radius: 100px;
+              border: none;
+              outline: none;
+              background-color: #fff;
+            }
+          }
+          .slick-active {
+            button {
+              background-color: #ff6f61;
+              transition: all 0.2 linear;
+            }
+            &::marker {
+              display: none !important;
+            }
+          }
         }
       }
       .shop-content-selection {
@@ -94,7 +129,7 @@
           }
           &:hover .shop-content-item-imga {
             opacity: 0;
-            transition: all 0.4s ease-in;
+            transition: all 0.3s ease-in;
           }
           &:hover .shop-content-item-imgb {
             opacity: 1;
@@ -113,8 +148,8 @@
           width: 170px;
           height: 48px;
           border: 1px solid black;
+          background: #fff;
           p {
-            padding-top: 6px;
             color: black;
             margin: unset;
             font-style: 15px;
@@ -128,6 +163,61 @@
           }
         }
       }
+    }
+    .page-shop-selection {
+      .accordion {
+        .accordion-item {
+          border: unset;
+          .accordion-header {
+            .accordion-button {
+              border-bottom: 2px solid gray;
+              padding: 20px 0px 5px 0px;
+              &:not(.collapsed) {
+                color: black;
+                background-color: #fff;
+                box-shadow: unset;
+              }
+              &:focus {
+                box-shadow: none;
+                border: unset;
+              }
+              p {
+                color: black;
+                font-style: 20px;
+                margin-bottom: unset;
+              }
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              padding: 0px 25px;
+              li {
+                p {
+                  margin: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.stick-selection {
+  display: flex;
+  padding: 15px 0px;
+  .stick-selection-icon {
+    i {
+      margin-right: 10px;
+    }
+    &:hover {
+      color: red;
+    }
+  }
+  .stick-selection-name {
+    p {
+      color: gray;
+      margin: unset;
     }
   }
 }

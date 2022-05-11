@@ -143,3 +143,29 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   });
 });
+// STYLE BANNER SHOP
+$(document).ready(function () {
+  $(".shop-content-header").slick({
+    slidesToShow: 1,
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
