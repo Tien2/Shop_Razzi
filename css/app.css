@@ -1961,7 +1961,7 @@
 }
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button {
   border-bottom: 2px solid gray;
-  padding: 20px 0px 5px 0px;
+  padding: 10px 0px;
 }
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: black;
@@ -1973,12 +1973,14 @@
   border: unset;
 }
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button p {
+  font-weight: 500;
+  font-size: 17px;
   color: black;
   font-style: 20px;
   margin-bottom: unset;
 }
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-collapse .accordion-body {
-  padding: 0px 25px;
+  padding: 0px 15px;
 }
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-collapse .accordion-body li p {
   margin: unset;
@@ -1986,17 +1988,54 @@
 
 .stick-selection {
   display: flex;
-  padding: 15px 0px;
+  padding: 5px 0px;
+  position: relative;
 }
 .stick-selection .stick-selection-icon i {
+  color: gray;
   margin-right: 10px;
 }
-.stick-selection .stick-selection-icon:hover {
-  color: red;
+.stick-selection .stick-selection-iconb {
+  position: absolute;
+  opacity: 0;
+  left: 2px;
+  top: 9px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.stick-selection .stick-selection-iconb i {
+  color: #fff;
+  margin-right: 10px;
+}
+.stick-selection:hover .stick-selection-icon i {
+  color: black;
+}
+.stick-selection:hover .stick-selection-iconb {
+  opacity: 1;
 }
 .stick-selection .stick-selection-name p {
   color: gray;
   margin: unset;
+}
+
+.accordion-body-size {
+  padding: 20px 0px;
+}
+.accordion-body-size .accordion-body-size-item {
+  width: 48px;
+  height: 42px;
+  border: 1px solid gray;
+  margin: 10px;
+}
+.accordion-body-size .accordion-body-size-item p {
+  text-align: center;
+  color: gray;
+  font-style: 13px;
+  margin-bottom: unset;
+  margin-top: 7px;
+}
+.accordion-body-size .accordion-body-size-item:hover {
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=app.css.map */

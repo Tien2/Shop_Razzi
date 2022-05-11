@@ -171,7 +171,7 @@
           .accordion-header {
             .accordion-button {
               border-bottom: 2px solid gray;
-              padding: 20px 0px 5px 0px;
+              padding: 10px 0px;
               &:not(.collapsed) {
                 color: black;
                 background-color: #fff;
@@ -182,6 +182,8 @@
                 border: unset;
               }
               p {
+                font-weight: 500;
+                font-size: 17px;
                 color: black;
                 font-style: 20px;
                 margin-bottom: unset;
@@ -190,7 +192,7 @@
           }
           .accordion-collapse {
             .accordion-body {
-              padding: 0px 25px;
+              padding: 0px 15px;
               li {
                 p {
                   margin: unset;
@@ -205,19 +207,57 @@
 }
 .stick-selection {
   display: flex;
-  padding: 15px 0px;
+  padding: 5px 0px;
+  position: relative;
   .stick-selection-icon {
     i {
+      color: gray;
       margin-right: 10px;
     }
-    &:hover {
-      color: red;
+  }
+  .stick-selection-iconb {
+    position: absolute;
+    opacity: 0;
+    left: 2px;
+    top: 9px;
+    font-size: 11px;
+    font-weight: 500;
+    i {
+      color: #fff;
+      margin-right: 10px;
     }
+  }
+  &:hover .stick-selection-icon {
+    i {
+      color: black;
+    }
+  }
+  &:hover .stick-selection-iconb {
+    opacity: 1;
   }
   .stick-selection-name {
     p {
       color: gray;
       margin: unset;
+    }
+  }
+}
+.accordion-body-size {
+  padding: 20px 0px;
+  .accordion-body-size-item {
+    width: 48px;
+    height: 42px;
+    border: 1px solid gray;
+    margin: 10px;
+    p {
+      text-align: center;
+      color: gray;
+      font-style: 13px;
+      margin-bottom: unset;
+      margin-top: 7px;
+    }
+    &:hover {
+      border: 1px solid black;
     }
   }
 }
