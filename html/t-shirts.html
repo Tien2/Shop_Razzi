@@ -55,24 +55,198 @@
   </head>
   <body>
     <div id="t-shirts">
-      <div class="container">
-        <div class="header-navbar">
-          <p>Home > Shop > Women > T-Shirts > Crew Neck T-shirts</p>
-        </div>
-        <div class="header-content">
-          <div class="row">
-            <div class="col-12 col-md-12 col-lg-6 header-content-left">
-              <div class="header-content-img">
-                <div class="content-img">
-                  <img src="../images/img_t-shirts/w61.webp" alt="" />
+      <div class="t-shirts-content">
+        <div class="container">
+          <div class="header-navbar">
+            <p>Home > Shop > Women > T-Shirts > Crew Neck T-shirts</p>
+          </div>
+          <div class="header-content">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6 header-content-left">
+                <div class="header-content-img">
+                  <div id="imgzoom" class="content-img">
+                    <img src="../images/img_t-shirts/w61.webp" alt="" />
+                  </div>
+                  <div class="content-img">
+                    <img src="../images/img_t-shirts/w62.webp" alt="" />
+                  </div>
+                  <div class="content-img">
+                    <img src="../images/img_t-shirts/w63.webp" alt="" />
+                  </div>
+                  <div class="content-img">
+                    <img src="../images/img_t-shirts/w64.webp" alt="" />
+                  </div>
+                </div>
+                <div class="header-content-img-tab">
+                  <div class="content-img-tab">
+                    <img src="../images/img_t-shirts/w61 (1).webp" alt="" />
+                  </div>
+                  <div class="content-img-tab">
+                    <img src="../images/img_t-shirts/w62 (1).webp" alt="" />
+                  </div>
+                  <div class="content-img-tab">
+                    <img src="../images/img_t-shirts/w63 (1).webp" alt="" />
+                  </div>
+                  <div class="content-img-tab">
+                    <img src="../images/img_t-shirts/w64 (1).webp" alt="" />
+                  </div>
+                </div>
+                <script>
+                  const container = document.getElementById("imgzoom");
+                  const img = document.querySelector("img");
+                  container.addEventListener("mousemove", (e) => {
+                    const x = e.clientX - e.target.offsetLeft;
+                    const y = e.clientY - e.target.offsetTop;
+
+                    console.log(x, y);
+                    img.style.transformOrigin = "${x}px ${y}px";
+                    img.style.transform = "scale(2)";
+                  });
+                  container.addEventListener("mouseleave", () => {
+                    img.style.transformOrigin = "center";
+                    img.style.transform = "scale(1)";
+                  });
+                </script>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6 header-content-right">
+                <div class="content-right-review">
+                  <div class="content-right-review-text">
+                    <p>Adidas</p>
+                  </div>
+                  <div class="content-right-review-star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="content-right-name">
+                  <h3>Crew Neck T-shirts</h3>
+                  <br />
+                  <h3>$134.00</h3>
+                  <h5>(In stock)</h5>
+                  <p>
+                    Designed for simplicity and made from hight quality
+                    materials. Its sleek geometry and material combinations
+                    creates a modern look.
+                  </p>
+                  <span>
+                    <i class="fa-solid fa-ruler"></i>
+                    <p style="text-decoration: underline; color: black">
+                      Size Chart
+                    </p>
+                  </span>
+                </div>
+                <div class="content-right-name2">
+                  <p>SKU : NTB7SDVX44</p>
+                  <p>Categories : T-Shirts, Womens</p>
+                  <p>Tags : Fashion, T-Shirts, Women</p>
+                </div>
+                <div class="content-right-social">
+                  <p>Share:</p>
+                  <div class="content-right-social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="content-right-social-item">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="content-right-social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+                <div class="content-right-name3">
+                  <p style="color: black; font-size: 20px; font-weight: 500">
+                    Free worldwide shipping on all orders over $50
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"></i>30 days easy returns
+                  </p>
+                  <p style="padding-bottom: 40px">
+                    <i class="fa-solid fa-circle-check"></i>Order your before
+                    2.30pm for same day dispatch
+                  </p>
+                  <div class="content-right-name3-img">
+                    <p>Guaranteed Safe Checkout</p>
+                    <img
+                      src="../images/img_t-shirts/trust-images.webp"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-6 header-content-right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="t-shirts-tab">
+        <div class="container">
+          <!-- TAB SELECTION  -->
+          <div class="tab-selection">
+            <a
+              class="tablink"
+              onclick="openPage('description')"
+              id="defaultOpen"
+            >
+              <p>Description</p>
+            </a>
+            <a class="tablink" onclick="openPage('additional')">
+              <p>Additional Information</p>
+            </a>
+            <a class="tablink" onclick="openPage('reviews')">
+              <p>Reviews</p>
+            </a>
+            <a class="tablink" onclick="openPage('shipping')">
+              <p>Shipping Rates</p>
+            </a>
+          </div>
+          <!-- TAB CONTENT  -->
+          <div class="container">
+            <div id="description" class="tabcontent">
+              <div class="content-description">
+                <p>
+                  Lower temperature washes and delicate spin cycle are gentler
+                  on garment, helping to maintain the color, shape and structure
+                  of the fabric. At the same time it reduces energy consumption
+                  that is used in care processes
+                </p>
+              </div>
+            </div>
+            <div id="additional" class="tabcontent">
+              <h3>News</h3>
+              <p>Some news this fine day!</p>
+            </div>
+
+            <div id="reviews" class="tabcontent">
+              <h3>Contact</h3>
+              <p>Get in touch, or swing by for a cup of coffee.</p>
+            </div>
+            <div id="shipping" class="tabcontent">
+              <h3>About</h3>
+              <p>Who we are and what we do.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- SCRIPT TAB  -->
+    <script>
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
     <!-- SCRIPT SLICK SLIDE  -->
     <script
       type="text/javascript"

@@ -147,7 +147,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".shop-content-header").slick({
     slidesToShow: 1,
-    dots: true,
+    dots: false,
     arrows: false,
     responsive: [
       {
@@ -155,17 +155,31 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
         },
       },
       {
         breakpoint: 668,
         settings: {
           slidesToShow: 1,
-          dots: true,
           slidesToScroll: 1,
         },
       },
     ],
   });
+});
+// STYLE T-SHIRTS CONTENT-IMG
+$(".header-content-img").slick({
+  draggable: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".header-content-img-tab",
+});
+$(".header-content-img-tab").slick({
+  slidesToShow: 4,
+  asNavFor: ".header-content-img",
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
 });

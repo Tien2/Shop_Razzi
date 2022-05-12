@@ -386,8 +386,13 @@
 #header .header-top .container .header-top-right ul li ul li i:hover {
   color: black;
 }
+#header .header-bottom {
+  border-bottom: 1px solid #d0d0d0;
+  background: #fff;
+  height: 72px;
+  top: 10px;
+}
 #header .header-bottom .container {
-  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -501,7 +506,7 @@
   text-decoration: underline;
 }
 #header .header-bottom .container .header-bottom-item ul li .dropdown .dropdown-content {
-  display: block;
+  display: none;
   position: absolute;
   background-color: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -558,6 +563,9 @@
   .header-top-right {
     display: none;
   }
+}
+.body-sale {
+  margin-top: 122px;
 }
 .body-sale .body-sale-text {
   height: 52px;
@@ -1806,9 +1814,11 @@
 }
 
 .page-shop {
-  padding-top: 80px;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 .page-shop .container {
+  width: 80%;
   margin: auto;
 }
 .page-shop .container .page-shop-content {
@@ -1838,20 +1848,20 @@
   border-radius: 100px;
   border: none;
   outline: none;
-  background-color: #fff;
+  background-color: gray;
 }
 .page-shop .container .page-shop-content .shop-content-header .slick-dots .slick-active button {
   background-color: #ff6f61;
   transition: all 0.2 linear;
 }
-.page-shop .container .page-shop-content .shop-content-header .slick-dots .slick-active::marker {
+.page-shop .container .page-shop-content .shop-content-header .slick-dots li.slick-active::marker {
   display: none !important;
 }
 .page-shop .container .page-shop-content .shop-content-selection {
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
 }
 .page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-left h3 {
   color: black;
@@ -1887,7 +1897,7 @@
   color: #fff;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item {
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-img {
   position: relative;
@@ -1910,13 +1920,13 @@
   padding-top: 10px;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text p {
-  font-style: 13px;
+  font-size: 13px;
   color: gray;
   margin: unset;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text h5 {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text span {
@@ -1930,12 +1940,12 @@
   opacity: 1;
 }
 .page-shop .container .page-shop-content .shop-content-content-text {
-  padding-top: 20px;
+  padding-top: 15px;
   text-align: center;
 }
 .page-shop .container .page-shop-content .shop-content-content-text p {
   color: gray;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 .page-shop .container .page-shop-content .shop-content-content-text button {
@@ -1960,8 +1970,8 @@
   border: unset;
 }
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button {
-  border-bottom: 2px solid gray;
-  padding: 10px 0px;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 20px 0px 0px 0px;
 }
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: black;
@@ -1979,6 +1989,9 @@
   font-style: 20px;
   margin-bottom: unset;
 }
+.page-shop .container .page-shop-selection .accordion .accordion-item .accordion-header .accordion-button::after {
+  transition: transform 0.2s ease-in-out;
+}
 .page-shop .container .page-shop-selection .accordion .accordion-item .accordion-collapse .accordion-body {
   padding: 0px 15px;
 }
@@ -1988,20 +2001,19 @@
 
 .stick-selection {
   display: flex;
-  padding: 5px 0px;
+  padding: 10px 0px;
   position: relative;
 }
 .stick-selection .stick-selection-icon i {
   color: gray;
   margin-right: 10px;
+  font-size: 25px;
 }
 .stick-selection .stick-selection-iconb {
   position: absolute;
   opacity: 0;
-  left: 2px;
-  top: 9px;
-  font-size: 11px;
-  font-weight: 500;
+  left: 3px;
+  font-size: 18px;
 }
 .stick-selection .stick-selection-iconb i {
   color: #fff;
@@ -2036,6 +2048,264 @@
 }
 .accordion-body-size .accordion-body-size-item:hover {
   border: 1px solid black;
+}
+
+.accordion-body .accordion-body-color {
+  margin: unset;
+  padding: 20px 0px;
+}
+.accordion-body .accordion-body-color li {
+  position: relative;
+  padding: 10px 0px;
+  display: flex;
+  position: relative;
+}
+.accordion-body .accordion-body-color li .body-color {
+  margin-right: 10px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.accordion-body .accordion-body-color li .body-color i {
+  position: absolute;
+  color: #fff;
+  left: 2%;
+  top: 32%;
+  opacity: 0;
+}
+.accordion-body .accordion-body-color li .body-color-name {
+  position: absolute;
+  left: 20%;
+}
+.accordion-body .accordion-body-color li .body-color-name p {
+  margin-bottom: unset;
+  color: gray;
+  font-style: 15px;
+}
+.accordion-body .accordion-body-color li:hover i {
+  opacity: 1;
+}
+
+.accordion-body .accordion-body-brand {
+  padding: 20px 0px;
+}
+.accordion-body .accordion-body-brand .body-brand-search {
+  padding: 20px 0px;
+}
+.accordion-body .accordion-body-brand .body-brand-item {
+  overflow: auto;
+  height: 240px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.accordion-body .accordion-body-brand .body-brand-item::-webkit-scrollbar {
+  width: 3px;
+}
+.accordion-body .accordion-body-brand .body-brand-item::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.accordion-body .accordion-body-brand .body-brand-item::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    padding: unset;
+  }
+
+  .shop-content-selection-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .container {
+    padding: unset;
+  }
+  .container .slick-dots {
+    bottom: -27px !important;
+  }
+
+  .shop-content-selection-right {
+    display: none;
+  }
+}
+#t-shirts .t-shirts-content {
+  margin: auto;
+}
+#t-shirts .t-shirts-content .container {
+  width: 80%;
+}
+#t-shirts .t-shirts-content .container .header-navbar {
+  padding: 20px 0px;
+}
+#t-shirts .t-shirts-content .container .header-navbar p {
+  color: gray;
+  font-style: 14px;
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-left .header-content-img .content-img img {
+  width: 100%;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-left .header-content-img-tab .content-img-tab {
+  padding: 10px 0px 0px 20px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-left .header-content-img-tab .content-img-tab img {
+  width: 100%;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right {
+  padding: 0px 60px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-review {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-review .content-right-review-text p {
+  margin-bottom: unset;
+  color: gray;
+  font-style: 16px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-review .content-right-review-star .fa-star {
+  font-style: 16px;
+  color: gray;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-review .content-right-review-star .checked {
+  color: black;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name {
+  position: relative;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name h3 {
+  margin-bottom: unset;
+  font-style: 28px;
+  font-weight: 500;
+  line-height: 15px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name h5 {
+  position: absolute;
+  top: 22%;
+  left: 23%;
+  font-style: 7px;
+  color: gray;
+  font-weight: 400;
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name p {
+  margin-top: 20px;
+  color: gray;
+  font-style: 15px;
+  font-weight: 400;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name span {
+  display: flex;
+  position: relative;
+  margin: 20px 0px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name span i {
+  font-style: 14px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name span p {
+  position: absolute;
+  text-decoration: solid;
+  font-weight: 400;
+  font-style: 15px;
+  margin: unset;
+  top: -5px;
+  left: 8%;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name2 p {
+  font-style: 12px;
+  margin-bottom: unset;
+  color: gray;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-social {
+  display: flex;
+  padding: 20px 0px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-social p {
+  color: black;
+  font-style: 13px;
+  margin-bottom: unset;
+  margin-right: 20px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-social .content-right-social-item {
+  position: relative;
+  padding: 0px 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: gray;
+  margin: 0px 10px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-social .content-right-social-item i {
+  position: absolute;
+  color: #d3d3d3;
+  top: 28%;
+  left: 27%;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-social .content-right-social-item:hover {
+  background: black;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-social .content-right-social-item:hover i {
+  color: #fff;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name3 p {
+  font-style: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-bottom: unset;
+  color: gray;
+  padding: 10px 0px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name3 p i {
+  margin-right: 10px;
+  font-weight: 400;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name3 .content-right-name3-img {
+  position: relative;
+  border: 1px solid gray;
+  height: 80px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name3 .content-right-name3-img p {
+  position: absolute;
+  font-weight: 500;
+  font-style: 10px;
+  color: black;
+  background: #fff;
+  padding: unset;
+  left: 33%;
+  padding: unset;
+  top: -9px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name3 .content-right-name3-img img {
+  padding: 10px;
+  width: 100%;
+}
+#t-shirts .t-shirts-tab {
+  padding-top: 50px;
+}
+#t-shirts .t-shirts-tab .container .tab-selection {
+  border-bottom: 1px solid gray;
+  display: flex;
+  text-align: center;
+}
+#t-shirts .t-shirts-tab .container .tab-selection .tablink {
+  padding: 0px 20px;
+  text-decoration: none;
+}
+#t-shirts .t-shirts-tab .container .tab-selection .tablink p {
+  margin-bottom: unset;
+  color: black;
+  font-style: 15px;
+  font-weight: 400;
+}
+#t-shirts .t-shirts-tab .container .container .tabcontent .content-description p {
+  color: gray;
+  font-style: 14px;
+  margin-bottom: unset;
+  padding: 30px 0px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,6 +1,8 @@
 .page-shop {
-  padding-top: 80px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   .container {
+    width: 80%;
     margin: auto;
     .page-shop-content {
       padding-bottom: 40px;
@@ -30,7 +32,7 @@
               border-radius: 100px;
               border: none;
               outline: none;
-              background-color: #fff;
+              background-color: gray;
             }
           }
           .slick-active {
@@ -38,17 +40,17 @@
               background-color: #ff6f61;
               transition: all 0.2 linear;
             }
-            &::marker {
-              display: none !important;
-            }
+          }
+          li.slick-active::marker {
+            display: none !important;
           }
         }
       }
       .shop-content-selection {
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 40px;
         display: flex;
         justify-content: space-between;
-        padding-top: 40px;
         .shop-content-selection-left {
           h3 {
             color: black;
@@ -93,7 +95,7 @@
       }
       .shop-content-content {
         .shop-content-item {
-          padding-bottom: 10px;
+          padding-bottom: 30px;
           .shop-content-item-img {
             position: relative;
             .shop-content-item-imga {
@@ -114,13 +116,13 @@
           .shop-content-item-text {
             padding-top: 10px;
             p {
-              font-style: 13px;
+              font-size: 13px;
               color: gray;
               margin: unset;
             }
             h5 {
               color: black;
-              font-size: 18px;
+              font-size: 16px;
               font-weight: 500;
             }
             span {
@@ -137,11 +139,11 @@
         }
       }
       .shop-content-content-text {
-        padding-top: 20px;
+        padding-top: 15px;
         text-align: center;
         p {
           color: gray;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 400;
         }
         button {
@@ -170,8 +172,8 @@
           border: unset;
           .accordion-header {
             .accordion-button {
-              border-bottom: 2px solid gray;
-              padding: 10px 0px;
+              border-bottom: 1px solid #d0d0d0;
+              padding: 20px 0px 0px 0px;
               &:not(.collapsed) {
                 color: black;
                 background-color: #fff;
@@ -187,6 +189,9 @@
                 color: black;
                 font-style: 20px;
                 margin-bottom: unset;
+              }
+              &::after {
+                transition: transform 0.2s ease-in-out;
               }
             }
           }
@@ -205,23 +210,23 @@
     }
   }
 }
+// STYLE HOVER HIỆN NÚT CHECK
 .stick-selection {
   display: flex;
-  padding: 5px 0px;
+  padding: 10px 0px;
   position: relative;
   .stick-selection-icon {
     i {
       color: gray;
       margin-right: 10px;
+      font-size: 25px;
     }
   }
   .stick-selection-iconb {
     position: absolute;
     opacity: 0;
-    left: 2px;
-    top: 9px;
-    font-size: 11px;
-    font-weight: 500;
+    left: 3px;
+    font-size: 18px;
     i {
       color: #fff;
       margin-right: 10px;
@@ -259,5 +264,89 @@
     &:hover {
       border: 1px solid black;
     }
+  }
+}
+// STYLE COLOR
+.accordion-body {
+  .accordion-body-color {
+    margin: unset;
+    padding: 20px 0px;
+    li {
+      position: relative;
+      padding: 10px 0px;
+      display: flex;
+      position: relative;
+      .body-color {
+        margin-right: 10px;
+        content: "";
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        i {
+          position: absolute;
+          color: #fff;
+          left: 2%;
+          top: 32%;
+          opacity: 0;
+        }
+      }
+      .body-color-name {
+        position: absolute;
+        left: 20%;
+        p {
+          margin-bottom: unset;
+          color: gray;
+          font-style: 15px;
+        }
+      }
+      &:hover i {
+        opacity: 1;
+      }
+    }
+  }
+}
+// STYLE BRAND
+.accordion-body {
+  .accordion-body-brand {
+    padding: 20px 0px;
+    .body-brand-search {
+      padding: 20px 0px;
+    }
+    .body-brand-item {
+      overflow: auto;
+      height: 240px;
+      /* width */
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: black;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    padding: unset;
+  }
+  .shop-content-selection-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .container {
+    padding: unset;
+    .slick-dots {
+      bottom: -27px !important;
+    }
+  }
+  .shop-content-selection-right {
+    display: none;
   }
 }

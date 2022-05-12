@@ -1,21 +1,202 @@
 #t-shirts {
-  .container {
+  .t-shirts-content {
     margin: auto;
-    .header-navbar {
-      p {
-        color: gray;
-        font-style: 14px;
-        margin-bottom: unset;
+    .container {
+      width: 80%;
+      .header-navbar {
+        padding: 20px 0px;
+        p {
+          color: gray;
+          font-style: 14px;
+          margin-bottom: unset;
+        }
+      }
+      .header-content {
+        .row {
+          .header-content-left {
+            .header-content-img {
+              .content-img {
+                img {
+                  width: 100%;
+                }
+              }
+            }
+            .header-content-img-tab {
+              .content-img-tab {
+                padding: 10px 0px 0px 20px;
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .header-content-right {
+            padding: 0px 60px;
+            .content-right-review {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 30px;
+              .content-right-review-text {
+                p {
+                  margin-bottom: unset;
+                  color: gray;
+                  font-style: 16px;
+                }
+              }
+              .content-right-review-star {
+                .fa-star {
+                  font-style: 16px;
+                  color: gray;
+                }
+                .checked {
+                  color: black;
+                }
+              }
+            }
+            .content-right-name {
+              position: relative;
+              h3 {
+                margin-bottom: unset;
+                font-style: 28px;
+                font-weight: 500;
+                line-height: 15px;
+              }
+              h5 {
+                position: absolute;
+                top: 22%;
+                left: 23%;
+                font-style: 7px;
+                color: gray;
+                font-weight: 400;
+                margin-bottom: unset;
+              }
+              p {
+                margin-top: 20px;
+                color: gray;
+                font-style: 15px;
+                font-weight: 400;
+              }
+              span {
+                display: flex;
+                position: relative;
+                margin: 20px 0px;
+                i {
+                  font-style: 14px;
+                }
+                p {
+                  position: absolute;
+                  text-decoration: solid;
+                  font-weight: 400;
+                  font-style: 15px;
+                  margin: unset;
+                  top: -5px;
+                  left: 8%;
+                }
+              }
+            }
+            .content-right-name2 {
+              p {
+                font-style: 12px;
+                margin-bottom: unset;
+                color: gray;
+              }
+            }
+            .content-right-social {
+              display: flex;
+              padding: 20px 0px;
+              p {
+                color: black;
+                font-style: 13px;
+                margin-bottom: unset;
+                margin-right: 20px;
+              }
+              .content-right-social-item {
+                position: relative;
+                padding: 0px 15px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: gray;
+                margin: 0px 10px;
+                i {
+                  position: absolute;
+                  color: #d3d3d3;
+                  top: 28%;
+                  left: 27%;
+                }
+                &:hover {
+                  background: black;
+                  i {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            .content-right-name3 {
+              p {
+                font-style: 13px;
+                font-weight: 400;
+                line-height: 15px;
+                margin-bottom: unset;
+                color: gray;
+                padding: 10px 0px;
+                i {
+                  margin-right: 10px;
+                  font-weight: 400;
+                }
+              }
+              .content-right-name3-img {
+                position: relative;
+                border: 1px solid gray;
+                height: 80px;
+                p {
+                  position: absolute;
+                  font-weight: 500;
+                  font-style: 10px;
+                  color: black;
+                  background: #fff;
+                  padding: unset;
+                  left: 33%;
+                  padding: unset;
+                  top: -9px;
+                }
+                img {
+                  padding: 10px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
       }
     }
-    .header-content {
-      .row {
-        .header-content-left {
-          .header-content-img {
-            .content-img {
-              img {
-                width: 100%;
-              }
+  }
+  .t-shirts-tab {
+    padding-top: 50px;
+    .container {
+      .tab-selection {
+        border-bottom: 1px solid gray;
+        display: flex;
+        text-align: center;
+        .tablink {
+          padding: 0px 20px;
+          text-decoration: none;
+          p {
+            margin-bottom: unset;
+            color: black;
+            font-style: 15px;
+            font-weight: 400;
+          }
+        }
+      }
+      .container {
+        .tabcontent {
+          .content-description {
+            p {
+              color: gray;
+              font-style: 14px;
+              margin-bottom: unset;
+              padding: 30px 0px;
             }
           }
         }
