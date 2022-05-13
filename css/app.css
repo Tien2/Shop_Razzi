@@ -2134,9 +2134,6 @@
 #t-shirts .t-shirts-content {
   margin: auto;
 }
-#t-shirts .t-shirts-content .container {
-  width: 80%;
-}
 #t-shirts .t-shirts-content .container .header-navbar {
   padding: 20px 0px;
 }
@@ -2144,6 +2141,9 @@
   color: gray;
   font-style: 14px;
   margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .header-content {
+  margin-bottom: 100px;
 }
 #t-shirts .t-shirts-content .container .header-content .row .header-content-left .header-content-img .content-img img {
   width: 100%;
@@ -2215,6 +2215,57 @@
   top: -5px;
   left: 8%;
 }
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button {
+  padding: 20px 0px;
+  display: flex;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button {
+  width: 250px;
+  height: 58px;
+  border: 1px solid gray;
+  margin: 0px 20px 0px 0px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button p {
+  text-align: center;
+  margin-bottom: unset;
+  font-style: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button p i {
+  margin: 0px 10px;
+  background: #fff;
+  width: 17px;
+  height: 16px;
+  border-radius: 50%;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button p i:hover {
+  background: #dcdcdc;
+  color: gray;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button-1 {
+  width: 250px;
+  height: 58px;
+  border: 1px solid gray;
+  margin: 0px 20px 0px 0px;
+  display: none;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button-1 .button-1-a {
+  text-align: center;
+  display: flex;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button-1 .button-1-a i {
+  font-style: 20px;
+  color: black;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button-1 .button-1-a p {
+  font-style: 20px;
+  color: black;
+}
+#t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-button .right-button-2 i {
+  font-style: 29px;
+  margin-top: 13px;
+}
 #t-shirts .t-shirts-content .container .header-content .row .header-content-right .content-right-name2 p {
   font-style: 12px;
   margin-bottom: unset;
@@ -2283,29 +2334,176 @@
   padding: 10px;
   width: 100%;
 }
-#t-shirts .t-shirts-tab {
-  padding-top: 50px;
-}
-#t-shirts .t-shirts-tab .container .tab-selection {
+#t-shirts .t-shirts-content .container .body-selected .container {
+  position: relative;
   border-bottom: 1px solid gray;
-  display: flex;
+}
+#t-shirts .t-shirts-content .container .body-selected .container .tab {
+  top: -44px;
+  position: absolute;
+  left: 13%;
+  padding: 10px 0px;
+  overflow: hidden;
+}
+#t-shirts .t-shirts-content .container .body-selected .container .tab .tablinks {
+  margin: 0px 50px;
   text-align: center;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
 }
-#t-shirts .t-shirts-tab .container .tab-selection .tablink {
-  padding: 0px 20px;
-  text-decoration: none;
+#t-shirts .t-shirts-content .container .body-selected .container .tab .tablinks p {
+  margin: unset;
 }
-#t-shirts .t-shirts-tab .container .tab-selection .tablink p {
-  margin-bottom: unset;
-  color: black;
-  font-style: 15px;
-  font-weight: 400;
+#t-shirts .t-shirts-content .container .body-selected .container .tab .tablinks:hover {
+  color: #ff6f61;
 }
-#t-shirts .t-shirts-tab .container .container .tabcontent .content-description p {
+#t-shirts .t-shirts-content .container .body-selected .container .tab .tablinks.active {
+  color: #ff6f61;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content {
+  padding-top: 60px;
+  max-width: 790px;
+  margin: auto;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 {
+  display: none;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 .tabcontent-description p {
   color: gray;
-  font-style: 14px;
+  font-style: 15px;
+  line-height: 25px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 .tabcontent-description .description-text {
+  padding: 20px 0px 5px 0px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 .tabcontent-description .description-text .description-text-a {
+  padding: 10px 0px;
+  display: flex;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 .tabcontent-description .description-text .description-text-a .text-color {
+  color: black;
+  font-style: 10px;
+  line-height: 10px;
+  margin: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 .tabcontent-description .description-text .description-text-a p {
+  padding-left: 10px;
+  color: gray;
+  font-style: 10px;
+  line-height: 10px;
+  margin: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table {
+  width: 100%;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr {
+  padding: 10px;
+  border: 1px solid gray;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr th {
+  padding: 10px 20px;
+  width: 50%;
+  border-right: 1px solid gray;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr th p {
   margin-bottom: unset;
-  padding: 30px 0px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr td {
+  padding: 10px 20px;
+  width: 50%;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr td p {
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border: 1px solid gray;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .content {
+  display: flex;
+  position: relative;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .content .content-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .content .content-text {
+  width: 200px;
+  position: absolute;
+  left: 130%;
+  top: 11px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .content .content-text p {
+  color: gray;
+  font-style: 10px;
+  line-height: 14px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .content .content-text h5 {
+  color: black;
+  font-style: 14px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .star .fa-star {
+  color: gray;
+  font-style: 10px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .star .checked {
+  color: black;
+  font-style: 10px;
+}
+
+@media only screen and (max-width: 376px) {
+  .content-right-review {
+    display: block !important;
+  }
+
+  .content-right-name h5 {
+    top: 19% !important;
+    left: 31% !important;
+  }
+
+  .content-right-name3 p {
+    font-style: 15px !important;
+  }
+  .content-right-name3 .content-right-name3-img p {
+    left: 22% !important;
+  }
+
+  .header-content-right {
+    padding: unset !important;
+  }
+  .header-content-right .content-right-button {
+    display: block !important;
+  }
+  .header-content-right .content-right-button .right-button {
+    margin: 10px 0px !important;
+    width: 100% !important;
+  }
+  .header-content-right .content-right-button .right-button-1 {
+    display: block !important;
+    width: 100% !important;
+    position: relative;
+  }
+  .header-content-right .content-right-button .right-button-1 .button-1-a {
+    position: absolute;
+    align-items: center;
+    left: 39%;
+    top: 26%;
+  }
+  .header-content-right .content-right-button .right-button-1 .button-1-a p {
+    margin-left: 10px;
+    font-style: 20px;
+    font-weight: 500;
+    margin-bottom: unset;
+  }
+  .header-content-right .content-right-button .right-button-2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
