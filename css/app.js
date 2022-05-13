@@ -183,3 +183,12 @@ $(".header-content-img-tab").slick({
   centerMode: true,
   focusOnSelect: true,
 });
+
+$(document).ready(function () {
+  $(".shop-content-content").slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    dots: true,
+  });
+});
