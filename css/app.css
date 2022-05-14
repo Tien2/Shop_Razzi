@@ -2145,8 +2145,19 @@
 #t-shirts .t-shirts-content .container .header-content {
   margin-bottom: 100px;
 }
-#t-shirts .t-shirts-content .container .header-content .header-content-left .header-content-img .content-img img {
+#t-shirts .t-shirts-content .container .header-content .header-content-left .header-content-img .content-img .zoom {
+  background-position: 50% 50%;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+#t-shirts .t-shirts-content .container .header-content .header-content-left .header-content-img .content-img .zoom img {
+  transition: opacity 0.5s;
+  display: block;
   width: 100%;
+}
+#t-shirts .t-shirts-content .container .header-content .header-content-left .header-content-img .content-img .zoom img:hover {
+  opacity: 0;
 }
 #t-shirts .t-shirts-content .container .header-content .header-content-left .header-content-img-tab .content-img-tab {
   padding: 10px 0px 0px 20px;
@@ -2501,49 +2512,111 @@
   font-style: 20px;
   font-weight: 500;
 }
-
-.shop-content-content .shop-content-item {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item {
   padding: 20px;
 }
-.shop-content-content .shop-content-item .shop-content-item-img {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-img {
   position: relative;
 }
-.shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imga {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imga {
   position: absolute;
   opacity: 1;
   top: 0%;
 }
-.shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imga img {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imga img {
   width: 100%;
 }
-.shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imgb {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imgb {
   opacity: 0;
 }
-.shop-content-content .shop-content-item .shop-content-item-img .shop-content-item-imgb img {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imgb img {
   width: 100%;
 }
-.shop-content-content .shop-content-item .shop-content-item-text {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-text {
   padding-top: 10px;
 }
-.shop-content-content .shop-content-item .shop-content-item-text p {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-text p {
   font-size: 13px;
   color: gray;
   margin: unset;
 }
-.shop-content-content .shop-content-item .shop-content-item-text h5 {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-text h5 {
   color: black;
   font-size: 16px;
   font-weight: 500;
 }
-.shop-content-content .shop-content-item .shop-content-item-text span {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-text span {
   display: flex;
 }
-.shop-content-content .shop-content-item:hover .shop-content-item-imga {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item:hover .shop-content-item-imga {
   opacity: 0;
   transition: all 0.3s ease-in;
 }
-.shop-content-content .shop-content-item:hover .shop-content-item-imgb {
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item:hover .shop-content-item-imgb {
   opacity: 1;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-text h3 {
+  text-align: center;
+  color: black;
+  font-style: 20px;
+  font-weight: 500;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item {
+  padding: 20px;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-img {
+  position: relative;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imga {
+  position: absolute;
+  opacity: 1;
+  top: 0%;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imga img {
+  width: 100%;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imgb {
+  opacity: 0;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imgb img {
+  width: 100%;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text {
+  padding-top: 10px;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text p {
+  font-size: 13px;
+  color: gray;
+  margin: unset;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text h5 {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text span {
+  display: flex;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item:hover .shop-content-item-imga {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item:hover .shop-content-item-imgb {
+  opacity: 1;
+}
+
+.slick-dots {
+  display: flex;
+  padding-left: unset;
+  margin-bottom: unset;
+  justify-content: center;
+}
+.slick-dots li {
+  list-style: none;
+}
+.slick-dots li button {
+  border: unset;
+  padding: unset;
 }
 
 .star-wrapper {

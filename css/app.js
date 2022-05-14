@@ -167,7 +167,8 @@ $(document).ready(function () {
     ],
   });
 });
-// STYLE T-SHIRTS CONTENT-IMG
+// STYLE SLICK SLIDER T-SHIRTS
+// T-SHIRTS CONTENT-IMG
 $(".header-content-img").slick({
   draggable: false,
   slidesToShow: 1,
@@ -183,12 +184,23 @@ $(".header-content-img-tab").slick({
   centerMode: true,
   focusOnSelect: true,
 });
-
+// BODY-PRODUCT
 $(document).ready(function () {
-  $(".shop-content-content").slick({
+  $(".product-content-slick").slick({
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 2,
     dots: true,
+    arrows: false,
+  });
+});
+// BODY-PRECENTLY
+$(document).ready(function () {
+  $(".recently-content-slick").slick({
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
   });
 });
