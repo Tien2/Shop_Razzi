@@ -147,7 +147,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".shop-content-header").slick({
     slidesToShow: 1,
-    dots: false,
+    dots: true,
     arrows: false,
     responsive: [
       {
@@ -192,6 +192,22 @@ $(document).ready(function () {
     slidesToScroll: 2,
     dots: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   });
 });
 // BODY-PRECENTLY
@@ -202,5 +218,47 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+// BODY SELECTED TAB
+$(document).ready(function () {
+  $(".tab").slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });

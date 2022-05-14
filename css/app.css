@@ -1939,6 +1939,22 @@
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item:hover .shop-content-item-imgb {
   opacity: 1;
 }
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-cart {
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+  background: black;
+  border-radius: 5px;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-cart p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: unset;
+  font-style: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+}
 .page-shop .container .page-shop-content .shop-content-content-text {
   padding-top: 15px;
   text-align: center;
@@ -2120,15 +2136,23 @@
   }
 }
 @media only screen and (max-width: 368px) {
-  .container {
+  .page-shop .container {
+    width: 100% !important;
     padding: unset;
   }
-  .container .slick-dots {
+  .page-shop .container .slick-dots {
     bottom: -27px !important;
   }
 
   .shop-content-selection-right {
     display: none;
+  }
+
+  .shop-content-item {
+    padding: 10px 5px !important;
+  }
+  .shop-content-item .shop-content-item-cart {
+    opacity: 1 !important;
   }
 }
 #t-shirts .t-shirts-content {
@@ -2143,7 +2167,7 @@
   margin-bottom: unset;
 }
 #t-shirts .t-shirts-content .container .header-content {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 #t-shirts .t-shirts-content .container .header-content .header-content-left .header-content-img .content-img .zoom {
   background-position: 50% 50%;
@@ -2166,7 +2190,7 @@
   width: 100%;
 }
 #t-shirts .t-shirts-content .container .header-content .header-content-right {
-  padding: 0px 60px;
+  padding: 20px 60px;
 }
 #t-shirts .t-shirts-content .container .header-content .header-content-right .content-right-review {
   display: flex;
@@ -2233,7 +2257,7 @@
 #t-shirts .t-shirts-content .container .header-content .header-content-right .content-right-button .right-button {
   width: 250px;
   height: 58px;
-  border: 1px solid gray;
+  border: 1px solid #e0e0e0;
   margin: 0px 20px 0px 0px;
 }
 #t-shirts .t-shirts-content .container .header-content .header-content-right .content-right-button .right-button p {
@@ -2257,7 +2281,7 @@
 #t-shirts .t-shirts-content .container .header-content .header-content-right .content-right-button .right-button-1 {
   width: 250px;
   height: 58px;
-  border: 1px solid gray;
+  border: 1px solid #e0e0e0;
   margin: 0px 20px 0px 0px;
   display: none;
 }
@@ -2327,7 +2351,7 @@
 }
 #t-shirts .t-shirts-content .container .header-content .header-content-right .content-right-name3 .content-right-name3-img {
   position: relative;
-  border: 1px solid gray;
+  border: 1px solid #e0e0e0;
   height: 80px;
 }
 #t-shirts .t-shirts-content .container .header-content .header-content-right .content-right-name3 .content-right-name3-img p {
@@ -2346,13 +2370,9 @@
   width: 100%;
 }
 #t-shirts .t-shirts-content .container .body-selected .container {
-  position: relative;
+  padding: 10px;
 }
 #t-shirts .t-shirts-content .container .body-selected .container .tab {
-  top: -44px;
-  position: absolute;
-  left: 13%;
-  padding: 10px 0px;
   overflow: hidden;
 }
 #t-shirts .t-shirts-content .container .body-selected .container .tab .tablinks {
@@ -2376,7 +2396,7 @@
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content {
   padding-top: 60px;
-  max-width: 790px;
+  max-width: 700px;
   margin: auto;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 {
@@ -2396,6 +2416,7 @@
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot1 .tabcontent-description .description-text .description-text-a .text-color {
   color: black;
+  font-weight: 500;
   font-style: 10px;
   line-height: 10px;
   margin: unset;
@@ -2412,12 +2433,12 @@
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr {
   padding: 10px;
-  border: 1px solid gray;
+  border: 1px solid #e0e0e0;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr th {
   padding: 10px 20px;
   width: 50%;
-  border-right: 1px solid gray;
+  border-right: 1px solid #e0e0e0;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot2 table tbody tr th p {
   margin-bottom: unset;
@@ -2432,8 +2453,8 @@
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
-  border: 1px solid gray;
+  padding: 40px;
+  border: 1px solid #e0e0e0;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review .content {
   display: flex;
@@ -2477,17 +2498,106 @@
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-text p {
   color: gray;
 }
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview {
+  position: relative;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-star {
+  padding: 30px 0px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-star p {
+  color: gray;
+  font-style: 15px;
+  font-weight: 400;
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-star .star-wrapper {
+  width: 125px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-node p {
+  color: gray;
+  font-style: 15px;
+  font-weight: 400;
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-node .comment-form-comment {
+  padding: 10px 0px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-node .comment-form-comment textarea {
+  width: 100%;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-contact {
+  display: flex;
+  justify-content: space-between;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-contact .rating-contact-name {
+  padding-right: 10px;
+  width: 50%;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-contact .rating-contact-name p {
+  color: gray;
+  font-style: 15px;
+  font-weight: 400;
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-contact .rating-contact-name input {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-contact .rating-contact-email {
+  padding-left: 10px;
+  width: 50%;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-contact .rating-contact-email p {
+  margin-bottom: unset;
+  color: gray;
+  font-style: 15px;
+  font-weight: 400;
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-contact .rating-contact-email input {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-checkbox {
+  padding: 20px 0px;
+  display: flex;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-checkbox input {
+  margin-right: 10px;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-checkbox p {
+  color: gray;
+  line-height: 15px;
+  font-style: 15px;
+  margin-bottom: unset;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-submit {
+  width: 150px;
+  height: 56px;
+  background: black;
+}
+#t-shirts .t-shirts-content .container .body-selected .tab-content #slot3 .review-addreview .rating-submit p {
+  text-align: center;
+  padding-top: 14px;
+  color: #fff;
+  font-style: 20px;
+  font-weight: 500;
+}
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot4 table {
   width: 100%;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot4 table tbody tr {
   padding: 10px;
-  border: 1px solid gray;
+  border: 1px solid #e0e0e0;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot4 table tbody tr th {
   padding: 10px 20px;
   width: 50%;
-  border-right: 1px solid gray;
+  border-right: 1px solid #e0e0e0;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot4 table tbody tr th p {
   margin-bottom: unset;
@@ -2495,7 +2605,7 @@
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot4 table tbody tr td {
   padding: 10px 20px;
   width: 50%;
-  border-right: 1px solid gray;
+  border-right: 1px solid #e0e0e0;
 }
 #t-shirts .t-shirts-content .container .body-selected .tab-content #slot4 table tbody tr td p {
   margin-bottom: unset;
@@ -2514,6 +2624,7 @@
 }
 #t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item {
   padding: 20px;
+  position: relative;
 }
 #t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-img {
   position: relative;
@@ -2555,11 +2666,90 @@
 #t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item:hover .shop-content-item-imgb {
   opacity: 1;
 }
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-cart {
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+  background: black;
+  border-radius: 5px;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .shop-content-item-cart p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: unset;
+  font-style: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-sale {
+  position: absolute;
+  top: 5%;
+  left: 7% !important;
+  width: 34px !important;
+  height: 20px !important;
+  background: black;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-sale p {
+  text-align: center;
+  margin: unset;
+  color: #fff;
+  font-size: 10px !important;
+  font-weight: 500;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-new {
+  position: absolute;
+  top: 5%;
+  left: 7% !important;
+  width: 34px !important;
+  height: 20px !important;
+  background: #fff;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-new p {
+  text-align: center;
+  margin: unset;
+  color: black;
+  font-size: 10px !important;
+  font-weight: 500;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-hot {
+  position: absolute;
+  top: 13% !important;
+  left: 7% !important;
+  width: 34px !important;
+  height: 20px !important;
+  background: #ff6f61;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-hot p {
+  text-align: center;
+  margin: unset;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px !important;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-soldout {
+  position: absolute;
+  top: 5%;
+  left: 7% !important;
+  width: 70px;
+  height: 20px !important;
+  background: gray;
+}
+#t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item .body-sellers-stick .sellers-stick-soldout p {
+  text-align: center;
+  margin: unset;
+  color: #fff;
+  font-size: 10px !important;
+  font-weight: 500;
+}
 #t-shirts .t-shirts-content .container .body-recently .recently-text h3 {
   text-align: center;
   color: black;
   font-style: 20px;
   font-weight: 500;
+}
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .slick-track {
+  padding: 30px 0px 20px 0px;
 }
 #t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item {
   padding: 20px;
@@ -2581,22 +2771,6 @@
 #t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-img .shop-content-item-imgb img {
   width: 100%;
 }
-#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text {
-  padding-top: 10px;
-}
-#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text p {
-  font-size: 13px;
-  color: gray;
-  margin: unset;
-}
-#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text h5 {
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-}
-#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item .shop-content-item-text span {
-  display: flex;
-}
 #t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .shop-content-item:hover .shop-content-item-imga {
   opacity: 0;
   transition: all 0.3s ease-in;
@@ -2612,6 +2786,7 @@
   justify-content: center;
 }
 .slick-dots li {
+  width: 10%;
   list-style: none;
 }
 .slick-dots li button {
@@ -2659,6 +2834,17 @@
 }
 
 @media only screen and (max-width: 376px) {
+  #t-shirts {
+    padding: 0px 20px;
+  }
+
+  #slot3 .content .content-img {
+    display: none;
+  }
+  #slot3 .content .content-text {
+    top: -27px !important;
+  }
+
   .content-right-review {
     display: block !important;
   }
@@ -2676,7 +2862,7 @@
   }
 
   .header-content-right {
-    padding: unset !important;
+    padding: 0px 10px !important;
   }
   .header-content-right .content-right-button {
     display: block !important;
@@ -2704,6 +2890,20 @@
   }
   .header-content-right .content-right-button .right-button-2 {
     display: none;
+  }
+
+  .body-product {
+    padding: 23px 0px !important;
+  }
+  .body-product .product-text {
+    padding: 20px !important;
+  }
+
+  .shop-content-item {
+    padding: 10px 5px !important;
+  }
+  .shop-content-item .shop-content-item-cart {
+    opacity: 1 !important;
   }
 }
 
