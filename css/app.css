@@ -3007,6 +3007,7 @@
   }
 }
 .about-us .header-about-us .container {
+  width: 77%;
   padding: 10px 0px;
   display: flex;
 }
@@ -3020,6 +3021,10 @@
   font-style: 15px;
   margin-bottom: unset;
 }
+.about-us .header-banner {
+  width: 77%;
+  margin: auto;
+}
 .about-us .header-banner .container {
   background-image: url(../images/img_about-us/about-us-banner.jpg);
   margin-bottom: 90px;
@@ -3032,7 +3037,8 @@
   color: #fff;
 }
 .about-us .about-store .container {
-  padding: 40px 0px;
+  width: 77%;
+  padding-bottom: 70px;
   margin: auto;
 }
 .about-us .about-store .container .bout-img img {
@@ -3040,7 +3046,7 @@
   width: 100%;
 }
 .about-us .about-store .container .about-text {
-  padding: 100px 50px;
+  padding: 60px 50px;
 }
 .about-us .about-store .container .about-text h5 {
   color: gray;
@@ -3061,7 +3067,7 @@
   padding: 30px 0px;
 }
 .about-us .about-fashion .container {
-  width: 80%;
+  width: 77%;
   padding: 50px 0px;
 }
 .about-us .about-fashion .container h2 {
@@ -3097,6 +3103,83 @@
   color: #fff;
   font-weight: 500;
   font-style: 20px;
+}
+.about-us .about-story {
+  padding: 30px 0px;
+}
+.about-us .about-story .container {
+  width: 77%;
+  margin: auto;
+}
+.about-us .about-story .container .story-text {
+  padding: 60px;
+}
+.about-us .about-story .container .story-text h5 {
+  color: gray;
+  font-style: 14px;
+  font-weight: 500;
+}
+.about-us .about-story .container .story-text h1 {
+  color: black;
+}
+.about-us .about-story .container .story-text p {
+  color: gray;
+  font-style: 35px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.about-us .about-story .container .story-img img {
+  width: 100%;
+}
+.about-us .about-text {
+  padding: 30px 0px;
+}
+.about-us .about-text .container {
+  width: 77%;
+  background: #ff7062;
+}
+.about-us .about-text .container h4 {
+  text-align: center;
+  padding: 60px 100px;
+  color: #fff;
+  line-height: 35px;
+  font-weight: 500;
+}
+.about-us .about-content-img {
+  display: flex;
+  flex-direction: column;
+}
+.about-us .about-content-img .content-img img {
+  width: 100%;
+}
+.about-us .about-review .container {
+  width: 77%;
+}
+.about-us .about-review .container .autoplay {
+  text-align: center;
+}
+.about-us .about-review .container .autoplay h5 {
+  color: gray;
+  font-style: 14px;
+  font-weight: 500;
+}
+.about-us .about-review .container .autoplay h2 {
+  color: black;
+}
+.about-us .about-review .container .autoplay .review-item i {
+  text-align: center;
+  color: black;
+  font-style: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.about-us .about-review .container .autoplay .review-item p {
+  margin-bottom: unset;
+  padding-top: 10px;
+  color: gray;
+  font-style: 10px;
+  line-height: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
