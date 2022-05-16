@@ -3041,7 +3041,7 @@
   padding-bottom: 70px;
   margin: auto;
 }
-.about-us .about-store .container .bout-img img {
+.about-us .about-store .container .about-img img {
   padding: 15px;
   width: 100%;
 }
@@ -3135,6 +3135,7 @@
   padding: 30px 0px;
 }
 .about-us .about-text .container {
+  padding: 40px;
   width: 77%;
   background: #ff7062;
 }
@@ -3152,21 +3153,29 @@
 .about-us .about-content-img .content-img img {
   width: 100%;
 }
+.about-us .about-review {
+  padding: 50px 0px;
+}
 .about-us .about-review .container {
   width: 77%;
-}
-.about-us .about-review .container .autoplay {
+  height: 200px;
   text-align: center;
 }
-.about-us .about-review .container .autoplay h5 {
+.about-us .about-review .container h5 {
   color: gray;
-  font-style: 14px;
   font-weight: 500;
 }
-.about-us .about-review .container .autoplay h2 {
+.about-us .about-review .container h2 {
   color: black;
 }
-.about-us .about-review .container .autoplay .review-item i {
+.about-us .about-review .container .autoplay {
+  padding: 50px 0px 60px 0px;
+  height: 150px;
+}
+.about-us .about-review .container .autoplay .review-item .container {
+  width: 50%;
+}
+.about-us .about-review .container .autoplay .review-item .container i {
   text-align: center;
   color: black;
   font-style: 30px;
@@ -3174,12 +3183,51 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
-.about-us .about-review .container .autoplay .review-item p {
+.about-us .about-review .container .autoplay .review-item .container p {
   margin-bottom: unset;
   padding-top: 10px;
   color: gray;
   font-style: 10px;
   line-height: 10px;
+}
+.about-us .about-review .container .autoplay .slick-dots {
+  padding: unset;
+  position: absolute;
+  left: 44%;
+  bottom: -50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: unset;
+}
+.about-us .about-review .container .autoplay .slick-dots li {
+  padding: 0px 10px;
+}
+.about-us .about-review .container .autoplay .slick-dots li button {
+  font-size: 0px;
+  padding: 0px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background-color: gray;
+}
+.about-us .about-review .container .autoplay .slick-dots .slick-active button {
+  background-color: #ff6f61;
+  transition: all 0.2 linear;
+}
+.about-us .about-review .container .autoplay .slick-dots li.slick-active::marker {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1025px) {
+  .about-fashion .container {
+    width: 100% !important;
+  }
+  .about-fashion .container .fashion-button {
+    left: 34% !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
