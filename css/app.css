@@ -987,6 +987,22 @@
   font-size: 13px;
   font-weight: 500;
 }
+.body-sellers .container .mt-3 .tab-content ul .body-sellers-content .shop-content-item-cart {
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+  background: black;
+  border-radius: 5px;
+}
+.body-sellers .container .mt-3 .tab-content ul .body-sellers-content .shop-content-item-cart p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: unset;
+  font-style: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+}
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .sellers-content-img .sellers-content-imga {
   opacity: 0;
   transition: all 0.3s ease-in;
@@ -2155,6 +2171,9 @@
     opacity: 1 !important;
   }
 }
+#t-shirts {
+  overflow-x: hidden;
+}
 #t-shirts .t-shirts-content {
   margin: auto;
 }
@@ -2369,14 +2388,18 @@
   padding: 10px;
   width: 100%;
 }
+#t-shirts .t-shirts-content .container .body-selected {
+  position: relative;
+}
 #t-shirts .t-shirts-content .container .body-selected .container {
   padding: 10px;
 }
 #t-shirts .t-shirts-content .container .body-selected .container .tab {
   overflow: hidden;
+  left: 18%;
 }
 #t-shirts .t-shirts-content .container .body-selected .container .tab .tablinks {
-  margin: 0px 50px;
+  width: 200px !important;
   text-align: center;
   float: left;
   border: none;
@@ -2622,6 +2645,9 @@
   font-style: 20px;
   font-weight: 500;
 }
+#t-shirts .t-shirts-content .container .body-product .product-content {
+  position: relative;
+}
 #t-shirts .t-shirts-content .container .body-product .product-content .product-content-slick .shop-content-item {
   padding: 20px;
   position: relative;
@@ -2748,6 +2774,9 @@
   font-style: 20px;
   font-weight: 500;
 }
+#t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick {
+  position: relative;
+}
 #t-shirts .t-shirts-content .container .body-recently .recently-content .recently-content-slick .slick-track {
   padding: 30px 0px 20px 0px;
 }
@@ -2781,6 +2810,7 @@
 
 .slick-dots {
   display: flex;
+  left: 40%;
   padding-left: unset;
   margin-bottom: unset;
   justify-content: center;
@@ -2831,6 +2861,72 @@
 
 .s5:hover ~ a {
   color: gold;
+}
+
+.fixed-item {
+  height: 99px;
+}
+.fixed-item .container {
+  display: flex;
+}
+.fixed-item .container .fixed-item {
+  display: flex;
+  justify-content: left;
+}
+.fixed-item .container .fixed-item .item-img img {
+  width: 10%;
+}
+.fixed-item .container .fixed-item .item-text h4 {
+  color: black;
+  font-weight: 500;
+  font-style: 15px;
+}
+.fixed-item .container .fixed-item .item-text p {
+  color: gray;
+  font-style: 10px;
+  font-weight: 500;
+  margin-bottom: unset;
+}
+.fixed-item .container .fixed-item .item-text .item-star .fa-star {
+  font-size: 10px;
+  color: gray;
+}
+.fixed-item .container .fixed-item .item-text .item-star .checked {
+  color: black;
+}
+.fixed-item .container .fixed-button {
+  display: flex;
+}
+.fixed-item .container .fixed-button .button-number {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  height: 56px;
+  margin-right: 20px;
+}
+.fixed-item .container .fixed-button .button-number p {
+  font-style: 20px;
+  padding: 13px 0px 0px 50px;
+}
+.fixed-item .container .fixed-button .button-text {
+  display: flex;
+  width: 150px;
+  height: 56px;
+  background: black;
+}
+.fixed-item .container .fixed-button .button-text p {
+  padding-left: 15px;
+  padding-top: 15px;
+  color: #fff;
+  font-style: 15px;
+  font-weight: 500;
+  margin-bottom: unset;
+  margin-right: 10px;
+}
+.fixed-item .container .fixed-button .button-text i {
+  color: #fff;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 376px) {
@@ -2904,6 +3000,10 @@
   }
   .shop-content-item .shop-content-item-cart {
     opacity: 1 !important;
+  }
+
+  .body-selected .tab {
+    left: 0 !important;
   }
 }
 

@@ -424,6 +424,22 @@
                 }
               }
             }
+            .shop-content-item-cart {
+              opacity: 0;
+              width: 100%;
+              height: 40px;
+              background: black;
+              border-radius: 5px;
+              p {
+                text-align: center;
+                color: #fff;
+                margin-bottom: unset;
+                font-style: 20px;
+                line-height: 20px;
+                font-weight: 500;
+                padding-top: 10px;
+              }
+            }
             &:hover .sellers-content-img {
               .sellers-content-imga {
                 opacity: 0;

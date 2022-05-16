@@ -1,4 +1,5 @@
 #t-shirts {
+  overflow-x: hidden;
   .t-shirts-content {
     margin: auto;
     .container {
@@ -232,12 +233,14 @@
         }
       }
       .body-selected {
+        position: relative;
         .container {
           padding: 10px;
           .tab {
             overflow: hidden;
+            left: 18%;
             .tablinks {
-              margin: 0px 50px;
+              width: 200px !important;
               text-align: center;
               float: left;
               border: none;
@@ -255,6 +258,22 @@
                 color: #ff6f61;
               }
             }
+            // &::before {
+            //   content: "";
+            //   position: absolute;
+            //   bottom: 0;
+            //   left: 1;
+            //   background: #ff6f61;
+            //   width: 0%;
+            //   height: 3%;
+            //   transition: all 0.3s ease-in-out;
+            // }
+            // &:hover {
+            //   color: #ff6f61;
+            // }
+            // &:hover::before {
+            //   width: 10%;
+            // }
           }
         }
         .tab-content {
@@ -509,6 +528,7 @@
           }
         }
         .product-content {
+          position: relative;
           .product-content-slick {
             .shop-content-item {
               padding: 20px;
@@ -646,6 +666,7 @@
         }
         .recently-content {
           .recently-content-slick {
+            position: relative;
             .slick-track {
               padding: 30px 0px 20px 0px;
             }
@@ -684,7 +705,9 @@
 }
 // css button slick slider body product
 .slick-dots {
+  // position: absolute;
   display: flex;
+  left: 40%;
   padding-left: unset;
   margin-bottom: unset;
   justify-content: center;
@@ -728,6 +751,77 @@
 }
 .s5:hover ~ a {
   color: gold;
+}
+.fixed-item {
+  height: 99px;
+  .container {
+    display: flex;
+    .fixed-item {
+      display: flex;
+      justify-content: left;
+      .item-img {
+        img {
+          width: 10%;
+        }
+      }
+      .item-text {
+        h4 {
+          color: black;
+          font-weight: 500;
+          font-style: 15px;
+        }
+        p {
+          color: gray;
+          font-style: 10px;
+          font-weight: 500;
+          margin-bottom: unset;
+        }
+        .item-star {
+          .fa-star {
+            font-size: 10px;
+            color: gray;
+          }
+          .checked {
+            color: black;
+          }
+        }
+      }
+    }
+    .fixed-button {
+      display: flex;
+      .button-number {
+        border: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        height: 56px;
+        margin-right: 20px;
+        p {
+          font-style: 20px;
+          padding: 13px 0px 0px 50px;
+        }
+      }
+      .button-text {
+        display: flex;
+        width: 150px;
+        height: 56px;
+        background: black;
+        p {
+          padding-left: 15px;
+          padding-top: 15px;
+          color: #fff;
+          font-style: 15px;
+          font-weight: 500;
+          margin-bottom: unset;
+          margin-right: 10px;
+        }
+        i {
+          color: #fff;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 376px) {
   #t-shirts {
@@ -802,6 +896,11 @@
     padding: 10px 5px !important;
     .shop-content-item-cart {
       opacity: 1 !important;
+    }
+  }
+  .body-selected {
+    .tab {
+      left: 0 !important;
     }
   }
 }

@@ -248,9 +248,10 @@ $(document).ready(function () {
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
+        dots: true,
       },
       {
         breakpoint: 668,
@@ -258,6 +259,7 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
+        dots: true,
       },
     ],
   });
