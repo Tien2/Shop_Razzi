@@ -34,7 +34,7 @@
   .about-store {
     .container {
       width: 77%;
-      padding-bottom: 70px;
+      padding-bottom: 40px;
       margin: auto;
       .about-img {
         img {
@@ -57,6 +57,7 @@
           font-style: 35px;
           line-height: 30px;
           font-weight: 400;
+          margin-bottom: unset;
         }
       }
     }
@@ -76,15 +77,11 @@
         padding: 30px;
         .fashion-text-1 {
           padding: 20px;
-          color: gray;
-          font-style: 25px;
-          line-height: 25px;
-        }
-        .fashion-text-2 {
-          padding: 20px;
-          color: gray;
-          font-style: 25px;
-          line-height: 25px;
+          p {
+            color: gray;
+            font-style: 25px;
+            line-height: 25px;
+          }
         }
       }
       .fashion-button {
@@ -148,16 +145,21 @@
     }
   }
   .about-content-img {
-    display: flex;
-    flex-direction: column;
-    .content-img {
-      img {
-        width: 100%;
+    .container {
+      width: 77%;
+      .row {
+        display: flex;
+        .content-img {
+          img {
+            width: 100%;
+            padding: 10px 0px;
+          }
+        }
       }
     }
   }
   .about-review {
-    padding: 50px 0px;
+    padding: 30px 0px;
     .container {
       width: 77%;
       height: 200px;
@@ -170,7 +172,6 @@
         color: black;
       }
       .autoplay {
-        padding: 50px 0px 60px 0px;
         height: 150px;
         .review-item {
           .container {
@@ -196,7 +197,7 @@
           padding: unset;
           position: absolute;
           left: 44%;
-          bottom: -50%;
+          bottom: -23%;
           display: flex !important;
           align-items: center;
           justify-content: center;
@@ -227,14 +228,182 @@
       }
     }
   }
+  .about-bottom-img {
+    margin-top: 50px;
+    position: relative;
+    .container {
+      ul {
+        padding-left: unset;
+        margin: unset;
+        li {
+          list-style: none;
+          margin: unset;
+          padding: unset;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .bottom-img-button {
+      top: 44%;
+      left: 43%;
+      position: absolute;
+      width: 200px;
+      height: 56px;
+      background: black;
+      p {
+        text-align: center;
+        color: #fff;
+        font-style: 25px;
+        font-weight: 500;
+        margin-bottom: unset;
+        padding-top: 14px;
+      }
+    }
+  }
+  .body-ship {
+    padding-top: 30px;
+    .container {
+      border-bottom: 1px solid gray;
+      margin: auto;
+      .body-ship-item {
+        display: flex;
+        img {
+          width: 15%;
+        }
+        span {
+          margin-top: 9px;
+          margin-left: 20px;
+          h5 {
+            color: black;
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: unset;
+          }
+          p {
+            color: gray;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1025px) {
+  .header-banner {
+    width: 100% !important;
+  }
+  .about-fashion {
+    .container {
+      width: 100% !important;
+      margin-bottom: 30px;
+      .fashion-button {
+        left: 34% !important;
+      }
+    }
+  }
+  .about-store {
+    .container {
+      width: 100% !important;
+      padding-bottom: unset !important;
+      .about-img {
+        img {
+          padding: 20px 12px !important;
+        }
+      }
+      .about-text {
+        padding: 12px !important;
+      }
+    }
+  }
+  .about-story {
+    margin: 30px 0px;
+    padding: unset !important;
+    .container {
+      width: 100% !important;
+      .story-text {
+        padding: 0px 12px !important;
+        p {
+          margin-bottom: unset;
+        }
+      }
+      .story-img {
+        padding: 20px 12px !important;
+      }
+    }
+  }
+  .about-text {
+    padding: unset !important;
+    width: 100% !important;
+    .container {
+      width: 100% !important;
+      padding: unset !important;
+    }
+  }
+  .about-review {
+    padding: 50px 0px 100px 0px !important;
+    .container {
+      width: 90% !important;
+    }
+  }
+  .about-fashion {
+    .container {
+      .fashion-text {
+        padding: unset !important;
+      }
+    }
+  }
+  .about-content-img {
+    .container {
+      width: 100% !important;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
   .about-fashion {
     .container {
       width: 100% !important;
       .fashion-button {
-        left: 34% !important;
+        left: 19% !important;
       }
+      .fashion-text {
+        .fashion-text-1 {
+          padding: 5px 20px !important;
+        }
+      }
+    }
+  }
+  .about-text {
+    .container {
+      h4 {
+        padding: 20px 10px !important;
+      }
+    }
+  }
+  .about-review {
+    .slick-dots {
+      left: 34% !important;
+      bottom: -70% !important;
+    }
+  }
+  .about-bottom-img {
+    .bottom-img-button {
+      top: 47% !important;
+      left: 23% !important;
+    }
+  }
+  .header-banner {
+    .container {
+      .banner-text {
+        padding: 46px !important;
+      }
+    }
+  }
+  .about-content-img {
+    .container {
+      width: 95% !important;
     }
   }
 }
