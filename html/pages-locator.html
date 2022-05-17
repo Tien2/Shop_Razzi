@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Locator</title>
+    <!-- IMPORT SLICK SLIDER -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- IMPORT BOOTRAP 5  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- IMPORT ANIMATE CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+    />
+    <!-- IMPORT FONT - ICON   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+    <!-- IMPORT JQUERY  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/app.css" />
+    <script>
+      $(function () {
+        $("#header").load("./include/header.html");
+        $("#footer").load("./include/footer.html");
+        $("#fixed").load("./include/fixed.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="pages-locator">
+      <div class="header-locator">
+        <div class="container">
+          <a>Home</a>
+          <p>> Locator</p>
+        </div>
+      </div>
+      <div class="locator-name">
+        <h1>Store Locator</h1>
+      </div>
+      <div class="locator-search">
+        <div class="container">
+          <div class="search-box">
+            <form class="search-form">
+              <input class="form-control" placeholder="Search" type="text" />
+              <button class="btn btn-link search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="locator__map">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 locator__map--adress">
+              <div
+                class="address__location"
+                style="border-bottom: 1px solid gray"
+              >
+                <p class="adress__location--text--name">
+                  Baldwin Hills Crenshaw Plaza
+                </p>
+                <br />
+                <br />
+                <p>24/26 Strain Bargate, Boston, PE21, United Kingdom</p>
+                <p class="adress__location--text--name">Phone</p>
+                <p>6-146-389-574</p>
+                <p class="adress__location--text--name">Store Hours</p>
+                <p>10 am - 10pm EST, 7 days a week</p>
+              </div>
+              <div
+                class="address__location"
+                style="border-bottom: 1px solid gray"
+              >
+                <p class="adress__location--text--name">Stonewood Center</p>
+                <br />
+                <br />
+
+                <p>3250 W. MLK Jr.Blvd, Ste 120 Los Angeles</p>
+                <p class="adress__location--text--name">Phone</p>
+                <p>6-146-389-574</p>
+                <p class="adress__location--text--name">Store Hours</p>
+                <p>10 am - 10pm EST, 7 days a week</p>
+              </div>
+              <div class="address__location">
+                <p class="adress__location--text--name">Shalyapin Palace</p>
+                <br />
+                <br />
+                <p>
+                  Block 5, 5th Floor, Harcourt Centre, Harcourt Road Dublin,
+                  Ireland
+                </p>
+                <p class="adress__location--text--name">Phone</p>
+                <p>6-146-389-574</p>
+                <p class="adress__location--text--name">Store Hours</p>
+                <p>10 am - 10pm EST, 7 days a week</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

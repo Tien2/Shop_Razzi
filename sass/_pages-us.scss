@@ -8,6 +8,9 @@
         color: gray;
         font-style: 15px;
         margin-right: 4px;
+        &:hover {
+          color: black;
+        }
       }
       p {
         color: gray;
