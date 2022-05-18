@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store Locator</title>
+
     <!-- IMPORT SLICK SLIDER -->
     <link
       rel="stylesheet"
@@ -30,6 +31,18 @@
       integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
       crossorigin="anonymous"
     />
+    <!-- IMPORT MAP  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
     <!-- IMPORT FONT - ICON   -->
     <link
       rel="stylesheet"
@@ -39,11 +52,10 @@
     />
     <!-- IMPORT JQUERY  -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"
+      integrity="sha512-5SUkiwmm+0AiJEaCiS5nu/ZKPodeuInbQ7CiSrSnUHe11dJpQ8o4J1DU/rw4gxk/O+WBpGYAZbb8e17CDEoESw=="
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/app.css" />
     <script>
       $(function () {
@@ -122,6 +134,22 @@
                 <p class="adress__location--text--name">Store Hours</p>
                 <p>10 am - 10pm EST, 7 days a week</p>
               </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-8 locator__map--map">
+              <div id="map"></div>
+              <script>
+                var map = L.map("map").setView([52.9, 0], 6);
+                L.tileLayer(
+                  "https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=wTPUCXySWRTWpynNjV0i",
+                  {
+                    attribution:
+                      '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                  }
+                ).addTo(map);
+                var marker = L.marker([52.9, 0]).addTo(map);
+                var marker = L.marker([52.29, -1]).addTo(map);
+                var marker = L.marker([51.339, 0]).addTo(map);
+              </script>
             </div>
           </div>
         </div>

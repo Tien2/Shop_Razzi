@@ -3549,10 +3549,11 @@
   margin: auto;
 }
 .locator__map .container .row {
-  padding: 40px 100px;
+  padding: 40px 70px;
 }
 
 .locator__map--adress {
+  padding: 20px;
   background: #fff;
   overflow: auto;
   height: 620px;
@@ -3576,6 +3577,30 @@
 }
 .locator__map--adress::-webkit-scrollbar-track {
   background: gray;
+}
+
+.locator__map--map {
+  padding: 0px 30px;
+}
+.locator__map--map #map {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1025px) {
+  .locator-search {
+    margin-top: 0px !important;
+  }
+  .locator-search .container {
+    width: 100% !important;
+  }
+
+  .locator__map {
+    background-color: #fff !important;
+  }
+  .locator__map .container .row {
+    padding: unset !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
