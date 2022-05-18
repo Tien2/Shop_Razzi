@@ -3602,5 +3602,264 @@
     padding: unset !important;
   }
 }
+.blog__header .container {
+  padding: 10px 0px;
+  display: flex;
+}
+.blog__header .container a {
+  color: gray;
+  font-style: 15px;
+  margin-right: 4px;
+}
+.blog__header .container a:hover {
+  color: black;
+}
+.blog__header .container p {
+  color: gray;
+  font-style: 15px;
+  margin-bottom: unset;
+}
+
+.blog__name {
+  padding: 40px 0px;
+}
+.blog__name h1 {
+  text-align: center;
+}
+
+.single-post__header {
+  padding: 20px 0px;
+}
+.single-post__header .container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.single-post__header .container a {
+  font-style: 10px;
+  color: gray;
+}
+.single-post__header .container a:hover {
+  color: black;
+}
+.single-post__header .container p {
+  font-style: 10px;
+  margin-bottom: unset;
+  color: gray;
+}
+
+.single-post__name {
+  margin: 50px 0px;
+}
+.single-post__name .container {
+  text-align: center;
+}
+.single-post__name .container h1 {
+  margin-bottom: 20px;
+}
+.single-post__name .container p {
+  color: gray;
+}
+
+.single-post__banner .container {
+  width: 80%;
+}
+.single-post__banner .container img {
+  width: 100%;
+}
+
+.single-post__body--text1 {
+  margin: 50px 0px;
+}
+.single-post__body--text1 .container {
+  width: 60%;
+}
+.single-post__body--text1 .container h5 {
+  padding: 20px 0px;
+}
+.single-post__body--text1 .container p {
+  color: gray;
+}
+.single-post__body--text1 .container u {
+  color: black;
+}
+.single-post__body--text1 .container b {
+  color: black;
+  font-weight: 400;
+}
+
+.single-post__body--img {
+  margin: 30px 0px;
+}
+.single-post__body--img .container {
+  width: 80%;
+}
+.single-post__body--img .container .row {
+  display: flex;
+}
+.single-post__body--img .container .row .body__img img {
+  width: 100%;
+}
+
+.single-post__body--text2 {
+  margin: 30px 0px;
+}
+.single-post__body--text2 .container {
+  width: 50%;
+}
+.single-post__body--text2 .container h5 {
+  padding: 20px 0px;
+}
+.single-post__body--text2 .container .body__text2 {
+  margin: 30px 0px;
+  border-left: 3px solid #ff6f61;
+  padding: 30px;
+}
+.single-post__body--text2 .container .body__text2 h5 {
+  font-weight: 400;
+  line-height: 25px;
+  padding: unset;
+}
+.single-post__body--text2 .container .body__text2 i {
+  color: gray;
+  font-style: 10px;
+}
+.single-post__body--text2 .container .body__text2 p {
+  color: gray;
+  font-style: 17px;
+}
+
+.button__keyword .container {
+  width: 60%;
+  display: flex;
+}
+.button__keyword .container .button__keyword--item {
+  width: 140px;
+  height: 41px;
+  border: 1px solid gray;
+  margin: 20px;
+}
+.button__keyword .container .button__keyword--item p {
+  text-align: center;
+  color: gray;
+  margin-top: 6px;
+  margin-bottom: unset;
+  font-style: 12px;
+}
+
+.button__social {
+  margin: 40px 0px;
+}
+.button__social .container {
+  display: flex;
+  width: 62%;
+}
+.button__social .container .button__social--item {
+  margin: 0px 30px;
+  align-items: center;
+  padding-left: 50px;
+  display: flex;
+  width: 250px;
+  height: 56px;
+}
+.button__social .container .button__social--item i {
+  color: #fff;
+  padding-right: 10px;
+}
+.button__social .container .button__social--item p {
+  color: #fff;
+  margin-bottom: unset;
+}
+
+.single-post__post .container {
+  width: 80%;
+}
+.single-post__post .container h2 {
+  padding: 30px 0px;
+  text-align: center;
+}
+.single-post__post .container .post-item {
+  display: flex;
+}
+.single-post__post .container .post-item .post-item__item {
+  padding: 20px;
+}
+.single-post__post .container .post-item .post-item__item .post-item__item--img img {
+  width: 100%;
+}
+.single-post__post .container .post-item .post-item__item h5 {
+  padding: 20px 0px;
+  color: black;
+}
+
+.single-post__comment .container {
+  width: 50%;
+}
+.single-post__comment .container h1 {
+  text-align: center;
+}
+.single-post__comment .container .single-post__comment--user {
+  padding: 30px;
+  border-bottom: 1px solid gray;
+  display: flex;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__text {
+  margin-left: 50px;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__text .text__header {
+  display: flex;
+  justify-content: space-between;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__text .text__header h6 {
+  color: black;
+  margin-bottom: unset;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__text .text__header a {
+  color: gray;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__text .text__header a:hover {
+  color: black;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__text p {
+  margin-bottom: 20px;
+}
+.single-post__comment .container .single-post__comment--user .comment-user__text h6 {
+  color: black;
+}
+
+.single-post__reply {
+  position: relative;
+  margin: 50px 0px;
+}
+.single-post__reply .container {
+  width: 80%;
+  text-align: center;
+}
+.single-post__reply .container h2 {
+  padding: 30px 0px;
+}
+.single-post__reply .container .single-post__reply--form .form__2 {
+  display: flex;
+}
+.single-post__reply .container .single-post__reply--form .form__2 input {
+  height: 50px;
+  width: 23%;
+}
+.single-post__reply .container .single-post__reply--button {
+  width: 200px;
+  height: 65px;
+  background: black;
+}
+.single-post__reply .container .single-post__reply--button p {
+  color: #fff;
+  margin-bottom: unset;
+  padding-top: 17px;
+  text-align: center;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=app.css.map */

@@ -275,3 +275,30 @@ $(document).ready(function () {
     arrows: false,
   });
 });
+// BLOG
+$(document).ready(function () {
+  $(".post-item").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+        dots: true,
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+        dots: true,
+      },
+    ],
+  });
+});

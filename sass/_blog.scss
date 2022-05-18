@@ -1,0 +1,25 @@
+.blog__header {
+  .container {
+    padding: 10px 0px;
+    display: flex;
+    a {
+      color: gray;
+      font-style: 15px;
+      margin-right: 4px;
+      &:hover {
+        color: black;
+      }
+    }
+    p {
+      color: gray;
+      font-style: 15px;
+      margin-bottom: unset;
+    }
+  }
+}
+.blog__name {
+  padding: 40px 0px;
+  h1 {
+    text-align: center;
+  }
+}
