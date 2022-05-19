@@ -3731,13 +3731,13 @@
 
 .button__keyword .container {
   width: 60%;
-  display: flex;
+  margin: auto;
 }
 .button__keyword .container .button__keyword--item {
   width: 140px;
   height: 41px;
   border: 1px solid gray;
-  margin: 20px;
+  margin: 10px 15px;
 }
 .button__keyword .container .button__keyword--item p {
   text-align: center;
@@ -3782,6 +3782,7 @@
   display: flex;
 }
 .single-post__post .container .post-item .post-item__item {
+  position: relative;
   padding: 20px;
 }
 .single-post__post .container .post-item .post-item__item .post-item__item--img img {
@@ -3791,12 +3792,51 @@
   padding: 20px 0px;
   color: black;
 }
+.single-post__post .container .post-item .post-item__item .post-item__item--sticker {
+  background: #fff;
+  position: absolute;
+  top: 10%;
+  width: 66px;
+  height: 23px;
+}
+.single-post__post .container .post-item .post-item__item .post-item__item--sticker p {
+  font-weight: 500;
+  color: black;
+  margin-bottom: unset;
+  padding-left: 4px;
+}
+.single-post__post .container .post-item .slick-dots {
+  padding: unset;
+  position: absolute;
+  left: 46%;
+  bottom: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.single-post__post .container .post-item .slick-dots button {
+  font-size: 0px;
+  padding: 0px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+}
+.single-post__post .container .post-item .slick-dots .slick-active button {
+  background-color: #ff6f61;
+  transition: all 0.2 linear;
+}
 
+.single-post__comment {
+  padding: 30px 0px;
+}
 .single-post__comment .container {
   width: 50%;
 }
-.single-post__comment .container h1 {
+.single-post__comment .container h2 {
   text-align: center;
+  padding: 30px 0px;
 }
 .single-post__comment .container .single-post__comment--user {
   padding: 30px;
@@ -3811,6 +3851,7 @@
   margin-left: 50px;
 }
 .single-post__comment .container .single-post__comment--user .comment-user__text .text__header {
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -3832,34 +3873,115 @@
 }
 
 .single-post__reply {
-  position: relative;
-  margin: 50px 0px;
+  padding: 30px 0px;
 }
 .single-post__reply .container {
   width: 80%;
+}
+.single-post__reply .container h3 {
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.single-post__reply .container p {
   text-align: center;
 }
-.single-post__reply .container h2 {
-  padding: 30px 0px;
+.single-post__reply .container .container {
+  width: 70%;
 }
-.single-post__reply .container .single-post__reply--form .form__2 {
-  display: flex;
+.single-post__reply .container .container input {
+  padding: 10px;
+  margin: 10px 0px;
 }
-.single-post__reply .container .single-post__reply--form .form__2 input {
-  height: 50px;
-  width: 23%;
+
+.single-post__reply--form {
+  position: relative;
 }
-.single-post__reply .container .single-post__reply--button {
+.single-post__reply--form .container {
+  margin: auto;
+}
+.single-post__reply--form .container input {
+  width: 100%;
+}
+.single-post__reply--form .container textarea {
+  width: 100%;
+}
+
+.single-post__reply--button {
+  position: absolute;
+  left: 42%;
   width: 200px;
-  height: 65px;
+  height: 56px;
   background: black;
 }
-.single-post__reply .container .single-post__reply--button p {
+.single-post__reply--button p {
   color: #fff;
   margin-bottom: unset;
-  padding-top: 17px;
-  text-align: center;
-  font-weight: 500;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .button__social .container {
+    width: 100% !important;
+  }
+  .button__social .container .button__social--item {
+    padding-left: 36px !important;
+    margin: 0px 10px !important;
+  }
+
+  .single-post__header .container,
+.single-post__name .container,
+.single-post__banner .container,
+.single-post__body--text1 .container,
+.single-post__body--text2 .container,
+.single-post__comment .container,
+.single-post__post .container,
+.single-post__reply .container {
+    width: 100%;
+  }
+
+  .button__keyword .container {
+    width: 100% !important;
+  }
+  .button__keyword .container .button__keyword--item {
+    margin: 10px !important;
+  }
+
+  .single-post__reply--form .container {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .single-post__header .container,
+.single-post__name .container,
+.single-post__banner .container,
+.single-post__body--text1 .container,
+.single-post__body--text2 .container,
+.single-post__comment .container,
+.single-post__post .container,
+.single-post__reply .container {
+    width: 90%;
+  }
+
+  .single-post__reply--button {
+    left: 23% !important;
+  }
+
+  .single-post__comment--user {
+    padding: 5px 10px !important;
+  }
+
+  .text__header {
+    display: block !important;
+  }
+
+  .post-item__item {
+    padding: unset !important;
+  }
+
+  .button__social--item p {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

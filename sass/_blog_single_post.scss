@@ -102,12 +102,12 @@
 .button__keyword {
   .container {
     width: 60%;
-    display: flex;
+    margin: auto;
     .button__keyword--item {
       width: 140px;
       height: 41px;
       border: 1px solid gray;
-      margin: 20px;
+      margin: 10px 15px;
       p {
         text-align: center;
         color: gray;
@@ -151,6 +151,7 @@
     .post-item {
       display: flex;
       .post-item__item {
+        position: relative;
         padding: 20px;
         .post-item__item--img {
           img {
@@ -161,15 +162,55 @@
           padding: 20px 0px;
           color: black;
         }
+        .post-item__item--sticker {
+          background: #fff;
+          position: absolute;
+          top: 10%;
+          width: 66px;
+          height: 23px;
+          p {
+            font-weight: 500;
+            color: black;
+            margin-bottom: unset;
+            padding-left: 4px;
+          }
+        }
+      }
+      // STYLE SLICK SLIDE
+      .slick-dots {
+        padding: unset;
+        position: absolute;
+        left: 46%;
+        bottom: 40px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        button {
+          font-size: 0px;
+          padding: 0px;
+          width: 13px;
+          height: 13px;
+          border-radius: 100px;
+          border: none;
+          outline: none;
+        }
+        .slick-active {
+          button {
+            background-color: #ff6f61;
+            transition: all 0.2 linear;
+          }
+        }
       }
     }
   }
 }
 .single-post__comment {
+  padding: 30px 0px;
   .container {
     width: 50%;
-    h1 {
+    h2 {
       text-align: center;
+      padding: 30px 0px;
     }
     .single-post__comment--user {
       padding: 30px;
@@ -184,6 +225,7 @@
       .comment-user__text {
         margin-left: 50px;
         .text__header {
+          padding-bottom: 10px;
           display: flex;
           justify-content: space-between;
           h6 {
@@ -208,34 +250,116 @@
   }
 }
 .single-post__reply {
-  position: relative;
-  margin: 50px 0px;
+  padding: 30px 0px;
   .container {
     width: 80%;
-    text-align: center;
-    h2 {
-      padding: 30px 0px;
+    h3 {
+      color: black;
+      text-align: center;
+      padding-bottom: 10px;
     }
-    .single-post__reply--form {
-      .form__2 {
-        display: flex;
-        input {
-          height: 50px;
-          width: 23%;
-        }
+    p {
+      text-align: center;
+    }
+    .container {
+      width: 70%;
+      input {
+        padding: 10px;
+        margin: 10px 0px;
       }
     }
-    .single-post__reply--button {
-      width: 200px;
-      height: 65px;
-      background: black;
-      p {
-        color: #fff;
-        margin-bottom: unset;
-        padding-top: 17px;
-        text-align: center;
-        font-weight: 500;
+  }
+}
+.single-post__reply--form {
+  position: relative;
+  .container {
+    margin: auto;
+    input {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+}
+.single-post__reply--button {
+  position: absolute;
+  left: 42%;
+  width: 200px;
+  height: 56px;
+  background: black;
+  p {
+    color: #fff;
+    margin-bottom: unset;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .button__social {
+    .container {
+      width: 100% !important;
+      .button__social--item {
+        padding-left: 36px !important;
+        margin: 0px 10px !important;
       }
+    }
+  }
+  .single-post__header,
+  .single-post__name,
+  .single-post__banner,
+  .single-post__body--text1,
+  .single-post__body--text2,
+  .single-post__comment,
+  .single-post__post,
+  .single-post__reply {
+    .container {
+      width: 100%;
+    }
+  }
+  .button__keyword {
+    .container {
+      width: 100% !important;
+      .button__keyword--item {
+        margin: 10px !important;
+      }
+    }
+  }
+  .single-post__reply--form {
+    .container {
+      width: 100% !important;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .single-post__header,
+  .single-post__name,
+  .single-post__banner,
+  .single-post__body--text1,
+  .single-post__body--text2,
+  .single-post__comment,
+  .single-post__post,
+  .single-post__reply {
+    .container {
+      width: 90%;
+    }
+  }
+  .single-post__reply--button {
+    left: 23% !important;
+  }
+  .single-post__comment--user {
+    padding: 5px 10px !important;
+  }
+  .text__header {
+    display: block !important;
+  }
+  .post-item__item {
+    padding: unset !important;
+  }
+
+  .button__social--item {
+    p {
+      display: none !important;
     }
   }
 }

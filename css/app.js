@@ -54,7 +54,7 @@ $(document).ready(function () {
     ],
   });
 });
-// STLE BODY-TIME
+// STYLE BODY-TIME
 $(document).ready(function () {
   $(".body-time").slick({
     infinite: false,
@@ -278,9 +278,10 @@ $(document).ready(function () {
 // BLOG
 $(document).ready(function () {
   $(".post-item").slick({
+    infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
+    slidesToScroll: 2,
+    dots: false,
     arrows: false,
     responsive: [
       {
@@ -295,7 +296,7 @@ $(document).ready(function () {
         breakpoint: 668,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
         dots: true,
       },
