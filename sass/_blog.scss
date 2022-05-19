@@ -18,8 +18,114 @@
   }
 }
 .blog__name {
-  padding: 40px 0px;
-  h1 {
-    text-align: center;
+  .container {
+    padding: 40px 0px;
+    h1 {
+      text-align: center;
+    }
+  }
+}
+.body-sellers {
+  margin-top: unset;
+}
+.container {
+  .blog__item {
+    position: relative;
+    padding: 0px 10px 40px 10px;
+    .blog__item--img {
+      img {
+        width: 100%;
+      }
+    }
+    .blog__item--text {
+      h4 {
+        padding: 20px 0px 5px 0px;
+        color: black;
+        margin-bottom: unset;
+      }
+      p {
+        padding: 10px 0px;
+        color: gray;
+        margin-bottom: unset;
+      }
+    }
+    .blog__item--button {
+      b {
+        color: black;
+        font-weight: 400;
+      }
+      i {
+        padding-left: 5px;
+      }
+      &:hover i {
+        transform: translateX(5px);
+        transition: all 0.1s linear;
+      }
+    }
+    .post-item__item--sticker {
+      background: #fff;
+      position: absolute;
+      top: 5%;
+      width: 66px;
+      height: 23px;
+      p {
+        font-style: 7px;
+        font-weight: 500;
+        color: black;
+        margin-bottom: unset;
+        padding-left: 4px;
+      }
+    }
+  }
+}
+.load-more {
+  position: absolute;
+  left: 40%;
+  .container {
+    p {
+      color: gray;
+      text-align: center;
+    }
+    .load-more__slide {
+      img {
+        width: 100%;
+      }
+    }
+    .load-more__button {
+      position: absolute;
+      left: 22%;
+      width: 170px;
+      height: 48px;
+      background: #fff;
+      border: 1px solid black;
+      p {
+        color: black;
+        margin-bottom: unset;
+        padding-top: 13px;
+        text-align: center;
+        font-weight: 500;
+      }
+      &:hover {
+        background: black;
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .load-more {
+    left: 30%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .tab-pane {
+    .container {
+      width: 90%;
+    }
+  }
+  .load-more {
+    left: 12%;
   }
 }
