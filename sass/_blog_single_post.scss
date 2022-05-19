@@ -181,7 +181,7 @@
         padding: unset;
         position: absolute;
         left: 46%;
-        bottom: 40px;
+        bottom: 0px;
         display: flex !important;
         align-items: center;
         justify-content: center;
@@ -199,6 +199,9 @@
             background-color: #ff6f61;
             transition: all 0.2 linear;
           }
+        }
+        li {
+          width: 50px;
         }
       }
     }
@@ -286,7 +289,7 @@
   position: absolute;
   left: 42%;
   width: 200px;
-  height: 56px;
+  height: 50px;
   background: black;
   p {
     color: #fff;
@@ -360,6 +363,12 @@
   .button__social--item {
     p {
       display: none !important;
+    }
+  }
+  .slick-dots {
+    left: 33% !important;
+    li {
+      width: 20px;
     }
   }
 }

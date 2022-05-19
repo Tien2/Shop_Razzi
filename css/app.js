@@ -280,7 +280,7 @@ $(document).ready(function () {
   $(".post-item").slick({
     infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     dots: false,
     arrows: false,
     responsive: [
@@ -289,16 +289,16 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: true,
         },
-        dots: true,
       },
       {
         breakpoint: 668,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
+          dots: true,
         },
-        dots: true,
       },
     ],
   });
