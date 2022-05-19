@@ -1,0 +1,27 @@
+.slider__header {
+  margin-top: 122px;
+  .container {
+    padding: bottom 50px;
+    .slider__header--navbar {
+      padding: 10px 0px;
+      display: flex;
+      a {
+        color: gray;
+        text-decoration: none;
+        &:hover {
+          color: black;
+        }
+      }
+      p {
+        padding: 0px 10px;
+        color: gray;
+      }
+    }
+    .slider__header--name {
+      h2 {
+        padding: 50px 0px;
+        text-align: center;
+      }
+    }
+  }
+}

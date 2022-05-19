@@ -47,13 +47,15 @@
     <link rel="stylesheet" href="../css/app.css" />
     <script>
       $(function () {
-        $("#header").load("./include/header.html");
-        $("#footer").load("./include/footer.html");
-        $("#fixed").load("./include/fixed.html");
+        $("#header").load("../include/header.html");
+        $("#footer").load("../include/footer.html");
+        $("#fixed").load("../include/fixed.html");
       });
     </script>
   </head>
   <body>
+    <div class="fixed-top" id="header"></div>
+    <div id="fixed"></div>
     <div class="blog__header">
       <div class="container">
         <a>Home</a>
@@ -756,5 +758,6 @@
         </div>
       </div>
     </div>
+    <div id="footer"></div>
   </body>
 </html>

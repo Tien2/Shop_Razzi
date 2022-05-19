@@ -54,12 +54,12 @@
             i {
               margin-left: 5px;
               font-size: 12px;
-              &:hover {
-                transform: translateX(5px);
-              }
             }
           }
         }
+      }
+      &:hover i {
+        transform: translateX(5px);
       }
     }
     .slick-prev {

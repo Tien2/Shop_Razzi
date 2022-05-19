@@ -92,7 +92,7 @@
           <li>
             <div class="header-bottom-item-home">
               <div class="dropdown">
-                <div class="dropbtn"><a href="#">Home</a></div>
+                <div class="dropbtn"><a href="../index.html">Home</a></div>
                 <div class="row dropdown-content">
                   <div class="col-lg-6 dropdown-content-list">
                     <ul>
@@ -139,7 +139,9 @@
           <li>
             <div class="header-bottom-item-shop">
               <div class="dropdown">
-                <div class="dropbtn"><a href="#">Shop</a></div>
+                <div class="dropbtn">
+                  <a href="../html/shop.html">Shop</a>
+                </div>
                 <div class="row dropdown-content">
                   <div class="col-lg-6 dropdown-content-list">
                     <ul>
@@ -353,14 +355,18 @@
           <li>
             <div class="header-bottom-item-blog">
               <div class="dropdown">
-                <div class="dropbtn"><a href="#">Blog</a></div>
+                <div class="dropbtn">
+                  <a href="../html/blog.html">Blog</a>
+                </div>
               </div>
             </div>
           </li>
           <li>
             <div class="header-bottom-item-features">
               <div class="dropdown">
-                <div class="dropbtn"><a href="#">Features</a></div>
+                <div class="dropbtn">
+                  <a href="../html/feature_sliders.html">Features</a>
+                </div>
               </div>
             </div>
           </li>
@@ -384,4 +390,20 @@
       </div>
     </div>
   </div>
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 </div>

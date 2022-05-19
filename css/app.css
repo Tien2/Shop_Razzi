@@ -623,7 +623,7 @@
   margin-left: 5px;
   font-size: 12px;
 }
-.body-sale .body-sale-content .body-sale-item .sale-text button p i:hover {
+.body-sale .body-sale-content .body-sale-item:hover i {
   transform: translateX(5px);
 }
 .body-sale .body-sale-content .slick-prev {
@@ -1830,6 +1830,7 @@
 }
 
 .page-shop {
+  margin-top: 122px;
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -2039,22 +2040,23 @@
 .stick-selection .stick-selection-icon i {
   color: gray;
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
-.stick-selection .stick-selection-icon .stick-selection-iconb {
+.stick-selection .stick-selection-icon .stick-selection-icon-check {
   position: absolute;
   opacity: 0;
   left: 3px;
-  font-size: 18px;
+  font-size: 10px;
 }
-.stick-selection .stick-selection-icon .stick-selection-iconb i {
-  color: #fff;
+.stick-selection .stick-selection-icon .stick-selection-icon-check i {
+  color: #fff !important;
   margin-right: 10px;
+  font-size: 13px;
 }
 .stick-selection:hover .stick-selection-icon i {
   color: black;
 }
-.stick-selection:hover .stick-selection-iconb {
+.stick-selection:hover .stick-selection-icon-check {
   opacity: 1;
 }
 .stick-selection .stick-selection-name p {
@@ -2172,6 +2174,7 @@
   }
 }
 #t-shirts {
+  margin-top: 122px;
   overflow-x: hidden;
 }
 #t-shirts .t-shirts-content {
@@ -3006,6 +3009,9 @@
     left: 0 !important;
   }
 }
+.about-us {
+  margin-top: 122px;
+}
 .about-us .header-about-us .container {
   width: 77%;
   padding: 10px 0px;
@@ -3381,6 +3387,9 @@
     width: 95% !important;
   }
 }
+.header-about-faq {
+  margin-top: 122px;
+}
 .header-about-faq .container {
   width: 77%;
   padding: 20px 0px;
@@ -3471,6 +3480,9 @@
   padding: 25px 15px;
 }
 
+.header-locator {
+  margin-top: 122px;
+}
 .header-locator .container {
   padding: 10px 0px;
   display: flex;
@@ -3602,6 +3614,9 @@
     padding: unset !important;
   }
 }
+.blog__header {
+  margin-top: 122px;
+}
 .blog__header .container {
   padding: 10px 0px;
   display: flex;
@@ -3722,6 +3737,7 @@
   }
 }
 .single-post__header {
+  margin-top: 122px;
   padding: 20px 0px;
 }
 .single-post__header .container {
@@ -4086,6 +4102,31 @@
   .slick-dots li {
     width: 20px;
   }
+}
+.slider__header {
+  margin-top: 122px;
+}
+.slider__header .container {
+  padding: bottom 50px;
+}
+.slider__header .container .slider__header--navbar {
+  padding: 10px 0px;
+  display: flex;
+}
+.slider__header .container .slider__header--navbar a {
+  color: gray;
+  text-decoration: none;
+}
+.slider__header .container .slider__header--navbar a:hover {
+  color: black;
+}
+.slider__header .container .slider__header--navbar p {
+  padding: 0px 10px;
+  color: gray;
+}
+.slider__header .container .slider__header--name h2 {
+  padding: 50px 0px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */

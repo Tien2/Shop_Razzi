@@ -47,13 +47,15 @@
     <link rel="stylesheet" href="../css/app.css" />
     <script>
       $(function () {
-        $("#header").load("./include/header.html");
-        $("#footer").load("./include/footer.html");
-        $("#fixed").load("./include/fixed.html");
+        $("#header").load("../include/header.html");
+        $("#footer").load("../include/footer.html");
+        $("#fixed").load("../include/fixed.html");
       });
     </script>
   </head>
   <body>
+    <div class="fixed-top" id="header"></div>
+    <div id="fixed"></div>
     <div id="t-shirts">
       <div class="t-shirts-content">
         <div class="container">
@@ -724,5 +726,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="/css/app.js"></script>
+    <div id="footer"></div>
   </body>
 </html>
