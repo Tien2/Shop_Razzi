@@ -46,6 +46,7 @@
           position: relative;
           margin-left: 30px;
           .dropdown-content {
+            display: flex;
             left: -16px;
             &::after {
               content: "";
@@ -138,7 +139,7 @@
   }
   //   CSS HEADER PHẦN PHÍA DƯỚI
   .header-bottom {
-    z-index: 10;
+    z-index: 10000;
     border-bottom: 1px solid #d0d0d0;
     background: #fff;
     height: 72px;
@@ -160,51 +161,9 @@
           margin-top: 23px;
           li {
             margin: 0px 20px;
-            .header-bottom-item-home {
-              position: relative;
-              margin-left: 30px;
-              .dropdown-content {
-                left: -16px;
-                &::after {
-                  content: "";
-                  position: absolute;
-                  top: -42px;
-                  width: 75px;
-                  height: 67px;
-                  background: transparent;
-                }
-              }
-            }
-            .header-bottom-item-shop {
-              position: relative;
-              margin-left: 30px;
-              .dropdown-content {
-                left: -16px;
-                &::after {
-                  content: "";
-                  position: absolute;
-                  top: -42px;
-                  width: 75px;
-                  height: 67px;
-                  background: transparent;
-                }
-              }
-            }
-            .header-bottom-item-pages {
-              position: relative;
-              margin-left: 30px;
-              .dropdown-content {
-                left: -16px;
-                &::after {
-                  content: "";
-                  position: absolute;
-                  top: -42px;
-                  width: 75px;
-                  height: 67px;
-                  background: transparent;
-                }
-              }
-            }
+            .header-bottom-item-home,
+            .header-bottom-item-shop,
+            .header-bottom-item-pages,
             .header-bottom-item-blog {
               position: relative;
               margin-left: 30px;
@@ -213,9 +172,9 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  top: -42px;
-                  width: 75px;
-                  height: 67px;
+                  top: -27px;
+                  width: 90px;
+                  height: 38px;
                   background: transparent;
                 }
               }
@@ -228,9 +187,10 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  top: -42px;
-                  width: 75px;
-                  height: 67px;
+                  top: -28px;
+                  width: 169px;
+                  height: 38px;
+                  left: 29%;
                   background: transparent;
                 }
               }
@@ -260,15 +220,19 @@
                 background-color: #fff;
                 box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
                 z-index: 1;
-                top: 55px;
+                top: 48px;
                 padding: 20px 10px;
                 width: 600px;
                 .dropdown-content-list {
                   ul {
                     display: unset;
                     li {
-                      line-height: 30px;
+                      width: max-content;
+                      padding: 5px 5px;
+                      text-align: left;
+                      line-height: 20px;
                       p {
+                        padding: 10px 0px;
                         color: black;
                         font-size: 15px;
                         font-weight: 500;
@@ -278,11 +242,16 @@
                         }
                       }
                       a {
+                        font-style: 9px;
                         color: black;
                         text-decoration: none;
                         &:hover {
                           color: #f08080;
                         }
+                      }
+                      img {
+                        width: 10%;
+                        padding-bottom: 30px;
                       }
                     }
                   }
@@ -314,6 +283,7 @@
     }
   }
 }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -323,6 +293,14 @@
   padding: 10px 16px;
   background: #555;
   color: #f1f1f1;
+}
+@media only screen and (max-width: 1025px) {
+  .header-bottom-item {
+    display: none;
+  }
+  .header-bottom-logo {
+    margin-left: 300px;
+  }
 }
 //  RESPONSIVE HEADER TOP LEFT
 @media only screen and (max-width: 769px) {
