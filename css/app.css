@@ -387,10 +387,10 @@
   color: black;
 }
 #header .header-bottom {
+  z-index: 10;
   border-bottom: 1px solid #d0d0d0;
   background: #fff;
   height: 72px;
-  top: 10px;
 }
 #header .header-bottom .container {
   display: flex;
@@ -555,6 +555,18 @@
   font-size: 15px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
 @media only screen and (max-width: 769px) {
   .header-top-left-shipping {
     display: none !important;
@@ -563,9 +575,6 @@
   .header-top-right {
     display: none;
   }
-}
-.body-sale {
-  margin-top: 122px;
 }
 .body-sale .body-sale-text {
   height: 52px;
@@ -1830,7 +1839,6 @@
 }
 
 .page-shop {
-  margin-top: 122px;
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -2174,7 +2182,6 @@
   }
 }
 #t-shirts {
-  margin-top: 122px;
   overflow-x: hidden;
 }
 #t-shirts .t-shirts-content {
@@ -3009,9 +3016,6 @@
     left: 0 !important;
   }
 }
-.about-us {
-  margin-top: 122px;
-}
 .about-us .header-about-us .container {
   width: 77%;
   padding: 10px 0px;
@@ -3387,9 +3391,6 @@
     width: 95% !important;
   }
 }
-.header-about-faq {
-  margin-top: 122px;
-}
 .header-about-faq .container {
   width: 77%;
   padding: 20px 0px;
@@ -3480,9 +3481,6 @@
   padding: 25px 15px;
 }
 
-.header-locator {
-  margin-top: 122px;
-}
 .header-locator .container {
   padding: 10px 0px;
   display: flex;
@@ -3614,9 +3612,6 @@
     padding: unset !important;
   }
 }
-.blog__header {
-  margin-top: 122px;
-}
 .blog__header .container {
   padding: 10px 0px;
   display: flex;
@@ -3644,6 +3639,7 @@
 
 .body-sellers {
   margin-top: unset;
+  padding-bottom: 200px;
 }
 
 .container .blog__item {
@@ -3737,7 +3733,6 @@
   }
 }
 .single-post__header {
-  margin-top: 122px;
   padding: 20px 0px;
 }
 .single-post__header .container {
@@ -4103,9 +4098,6 @@
     width: 20px;
   }
 }
-.slider__header {
-  margin-top: 122px;
-}
 .slider__header .container {
   padding: bottom 50px;
 }
@@ -4127,6 +4119,18 @@
 .slider__header .container .slider__header--name h2 {
   padding: 50px 0px;
   text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  padding: 0;
+  background: #555;
+  color: #f1f1f1;
 }
 
 /*# sourceMappingURL=app.css.map */

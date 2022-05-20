@@ -82,7 +82,7 @@
       </div>
     </div>
   </div>
-  <div class="header-bottom">
+  <div class="header-bottom header" id="myHeader">
     <div class="container">
       <div class="header-bottom-logo">
         <h2>Razzi.</h2>
@@ -389,5 +389,21 @@
         </ul>
       </div>
     </div>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
   </div>
 </div>

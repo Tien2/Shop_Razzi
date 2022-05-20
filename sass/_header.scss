@@ -138,10 +138,10 @@
   }
   //   CSS HEADER PHẦN PHÍA DƯỚI
   .header-bottom {
+    z-index: 10;
     border-bottom: 1px solid #d0d0d0;
     background: #fff;
     height: 72px;
-    top: 10px;
     .container {
       display: flex;
       justify-content: space-between;
@@ -314,7 +314,16 @@
     }
   }
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
 //  RESPONSIVE HEADER TOP LEFT
 @media only screen and (max-width: 769px) {
   .header-top-left-shipping {
