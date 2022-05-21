@@ -237,16 +237,17 @@
       margin-right: 10px;
       font-size: 20px;
     }
-    .stick-selection-icon-check {
+  }
+  .stick-selection-icon-check {
+    opacity: 0;
+    font-size: 10px;
+    i {
       position: absolute;
-      opacity: 0;
       left: 3px;
-      font-size: 10px;
-      i {
-        color: #fff !important;
-        margin-right: 10px;
-        font-size: 13px;
-      }
+      top: 15px;
+      color: #fff !important;
+      margin-right: 10px;
+      font-size: 13px;
     }
   }
   &:hover .stick-selection-icon {

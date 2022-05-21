@@ -2035,13 +2035,14 @@
   margin-right: 10px;
   font-size: 20px;
 }
-.stick-selection .stick-selection-icon .stick-selection-icon-check {
-  position: absolute;
+.stick-selection .stick-selection-icon-check {
   opacity: 0;
-  left: 3px;
   font-size: 10px;
 }
-.stick-selection .stick-selection-icon .stick-selection-icon-check i {
+.stick-selection .stick-selection-icon-check i {
+  position: absolute;
+  left: 3px;
+  top: 15px;
   color: #fff !important;
   margin-right: 10px;
   font-size: 13px;
