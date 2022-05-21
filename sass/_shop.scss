@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 80px;
   .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     .page-shop-content {
       padding-bottom: 40px;
@@ -90,6 +90,14 @@
                 }
               }
             }
+          }
+        }
+        .shop-content-selection-filter {
+          display: none;
+          p {
+            color: black;
+            margin-bottom: unset;
+            font-weight: 500;
           }
         }
       }
@@ -226,6 +234,48 @@
     }
   }
 }
+.page-shop-selection2 {
+  .accordion {
+    .accordion-item {
+      border: unset;
+      .accordion-header {
+        .accordion-button {
+          border-bottom: 1px solid #d0d0d0;
+          padding: 20px 0px 0px 0px;
+          &:not(.collapsed) {
+            color: black;
+            background-color: #fff;
+            box-shadow: unset;
+          }
+          &:focus {
+            box-shadow: none;
+            border: unset;
+          }
+          p {
+            font-weight: 500;
+            font-size: 17px;
+            color: black;
+            font-style: 20px;
+            margin-bottom: unset;
+          }
+          &::after {
+            transition: transform 0.2s ease-in-out;
+          }
+        }
+      }
+      .accordion-collapse {
+        .accordion-body {
+          padding: 0px 15px;
+          li {
+            p {
+              margin: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // STYLE HOVER HIỆN NÚT CHECK
 .stick-selection {
   display: flex;
@@ -352,23 +402,42 @@
 @media only screen and (max-width: 1025px) {
   .container {
     padding: unset;
+    .page-shop-selection {
+      display: none;
+    }
   }
   .shop-content-selection-right {
     display: none;
   }
+
+  .shop-content-selection-filter {
+    display: block !important;
+  }
+  .shop-content-item-cart {
+    display: block !important;
+  }
 }
-@media only screen and (max-width: 368px) {
+@media only screen and (max-width: 378px) {
   .page-shop {
     .container {
-      width: 100% !important;
       padding: unset;
+      .page-shop-selection {
+        display: none !important;
+      }
       .slick-dots {
-        bottom: -27px !important;
+        left: 44% !important;
+        top: 110% !important;
+      }
+      .page-shop-selection {
+        display: none !important;
       }
     }
   }
   .shop-content-selection-right {
     display: none;
+  }
+  .shop-content-selection-filter {
+    display: block !important;
   }
   .shop-content-item {
     padding: 10px 5px !important;

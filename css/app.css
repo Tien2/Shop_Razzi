@@ -1828,7 +1828,7 @@
   padding-bottom: 80px;
 }
 .page-shop .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 .page-shop .container .page-shop-content {
@@ -1905,6 +1905,14 @@
 }
 .page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-right .dropdown ul li:hover a {
   color: #fff;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-filter {
+  display: none;
+}
+.page-shop .container .page-shop-content .shop-content-selection .shop-content-selection-filter p {
+  color: black;
+  margin-bottom: unset;
+  font-weight: 500;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item {
   padding-bottom: 30px;
@@ -2025,6 +2033,39 @@
   margin: unset;
 }
 
+.page-shop-selection2 .accordion .accordion-item {
+  border: unset;
+}
+.page-shop-selection2 .accordion .accordion-item .accordion-header .accordion-button {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 20px 0px 0px 0px;
+}
+.page-shop-selection2 .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #fff;
+  box-shadow: unset;
+}
+.page-shop-selection2 .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  border: unset;
+}
+.page-shop-selection2 .accordion .accordion-item .accordion-header .accordion-button p {
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+  font-style: 20px;
+  margin-bottom: unset;
+}
+.page-shop-selection2 .accordion .accordion-item .accordion-header .accordion-button::after {
+  transition: transform 0.2s ease-in-out;
+}
+.page-shop-selection2 .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 0px 15px;
+}
+.page-shop-selection2 .accordion .accordion-item .accordion-collapse .accordion-body li p {
+  margin: unset;
+}
+
 .stick-selection {
   display: flex;
   padding: 10px 0px;
@@ -2142,22 +2183,43 @@
   .container {
     padding: unset;
   }
+  .container .page-shop-selection {
+    display: none;
+  }
 
   .shop-content-selection-right {
     display: none;
+  }
+
+  .shop-content-selection-filter {
+    display: block !important;
+  }
+
+  .shop-content-item-cart {
+    display: block !important;
   }
 }
-@media only screen and (max-width: 368px) {
+@media only screen and (max-width: 378px) {
   .page-shop .container {
-    width: 100% !important;
     padding: unset;
   }
+  .page-shop .container .page-shop-selection {
+    display: none !important;
+  }
   .page-shop .container .slick-dots {
-    bottom: -27px !important;
+    left: 44% !important;
+    top: 110% !important;
+  }
+  .page-shop .container .page-shop-selection {
+    display: none !important;
   }
 
   .shop-content-selection-right {
     display: none;
+  }
+
+  .shop-content-selection-filter {
+    display: block !important;
   }
 
   .shop-content-item {
