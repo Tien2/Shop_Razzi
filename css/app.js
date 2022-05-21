@@ -303,3 +303,18 @@ $(document).ready(function () {
     ],
   });
 });
+
+// SLIDER RAZZI DEFAULT
+$(document).ready(function () {
+  $(".slider__body--banner").slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  });
+});
