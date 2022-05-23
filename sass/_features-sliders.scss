@@ -155,6 +155,7 @@
   height: 945px;
   background: #cfcfcf;
   .container {
+    width: 60%;
     position: absolute;
     top: 27%;
     left: 24%;
@@ -228,5 +229,297 @@ button {
   }
   &:hover {
     background: #fff;
+  }
+}
+.slider__body--collection {
+  margin: 30px 0px 80px 0px;
+  height: 700px;
+  width: 100%;
+  .slick-prev {
+    position: absolute;
+    top: 103%;
+    left: 34%;
+    background: #f8f8f8;
+    opacity: 0.4;
+  }
+  .slick-next {
+    position: absolute;
+    top: 103%;
+    right: 60%;
+    background: #f8f8f8;
+    opacity: 0.4;
+  }
+}
+.body-collection__item {
+  position: relative;
+  .container {
+    margin: auto;
+    position: absolute;
+    top: 32%;
+    .body-collection__content {
+      display: flex;
+      h2 {
+        color: black;
+        margin: 0px 50px;
+      }
+      .body-banner__item1--button {
+        margin-top: 5%;
+        width: 190px;
+        height: 55px;
+        background: black;
+        position: relative;
+        a {
+          position: absolute;
+          text-decoration: none;
+          left: 24%;
+          top: 26%;
+          color: #fff;
+          font-weight: 500;
+          font-style: 13px;
+          i {
+            padding-left: 10px;
+          }
+        }
+        &:hover i {
+          transform: translateX(5px);
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+  .row {
+    .body-collection__img1 {
+      background-image: url(../images/img_feature-slider/home6_slider_1.jpg);
+      position: relative;
+      height: 745px;
+      width: 100%;
+    }
+    .body-collection__img2 {
+      background-image: url(../images/img_feature-slider/home6_slider_2.jpg);
+      position: relative;
+      height: 745px;
+      width: 100%;
+    }
+    .body-collection__img3 {
+      background-image: url(../images/img_feature-slider/home6_slider_3.jpg);
+      position: relative;
+      height: 745px;
+      width: 100%;
+    }
+  }
+}
+.slider__body--better {
+  position: relative;
+  margin: 30px 0px;
+  background-image: url(../images/img_feature-slider/home6_slider_4.jpg);
+  width: 100%;
+  height: 738px;
+  .container {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    h2 {
+      color: #fff;
+    }
+    p {
+      font-weight: 500;
+      font-style: 30px;
+      color: #fff;
+    }
+    .body-better__button {
+      width: 190px;
+      height: 55px;
+      background-color: #ff6f61;
+      p {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: unset;
+        padding-top: 13px;
+      }
+    }
+  }
+}
+.slider__body--bottom {
+  margin: 10px 0px 60px 0px;
+  .body-bottom__item1 {
+    background-image: url(../images/img_feature-slider/home_2_slider_1.jpg);
+    // position: relative;
+    height: 745px;
+    width: 100%;
+    .container {
+      margin: auto;
+      position: relative;
+      .body-bottom__item1--text {
+        position: absolute;
+        top: 240px;
+        left: 33%;
+        width: 383px;
+        height: 224px;
+        text-align: center;
+        background: #fff;
+        padding: 25px;
+        h3 {
+          line-height: 50px;
+          color: black;
+          margin-bottom: 15px;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .body-bottom__item2 {
+    background-image: url(../images/img_feature-slider/home_2_slider_2.jpg);
+    // position: relative;
+    height: 745px;
+    width: 100%;
+    .container {
+      margin: auto;
+      position: relative;
+      .body-bottom__item2--text {
+        padding: 30px;
+        position: absolute;
+        top: 240px;
+        left: 60%;
+        width: 383px;
+        height: 224px;
+        text-align: right;
+        background: #fff;
+        h3 {
+          line-height: 50px;
+          color: black;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .body-bottom__item3 {
+    .container {
+      margin: auto;
+      position: relative;
+      .body-bottom__item2--text {
+        padding: 30px;
+        position: absolute;
+        top: 240px;
+        left: 0;
+        width: 383px;
+        height: 224px;
+        text-align: right;
+        background: #fff;
+        h3 {
+          color: black;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          font-weight: 500;
+        }
+      }
+      .body-bottom__item2--sale {
+        position: absolute;
+        top: 180px;
+        left: 33%;
+        background: #ff6f61;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        p {
+          color: #fff;
+          margin-bottom: unset;
+          padding: 22px 0px 0px 28px;
+        }
+        h3 {
+          color: #fff;
+          margin-bottom: unset;
+          padding-left: 20px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    padding: unset;
+    position: absolute;
+    left: 46%;
+    bottom: 4%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    button {
+      font-size: 0px;
+      padding: 0px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+    }
+    .slick-active {
+      button {
+        background-color: #ff6f61;
+        transition: all 0.2 linear;
+      }
+    }
+    li {
+      width: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .slider__body--selector {
+    height: 500px;
+    .container {
+      width: 100% !important;
+      left: 4% !important;
+      h2 {
+        font-style: 55px;
+      }
+    }
+  }
+  .slider__body--better {
+    .container {
+      left: 3% !important;
+      h2 {
+        font-style: 75px !important;
+      }
+    }
+  }
+  .slider__body--collection {
+    .slick-next {
+      right: 55% !important;
+    }
+  }
+  .body-banner__item2--content {
+    .container {
+      top: 54% !important;
+      left: 13% !important;
+    }
+  }
+  .body-banner__item3 {
+    height: 729px !important;
+    .body-banner__item3--content {
+      .container {
+        width: 79% !important;
+        left: 10% !important;
+      }
+    }
+    .body-banner__item3--text {
+      h2 {
+        padding-left: 188px !important;
+      }
+    }
+  }
+  .body-bottom__item2--sale {
+    left: 49% !important;
+  }
+  .body-bottom__item2--text {
+    left: 29% !important;
   }
 }
