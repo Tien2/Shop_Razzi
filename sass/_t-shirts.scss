@@ -705,12 +705,28 @@
 }
 // css button slick slider body product
 .slick-dots {
-  // position: absolute;
-  display: flex;
-  left: 40%;
-  padding-left: unset;
-  margin-bottom: unset;
+  padding: unset;
+  position: absolute;
+  left: 16%;
+  bottom: -7%;
+  display: flex !important;
+  align-items: center;
   justify-content: center;
+  button {
+    font-size: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 8px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+  }
+  .slick-active {
+    button {
+      background-color: #ff6f61;
+      transition: all 0.2 linear;
+    }
+  }
   li {
     width: 10%;
     list-style: none;
@@ -901,6 +917,13 @@
   .body-selected {
     .tab {
       left: 0 !important;
+    }
+  }
+  .product-content {
+    .product-content-slick {
+      .slick-dots {
+        left: -11% !important;
+      }
     }
   }
 }
