@@ -139,11 +139,12 @@
   }
   //   CSS HEADER PHẦN PHÍA DƯỚI
   .header-bottom {
-    z-index: 10000;
+    z-index: 99999;
     border-bottom: 1px solid #d0d0d0;
     background: #fff;
     height: 72px;
     .container {
+      position: relative;
       display: flex;
       justify-content: space-between;
       .header-bottom-mobile {
@@ -303,11 +304,29 @@
   color: #f1f1f1;
 }
 @media only screen and (max-width: 1025px) {
+  .header-top {
+    .container {
+      position: relative;
+      .header-top-left {
+        position: absolute;
+        left: 36%;
+      }
+    }
+  }
+  .header-bottom {
+    .container {
+      .header-bottom-logo {
+        position: absolute;
+        left: 40%;
+      }
+      .header-bottom-icon {
+        position: absolute;
+        right: 0%;
+      }
+    }
+  }
   .header-bottom-item {
     display: none;
-  }
-  .header-bottom-logo {
-    margin-left: 41%;
   }
   .header-bottom {
     .container {
@@ -319,7 +338,6 @@
         .hide-mobile {
           display: none;
         }
-        padding-left: 28% !important;
       }
     }
   }
@@ -329,17 +347,28 @@
   .header-top-right {
     display: none;
   }
-  .header-top {
-    .container {
-      margin-left: 40%;
-    }
-  }
 }
 
 @media only screen and (max-width: 376px) {
   .header-top {
     .container {
-      margin-left: 31%;
+      position: relative;
+      .header-top-left {
+        position: absolute;
+        left: 25%;
+      }
+    }
+  }
+  .header-bottom {
+    .container {
+      .header-bottom-logo {
+        position: absolute;
+        left: 5%;
+      }
+      .header-bottom-icon {
+        position: absolute;
+        right: 0%;
+      }
     }
   }
   .header-bottom-icon {

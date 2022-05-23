@@ -154,3 +154,14 @@
     }
   }
 }
+@media only screen and (max-width: 376px) {
+  .offcanvas-end {
+    width: 80% !important;
+    .offcanvas__item3--body {
+      .item-button {
+        margin-left: unset !important;
+        width: 260px !important;
+      }
+    }
+  }
+}
