@@ -100,7 +100,7 @@
     background: black;
   }
   &::-webkit-scrollbar-track {
-    background: gray;
+    background: #f8f8f8;
   }
 }
 .locator__map--map {
@@ -124,5 +124,27 @@
         padding: unset !important;
       }
     }
+  }
+  .locator__map--map {
+    padding: unset;
+    height: 450px;
+    padding-bottom: 30px !important;
+  }
+  .locator__map--adress {
+    height: 340px !important;
+  }
+  .locator-search {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    bottom: 23%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .locator-search {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    bottom: -19%;
   }
 }
