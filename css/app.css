@@ -397,6 +397,13 @@
   display: flex;
   justify-content: space-between;
 }
+#header .header-bottom .container .header-bottom-mobile {
+  display: none;
+}
+#header .header-bottom .container .header-bottom-mobile i {
+  padding-top: 26px;
+  color: black;
+}
 #header .header-bottom .container .header-bottom-logo a {
   text-decoration: none;
   color: black;
@@ -549,16 +556,41 @@
   }
 
   .header-bottom-logo {
-    margin-left: 300px;
+    margin-left: 41%;
   }
-}
-@media only screen and (max-width: 769px) {
+
+  .header-bottom .container {
+    justify-content: unset !important;
+  }
+  .header-bottom .container .header-bottom-mobile {
+    display: block !important;
+  }
+  .header-bottom .container .header-bottom-icon {
+    padding-left: 28% !important;
+  }
+  .header-bottom .container .header-bottom-icon .hide-mobile {
+    display: none;
+  }
+
   .header-top-left-shipping {
     display: none !important;
   }
 
   .header-top-right {
     display: none;
+  }
+
+  .header-top .container {
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .header-top .container {
+    margin-left: 31%;
+  }
+
+  .header-bottom-icon {
+    padding-left: unset !important;
   }
 }
 .body-sale .body-sale-text {
@@ -1791,16 +1823,6 @@
   #fixed {
     height: 37%;
     width: 7%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #fixed {
-    display: none;
-  }
-}
-@media only screen and (max-width: 376px) {
-  #fixed {
-    display: none;
   }
 }
 #myBtn {
@@ -4692,7 +4714,7 @@ button:hover {
 .offcanvas__button--right {
   position: absolute;
   right: 3%;
-  top: 3%;
+  top: 1%;
 }
 
 .offcanvas__item1 {
@@ -4836,6 +4858,76 @@ button:hover {
 .offcanvas__item3 .offcanvas__item3--body .item-button p i {
   padding-right: 5px;
   color: #fff;
+}
+
+.offcanvas__mobile .offcanvas__mobile--name h1 {
+  color: black !important;
+  text-align: center;
+  margin-bottom: unset;
+  font-weight: 700;
+}
+.offcanvas__mobile .offcanvas__mobile--content {
+  padding: 40px 0px;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item {
+  border: unset;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  padding: 25px 20px;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #ff6f61;
+  background-color: #fff;
+  box-shadow: unset;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  border: unset;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-header .accordion-button p {
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+  font-style: 20px;
+  margin-bottom: unset;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-header .accordion-button::after {
+  transition: transform 0.2s ease-in-out;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-body {
+  padding: 0rem 1.25rem !important;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-body ul {
+  padding-left: 20px;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-body ul li {
+  list-style: none;
+  padding: 10px 0px;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-body ul li a {
+  color: black;
+  font-style: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.offcanvas__mobile .offcanvas__mobile--content .accordion .accordion-item .accordion-body ul li:hover a {
+  color: #ff6f61;
+}
+
+@media only screen and (max-width: 376px) {
+  .offcanvas-start {
+    width: 75% !important;
+  }
+
+  .container .header-bottom-mobile {
+    padding-left: 5px;
+  }
+  .container .header-bottom-logo {
+    margin-left: 29% !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

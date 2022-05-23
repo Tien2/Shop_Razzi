@@ -49,13 +49,14 @@
     width: 7%;
   }
 }
-@media only screen and (max-width: 768px) {
-  #fixed {
-    display: none;
-  }
-}
-@media only screen and (max-width: 376px) {
-  #fixed {
-    display: none;
-  }
-}
+// @media only screen and (max-width: 768px) {
+//   #fixed {
+//     // display: none;
+//     bottom: 50% !important;
+//   }
+// }
+// @media only screen and (max-width: 376px) {
+//   #fixed {
+//     display: none;
+//   }
+// }
