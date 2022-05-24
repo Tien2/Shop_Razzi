@@ -392,7 +392,6 @@
   color: black;
 }
 #header .header-bottom {
-  z-index: 99999;
   border-bottom: 1px solid #d0d0d0;
   background: #fff;
   height: 72px;
@@ -480,9 +479,21 @@
   font-size: 15px;
   font-weight: 500;
 }
+#header .header-bottom .container .header-bottom-item ul li .dropdown .dropbtn a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  background: #f08080;
+  width: 0%;
+  height: 4%;
+  transition: all 0.5s ease-out;
+}
+#header .header-bottom .container .header-bottom-item ul li .dropdown .dropbtn a:hover::before {
+  width: 100%;
+}
 #header .header-bottom .container .header-bottom-item ul li .dropdown .dropbtn a:hover {
   color: #f08080;
-  text-decoration: underline;
 }
 #header .header-bottom .container .header-bottom-item ul li .dropdown .dropdown-content {
   display: none;
@@ -1610,10 +1621,6 @@
   font-size: 17px;
   font-weight: 300;
 }
-.modal-view-sellers .modal-dialog .modal-content .modal-body .modal-body-view .modal-view-content .modal-view-content-button {
-  display: flex;
-  position: relative;
-}
 .modal-view-sellers .modal-dialog .modal-content .modal-body .modal-body-view .modal-view-content .modal-view-content-button button {
   margin: 10px 20px 10px 0px;
   width: 200px;
@@ -1857,17 +1864,13 @@
 
 @media only screen and (max-width: 1025px) {
   #fixed {
-    height: 37%;
-    width: 7%;
+    height: 6% !important;
+    width: 6% !important;
+    display: none;
   }
 
   .fixed-2 {
     right: 35%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #fixed {
-    bottom: 50% !important;
   }
 }
 @media only screen and (max-width: 376px) {

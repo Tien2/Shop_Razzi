@@ -45,19 +45,20 @@
 
 @media only screen and (max-width: 1025px) {
   #fixed {
-    height: 37%;
-    width: 7%;
+    height: 6% !important;
+    width: 6% !important;
+    display: none;
   }
   .fixed-2 {
     right: 35%;
   }
 }
-@media only screen and (max-width: 768px) {
-  #fixed {
-    // display: none;
-    bottom: 50% !important;
-  }
-}
+// @media only screen and (max-width: 768px) {
+//   #fixed {
+//     // display: none;
+//     bottom: 50% !important;
+//   }
+// }
 @media only screen and (max-width: 376px) {
   #fixed {
     display: none;
