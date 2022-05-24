@@ -1047,8 +1047,7 @@
               }
             }
             .modal-view-content-button {
-              display: flex;
-              position: relative;
+              // position: relative;
               button {
                 margin: 10px 20px 10px 0px;
                 width: 200px;
@@ -1058,7 +1057,6 @@
                   text-align: center;
                 }
               }
-
               i {
                 top: 19px;
                 position: absolute;

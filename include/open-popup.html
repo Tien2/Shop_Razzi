@@ -1,0 +1,155 @@
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-1.8.2.js"
+></script>
+<style type="text/css">
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.3;
+    z-index: 100;
+    display: none;
+  }
+  .popup {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    z-index: 101;
+  }
+  .content-popup {
+    padding: 10px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 570px;
+    height: 463px;
+    background: #fff;
+  }
+  .content-popup__body {
+    margin: auto;
+    width: 550px;
+    height: 200px;
+    position: relative;
+  }
+  .popup-body__text {
+    position: absolute;
+    top: 35%;
+    left: 12%;
+  }
+  .popup-body__text h5 {
+    color: #fff;
+    text-align: center;
+  }
+  .popup-body__text p {
+    color: #fff;
+    text-align: center;
+  }
+  .content-popup__body img {
+    width: 100%;
+  }
+  .content-popup__header {
+    position: relative;
+  }
+  .content-popup__header a {
+    position: absolute;
+    right: 7%;
+    z-index: 10;
+    top: 23px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+  .content-popup__wrapper {
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+  }
+  .popup-subscribe {
+    background: black;
+    width: 146px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  .popup-subscribe p {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: unset;
+    padding-top: 12px;
+    text-align: center;
+  }
+  .form-popup {
+    display: flex;
+  }
+  .form-control {
+    height: 50px;
+  }
+  .form-check {
+    margin-left: 125px;
+  }
+</style>
+<script type="text/javascript">
+  $(function () {
+    var overlay = $('<div id="overlay"></div>');
+    overlay.show();
+    overlay.appendTo(document.body);
+    $(".popup").show();
+    $(".close").click(function () {
+      $(".popup").hide();
+      overlay.appendTo(document.body).remove();
+      return false;
+    });
+
+    $(".x").click(function () {
+      $(".popup").hide();
+      overlay.appendTo(document.body).remove();
+      return false;
+    });
+  });
+</script>
+<div class="popup">
+  <div class="content-popup">
+    <div class="content-popup__header">
+      <a href="" class="close">X</a>
+    </div>
+    <div class="content-popup__body">
+      <div class="popup-body__text">
+        <h5 style="font-size: 35px">
+          Subscribe to newsletter and <br />
+          get 15% discount
+        </h5>
+        <p style="font-size: 18px">On your next purchase</p>
+      </div>
+      <img src="../images/img_popup/home6_slider_1.webp" alt="" />
+    </div>
+    <div class="content-popup__wrapper">
+      <form class="form-popup" action="">
+        <div class="mb-3" style="width: 300px">
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="popup-subscribe">
+          <p>Subscribe</p>
+        </div>
+      </form>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Don't show this popup again</label
+        >
+      </div>
+    </div>
+  </div>
+</div>
