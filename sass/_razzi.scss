@@ -295,7 +295,7 @@
                       opacity: 0;
                       position: absolute;
                       top: -38px;
-                      left: -21px;
+                      left: -24px;
                       width: 100px;
                       height: 25px;
                       background: black;
@@ -311,7 +311,7 @@
                       &::after {
                         content: "";
                         position: absolute;
-                        left: 36%;
+                        left: 41%;
                         top: 20px;
                         width: 10px;
                         height: 10px;
@@ -463,7 +463,7 @@
             }
             &:hover .seller-hover {
               opacity: 1;
-              transition: all 0.3s ease-in;
+              transition: all 0.4s ease-in;
             }
           }
         }
@@ -917,7 +917,7 @@
           .slick-prev {
             position: absolute;
             top: -10%;
-            right: 10%;
+            left: 87%;
           }
           .slick-dots {
             padding: unset;
@@ -1071,8 +1071,7 @@
                 }
               }
               i {
-                top: 19px;
-                position: absolute;
+                top: 24px;
                 font-size: 39px;
               }
             }

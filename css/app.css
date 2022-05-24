@@ -554,10 +554,10 @@
   font-size: 15px;
 }
 
-.sticky {
-  z-index: 100;
+.Top_bar-fixed {
   position: fixed;
-  top: 10;
+  top: 0;
+  z-index: 900;
   width: 100%;
 }
 
@@ -921,7 +921,7 @@
   opacity: 0;
   position: absolute;
   top: -38px;
-  left: -21px;
+  left: -24px;
   width: 100px;
   height: 25px;
   background: black;
@@ -938,7 +938,7 @@
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .seller-hover ul li .seller-hover-icon .seller-hover-icon-name::after {
   content: "";
   position: absolute;
-  left: 36%;
+  left: 41%;
   top: 20px;
   width: 10px;
   height: 10px;
@@ -1081,7 +1081,7 @@
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .seller-hover {
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.4s ease-in;
 }
 .body-sellers .container .textmore p {
   text-align: center;
@@ -1500,7 +1500,7 @@
 .modal-cart-sellers .modal-dialog .modal-content .modal-footer .modal-footer-cart-slick .slick-prev {
   position: absolute;
   top: -10%;
-  right: 10%;
+  left: 87%;
 }
 .modal-cart-sellers .modal-dialog .modal-content .modal-footer .modal-footer-cart-slick .slick-dots {
   padding: unset;
@@ -1639,8 +1639,7 @@
   text-align: center;
 }
 .modal-view-sellers .modal-dialog .modal-content .modal-body .modal-body-view .modal-view-content .modal-view-content-button i {
-  top: 19px;
-  position: absolute;
+  top: 24px;
   font-size: 39px;
 }
 .modal-view-sellers .modal-dialog .modal-content .modal-body .modal-body-view .modal-view-content .modal-view-content-name2 p {

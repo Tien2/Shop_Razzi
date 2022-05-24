@@ -82,7 +82,7 @@
       </div>
     </div>
   </div>
-  <div class="header-bottom" id="navbar">
+  <div class="header-bottom Top_bar" id="Top_bar">
     <div class="container">
       <div class="header-bottom-mobile">
         <i
@@ -1569,17 +1569,16 @@
     </div>
   </div>
   <script>
-    window.onscroll = function () {
-      myFunction();
-    };
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
+    var elementPosition = $("#Top_bar").offset();
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > elementPosition.top) {
+        $("#Top_bar").addClass("Top_bar-fixed");
+        $("#Top_bar").removeClass("Top_bar");
       } else {
-        navbar.classList.remove("sticky");
+        $("#Top_bar").removeClass("Top_bar-fixed");
+        $("#Top_bar").addClass("Top_bar");
       }
-    }
+    });
   </script>
 </div>
