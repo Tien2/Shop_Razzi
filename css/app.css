@@ -487,7 +487,7 @@
   background: #f08080;
   width: 0%;
   height: 4%;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 #header .header-bottom .container .header-bottom-item ul li .dropdown .dropbtn a:hover::before {
   width: 100%;
@@ -555,15 +555,10 @@
 }
 
 .sticky {
+  z-index: 100;
   position: fixed;
-  top: 0;
+  top: 10;
   width: 100%;
-}
-
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -1063,6 +1058,19 @@
   line-height: 20px;
   font-weight: 500;
   padding-top: 10px;
+}
+.body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-mobile {
+  display: none;
+}
+.body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-mobile .content__mobile--eye {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+.body-sellers .container .mt-3 .tab-content ul .body-sellers-content .sellers-content-mobile .content__mobile--heart {
+  position: absolute;
+  top: 13%;
+  right: 10%;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .sellers-content-img .sellers-content-imga {
   opacity: 0;
@@ -1691,6 +1699,10 @@
   .shop-content-item-cart {
     display: block !important;
   }
+
+  .sellers-content-mobile {
+    display: block !important;
+  }
 }
 @media only screen and (max-width: 376px) {
   .body-ship-item {
@@ -1814,6 +1826,10 @@
 
   .shop-content-item-cart {
     display: block !important;
+  }
+
+  .sellers-content-mobile {
+    display: block;
   }
 }
 #fixed {
@@ -1990,6 +2006,7 @@
   font-weight: 500;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item {
+  position: relative;
   padding-bottom: 30px;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-img {
@@ -2024,6 +2041,19 @@
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item .shop-content-item-text span {
   display: flex;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .sellers-content-mobile {
+  display: none;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .sellers-content-mobile .content__mobile--eye {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+.page-shop .container .page-shop-content .shop-content-content .shop-content-item .sellers-content-mobile .content__mobile--heart {
+  position: absolute;
+  top: 13%;
+  right: 10%;
 }
 .page-shop .container .page-shop-content .shop-content-content .shop-content-item:hover .shop-content-item-imga {
   opacity: 0;
@@ -4796,6 +4826,10 @@ button:hover {
   position: absolute;
   right: 3%;
   top: 1%;
+}
+
+.btn-close {
+  opacity: 1;
 }
 
 .offcanvas__item1 {

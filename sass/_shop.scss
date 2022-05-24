@@ -103,6 +103,7 @@
       }
       .shop-content-content {
         .shop-content-item {
+          position: relative;
           padding-bottom: 30px;
           .shop-content-item-img {
             position: relative;
@@ -135,6 +136,19 @@
             }
             span {
               display: flex;
+            }
+          }
+          .sellers-content-mobile {
+            display: none;
+            .content__mobile--eye {
+              position: absolute;
+              top: 5%;
+              right: 10%;
+            }
+            .content__mobile--heart {
+              position: absolute;
+              top: 13%;
+              right: 10%;
             }
           }
           &:hover .shop-content-item-imga {
