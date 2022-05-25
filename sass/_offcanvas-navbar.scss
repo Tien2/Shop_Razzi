@@ -8,6 +8,9 @@
 }
 .btn-close {
   opacity: 1;
+  &:focus {
+    box-shadow: none;
+  }
 }
 .offcanvas__item1 {
   padding: unset;

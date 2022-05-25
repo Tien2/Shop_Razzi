@@ -297,7 +297,14 @@
     }
   }
 }
+.about-hiden {
+  display: none;
+}
+
 @media only screen and (max-width: 1025px) {
+  .about-hiden {
+    display: block !important;
+  }
   .header-banner {
     width: 100% !important;
   }
@@ -366,8 +373,17 @@
       width: 100% !important;
     }
   }
+  .about-bottom-img {
+    .bottom-img-button {
+      top: 46% !important;
+      left: 37% !important;
+    }
+  }
 }
 @media only screen and (max-width: 376px) {
+  .about-hiden {
+    display: none !important;
+  }
   .about-fashion {
     .container {
       width: 100% !important;

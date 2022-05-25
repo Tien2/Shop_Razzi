@@ -1835,7 +1835,7 @@
   position: fixed;
   bottom: 70%;
   right: 0;
-  z-index: 999;
+  z-index: 100;
   width: 4.5%;
   font-weight: 100;
 }
@@ -3106,6 +3106,84 @@
   padding-top: 20px;
 }
 
+.fixed-shop {
+  border: 2px solid #f5f5f5;
+  width: 100%;
+  height: 90px;
+  background: #fff;
+}
+.fixed-shop .container {
+  display: flex;
+  justify-content: space-between;
+}
+.fixed-shop .container .fixed-shop__content {
+  position: relative;
+  display: flex;
+}
+.fixed-shop .container .fixed-shop__content .fixed-shop__content--img img {
+  padding: 10px;
+  width: 20%;
+}
+.fixed-shop .container .fixed-shop__content .fixed-shop__content--text {
+  top: 22%;
+  position: absolute;
+  left: 25%;
+}
+.fixed-shop .container .fixed-shop__content .fixed-shop__content--text b {
+  color: black;
+}
+.fixed-shop .container .fixed-shop__content .fixed-shop__content--text p {
+  color: gray;
+}
+.fixed-shop .container .fixed-shop__button {
+  padding-top: 20px;
+  display: flex;
+}
+.fixed-shop .container .fixed-shop__button .fixed-shop__button--cart {
+  width: 184px;
+  height: 56px;
+  background: black;
+}
+.fixed-shop .container .fixed-shop__button .fixed-shop__button--cart p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: unset;
+  padding-top: 13px;
+  font-weight: 500;
+  font-style: 20px;
+}
+.fixed-shop .container .fixed-shop__button .fixed-shop__button--cart p i {
+  color: #fff;
+  font-style: 20px;
+}
+.fixed-shop .container .fixed-shop__button .fixed-shop__button--number {
+  margin-right: 20px;
+  width: 120px;
+  height: 56px;
+  border: 1px solid gray;
+}
+.fixed-shop .container .fixed-shop__button .fixed-shop__button--number p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: unset;
+  text-align: center;
+  padding-top: 13px;
+}
+
+.Top_body {
+  margin-bottom: 400px;
+}
+.Top_body .container {
+  position: relative;
+}
+
+.Top_body-fixed {
+  position: fixed;
+  top: 0px;
+  z-index: 900;
+  width: 100%;
+}
+
 @media only screen and (max-width: 376px) {
   #t-shirts {
     padding: 0px 20px;
@@ -3467,7 +3545,15 @@
   font-weight: 500;
 }
 
+.about-hiden {
+  display: none;
+}
+
 @media only screen and (max-width: 1025px) {
+  .about-hiden {
+    display: block !important;
+  }
+
   .header-banner {
     width: 100% !important;
   }
@@ -3531,8 +3617,17 @@
   .about-content-img .container {
     width: 100% !important;
   }
+
+  .about-bottom-img .bottom-img-button {
+    top: 46% !important;
+    left: 37% !important;
+  }
 }
 @media only screen and (max-width: 376px) {
+  .about-hiden {
+    display: none !important;
+  }
+
   .about-fashion .container {
     width: 100% !important;
   }
@@ -4829,6 +4924,9 @@ button:hover {
 
 .btn-close {
   opacity: 1;
+}
+.btn-close:focus {
+  box-shadow: none;
 }
 
 .offcanvas__item1 {
