@@ -8,11 +8,11 @@ window.addEventListener("scroll", () => {
   }
 });
 // SCROLL CART TO TOP
-const stickyTop = document.querySelector(".stickyTop");
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 500) {
-    toTop.classList.add("sticky-top");
-  } else {
-    toTop.classList.remove("sticky-top");
-  }
-});
+// const stickyTop = document.querySelector(".stickyTop");
+// window.addEventListener("scroll", () => {
+//   if (window.pageYOffset > 500) {
+//     toTop.classList.add("sticky-top");
+//   } else {
+//     toTop.classList.remove("sticky-top");
+//   }
+// });
