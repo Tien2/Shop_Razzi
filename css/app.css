@@ -1937,7 +1937,7 @@
   background: black;
   position: fixed;
   bottom: 16px;
-  right: 32px;
+  right: 1%;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1956,6 +1956,18 @@
   pointer-events: auto;
   transform: translateX(0px);
   transition: all 0.5s ease-in-out;
+}
+
+.fixed-shop {
+  display: none;
+}
+
+.fixed-shop.sticky-top {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 900;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -3250,20 +3262,6 @@
   margin-bottom: unset;
   text-align: center;
   padding-top: 13px;
-}
-
-.Top_body {
-  margin-bottom: 400px;
-}
-.Top_body .container {
-  position: relative;
-}
-
-.Top_body-fixed {
-  position: fixed;
-  top: 0px;
-  z-index: 900;
-  width: 100%;
 }
 
 @media only screen and (max-width: 376px) {

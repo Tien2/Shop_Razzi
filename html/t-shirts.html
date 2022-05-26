@@ -636,7 +636,7 @@
         </div>
       </div>
       <!-- FIXED ITEM  -->
-      <!-- <div class="fixed-shop Top_body" id="Top_body">
+      <div class="fixed-shop stickyTop">
         <div class="container">
           <div class="fixed-shop__content">
             <div class="fixed-shop__content--img">
@@ -656,7 +656,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
     <!-- <div class="fixed-item">
       <div class="container">
@@ -691,19 +691,6 @@
         </div>
       </div>
     </div> -->
-    <!-- SCRIPT STICKER ITEM  -->
-    <script>
-      var elementPosition = $("#Top_body").offset();
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > elementPosition.top) {
-          $("#Top_body").addClass("Top_body-fixed");
-          $("#Top_body").removeClass("Top_body");
-        } else {
-          $("#Top_body").removeClass("Top_body-fixed");
-          $("#Top_body").addClass("Top_body");
-        }
-      });
-    </script>
     <!-- SCRIPT HOVER RATE STAR  -->
     <script>
       function myFunction() {

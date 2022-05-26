@@ -904,18 +904,7 @@
     }
   }
 }
-.Top_body {
-  margin-bottom: 400px;
-  .container {
-    position: relative;
-  }
-}
-.Top_body-fixed {
-  position: fixed;
-  top: 0px;
-  z-index: 900;
-  width: 100%;
-}
+
 @media only screen and (max-width: 376px) {
   #t-shirts {
     padding: 0px 20px;
