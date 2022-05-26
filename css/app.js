@@ -343,3 +343,37 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   });
 });
+// test
+$(document).ready(function () {
+  $(".modal-content1__body").slick({
+    infinite: false,
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  });
+});

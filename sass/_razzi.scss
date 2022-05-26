@@ -1089,7 +1089,7 @@
     }
   }
 }
-.modal {
+.modal1 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -1104,12 +1104,37 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content1 {
+  font-size: 10px;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  height: 52em;
+  .modal-content1__body {
+    display: flex;
+    .modal-content1__body--img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 // STYLE CSS ALL
 @media only screen and (max-width: 1025px) {
