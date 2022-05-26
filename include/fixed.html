@@ -1,43 +1,27 @@
-<div id="fixed">
-  <div class="fixed-2">
-    <p>MORE DEMOS</p>
-  </div>
-  <div class="fixed-1">
-    <p>BUY ON ENVATO FOR $29</p>
-  </div>
-</div>
-<!-- javascript scroll to top  -->
-<button
-  style="background: transparent"
-  onclick="topFunction()"
-  id="myBtn"
-  title="Go to top"
->
-  <i style="font-size: 15px; color: #fff" class="fa-solid fa-up"></i>
-</button>
-<script>
-  //Get the button
-  var mybutton = document.getElementById("myBtn");
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
 
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction();
-  };
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 30 ||
-      document.documentElement.scrollTop > 30
-    ) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
+    <link rel="stylesheet" href="../css/app.css" />
+  </head>
+  <body>
+    <div id="fixed">
+      <div class="fixed-2">
+        <p>MORE DEMOS</p>
+      </div>
+      <div class="fixed-1">
+        <p>BUY ON ENVATO FOR $29</p>
+      </div>
+    </div>
+    <a href="#" class="to-top">
+      <i style="font-size: 18px; color: #fff" class="fas fa-chevron-up"></i>
+    </a>
+    <!-- javascript scroll to top  -->
+    <script src="../js/scroll-top.js"></script>
+  </body>
+</html>
