@@ -188,7 +188,7 @@
     top: 32% !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .footer-mail .footer-mail-text p {
     font-size: 20px !important;
   }
@@ -590,7 +590,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .header-top .container {
     position: relative;
   }
@@ -1676,7 +1676,7 @@
     display: block !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .body-ship-item {
     display: block !important;
   }
@@ -1857,7 +1857,7 @@
     right: 35%;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   #fixed {
     display: none;
   }
@@ -3061,7 +3061,7 @@
   padding-top: 20px;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   #t-shirts {
     padding: 0px 20px;
   }
@@ -3487,7 +3487,7 @@
     width: 100% !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .about-fashion .container {
     width: 100% !important;
   }
@@ -3758,7 +3758,7 @@
     bottom: 23%;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .locator-search {
     position: absolute;
     z-index: 999;
@@ -3876,7 +3876,7 @@
     left: 30%;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .tab-pane .container {
     width: 90%;
   }
@@ -4213,7 +4213,7 @@
     width: 100% !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .single-post__header .container,
 .single-post__name .container,
 .single-post__banner .container,
@@ -4925,7 +4925,7 @@ button:hover {
   color: #fff;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .offcanvas-end {
     width: 80% !important;
   }
@@ -4991,7 +4991,7 @@ button:hover {
   color: #ff6f61;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .offcanvas-start {
     width: 75% !important;
   }

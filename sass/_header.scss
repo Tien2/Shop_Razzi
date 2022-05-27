@@ -361,7 +361,7 @@
   }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .header-top {
     .container {
       position: relative;
@@ -386,4 +386,7 @@
   .header-bottom-icon {
     padding-left: unset !important;
   }
+  // .Top_bar-fixed {
+  //   padding: 10px;
+  // }
 }

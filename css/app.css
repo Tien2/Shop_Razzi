@@ -188,7 +188,7 @@
     top: 32% !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .footer-mail .footer-mail-text p {
     font-size: 20px !important;
   }
@@ -601,7 +601,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .header-top .container {
     position: relative;
   }
@@ -1758,7 +1758,7 @@
     display: block !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .body-ship-item {
     display: block !important;
   }
@@ -1969,7 +1969,7 @@
     right: 35%;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   #fixed {
     display: none;
   }
@@ -3252,7 +3252,7 @@
   padding-top: 13px;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   #t-shirts {
     padding: 0px 20px;
   }
@@ -3691,7 +3691,7 @@
     left: 37% !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .about-hiden {
     display: none !important;
   }
@@ -3966,7 +3966,7 @@
     bottom: 23%;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .locator-search {
     position: absolute;
     z-index: 999;
@@ -4084,7 +4084,7 @@
     left: 30%;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .tab-pane .container {
     width: 90%;
   }
@@ -4421,7 +4421,7 @@
     width: 100% !important;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .single-post__header .container,
 .single-post__name .container,
 .single-post__banner .container,
@@ -4980,10 +4980,6 @@ button:hover {
   color: #f1f1f1;
 }
 
-.offcanvas-end {
-  width: 470px;
-}
-
 .offcanvas__button--right {
   position: absolute;
   right: 3%;
@@ -5083,7 +5079,7 @@ button:hover {
 }
 .offcanvas__item2 .offcanvas__item2--button .item-button {
   margin: 20px 0px;
-  width: 370px;
+  width: 100%;
   border-radius: 5px;
   height: 51px;
   border: 1px solid black;
@@ -5122,7 +5118,7 @@ button:hover {
 }
 .offcanvas__item3 .offcanvas__item3--body .item-button {
   margin: 20px 0px;
-  width: 370px;
+  width: 100%;
   border-radius: 5px;
   height: 51px;
   border: 1px solid black;
@@ -5140,13 +5136,18 @@ button:hover {
   color: #fff;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 1025px) {
+  .item-button {
+    width: 84% !important;
+  }
+}
+@media only screen and (max-width: 450px) {
   .offcanvas-end {
     width: 80% !important;
   }
   .offcanvas-end .offcanvas__item3--body .item-button {
     margin-left: unset !important;
-    width: 260px !important;
+    width: 100% !important;
   }
 }
 .offcanvas__mobile .offcanvas__mobile--name h1 {
@@ -5206,7 +5207,7 @@ button:hover {
   color: #ff6f61;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .offcanvas-start {
     width: 75% !important;
   }

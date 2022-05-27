@@ -1,6 +1,6 @@
-.offcanvas-end {
-  width: 470px;
-}
+// .offcanvas-end {
+//   width: 470px;
+// }
 .offcanvas__button--right {
   position: absolute;
   right: 3%;
@@ -100,7 +100,7 @@
     .item-button {
       //   display: flex;
       margin: 20px 0px;
-      width: 370px;
+      width: 100%;
       border-radius: 5px;
       height: 51px;
       border: 1px solid black;
@@ -140,7 +140,7 @@
     .item-button {
       //   display: flex;
       margin: 20px 0px;
-      width: 370px;
+      width: 100%;
       border-radius: 5px;
       height: 51px;
       border: 1px solid black;
@@ -160,13 +160,18 @@
     }
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 1025px) {
+  .item-button {
+    width: 84% !important;
+  }
+}
+@media only screen and (max-width: 450px) {
   .offcanvas-end {
     width: 80% !important;
     .offcanvas__item3--body {
       .item-button {
         margin-left: unset !important;
-        width: 260px !important;
+        width: 100% !important;
       }
     }
   }
