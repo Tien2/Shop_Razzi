@@ -3275,7 +3275,7 @@
 .fixed-shop {
   border: 2px solid #f5f5f5;
   width: 100%;
-  height: 72px;
+  height: 100px;
   background: #fff;
 }
 .fixed-shop .container {
@@ -3288,12 +3288,12 @@
 }
 .fixed-shop .container .fixed-shop__content .fixed-shop__content--img img {
   padding: 5px;
-  width: 15%;
+  width: 21%;
 }
 .fixed-shop .container .fixed-shop__content .fixed-shop__content--text {
-  top: 11%;
+  top: 19%;
   position: absolute;
-  left: 18%;
+  left: 24%;
 }
 .fixed-shop .container .fixed-shop__content .fixed-shop__content--text b {
   color: black;
@@ -3302,8 +3302,8 @@
   color: gray;
 }
 .fixed-shop .container .fixed-shop__button {
-  padding-top: 6px;
   display: flex;
+  align-items: center;
 }
 .fixed-shop .container .fixed-shop__button .fixed-shop__button--cart {
   width: 184px;
