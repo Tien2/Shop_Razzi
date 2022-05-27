@@ -896,8 +896,7 @@
   position: absolute;
   bottom: 28%;
   left: 21%;
-  opacity: 0;
-  justify-content: space-around;
+  opacity: 1;
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content .seller-hover ul {
   display: flex;
@@ -1091,7 +1090,6 @@
 }
 .body-sellers .container .mt-3 .tab-content ul .body-sellers-content:hover .seller-hover {
   opacity: 1;
-  transition: all 0.4s ease-in;
 }
 .body-sellers .container .textmore p {
   text-align: center;
@@ -1112,6 +1110,34 @@
 }
 .body-sellers .container .textmore p:hover::before {
   width: 0%;
+}
+
+.body-sellers-content:hover .hover1 {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+  transform: translateY(0px);
+  justify-content: space-around;
+}
+
+.body-sellers-content:hover .hover2 {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  transform: translateY(0px);
+  justify-content: space-around;
+}
+
+.body-sellers-content:hover .hover3 {
+  opacity: 1;
+  transition: all 0.4s ease-in;
+  transform: translateY(0px);
+  justify-content: space-around;
+}
+
+.hover1,
+.hover2,
+.hover3 {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .body-time {
