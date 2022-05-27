@@ -1922,10 +1922,9 @@
     height: 30px !important;
   }
   .seller-hover-icon i {
-    position: absolute;
     font-size: 14px;
-    top: 24%;
-    left: 22%;
+    top: 32%;
+    left: 23%;
   }
 }
 #fixed {
