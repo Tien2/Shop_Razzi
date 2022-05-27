@@ -1910,10 +1910,6 @@
     display: block;
   }
 
-  .mt-3 {
-    padding: 0px 20px !important;
-  }
-
   .modal-view-content-start p {
     left: 66% !important;
   }
@@ -3767,6 +3763,10 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  .header-about-us .container {
+    width: 90% !important;
+  }
+
   .about-hiden {
     display: none !important;
   }
