@@ -1190,6 +1190,14 @@
   .sellers-content-mobile {
     display: block !important;
   }
+  .modal-view-content-button {
+    button {
+      width: 146px !important;
+    }
+    i {
+      font-size: 25px !important;
+    }
+  }
 }
 @media only screen and (max-width: 450px) {
   .body-ship-item {
@@ -1317,5 +1325,35 @@
   }
   .sellers-content-mobile {
     display: block;
+  }
+  .mt-3 {
+    padding: 0px 20px !important;
+  }
+  .modal-view-content-start {
+    p {
+      left: 66% !important;
+    }
+  }
+  .modal-view-content-button {
+    button {
+      width: 100% !important;
+    }
+    i {
+      display: none !important;
+    }
+  }
+  .seller-hover {
+    top: 44%;
+    right: 24%;
+  }
+  .seller-hover-icon {
+    width: 30px !important;
+    height: 30px !important;
+    i {
+      position: absolute;
+      font-size: 14px;
+      top: 24%;
+      left: 22%;
+    }
   }
 }
