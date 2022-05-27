@@ -46,8 +46,10 @@
       .accordion-header {
         .accordion-button {
           border-bottom: 1px solid #d0d0d0;
-          padding: 22px 0px;
+          padding: 30px 0px;
           font-weight: 500;
+          color: black;
+          font-size: 18px;
           &:not(.collapsed) {
             color: black;
             background-color: #fff;
@@ -72,8 +74,31 @@
       .accordion-collapse {
         .accordion-body {
           padding: 25px 15px;
+          font-size: 16px;
+          font-weight: 400;
+          color: gray;
         }
       }
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .faq-content {
+    .container {
+      width: 95%;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .faq-content {
+    padding: unset;
+    .container {
+      width: 95%;
+    }
+  }
+  .accordion-header {
+    .accordion-button {
+      font-style: 16px;
     }
   }
 }
