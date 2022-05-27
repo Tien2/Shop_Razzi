@@ -248,7 +248,7 @@
   }
   .footer-razzi-social .footer-razzi-social-item {
     position: absolute;
-    left: 0% !important;
+    left: 2% !important;
     top: 30% !important;
   }
 
@@ -607,7 +607,7 @@
   }
   .header-top .container .header-top-left {
     position: absolute;
-    left: 25%;
+    left: 27%;
   }
 
   .header-bottom .container .header-bottom-logo {
@@ -616,7 +616,8 @@
   }
   .header-bottom .container .header-bottom-icon {
     position: absolute;
-    right: 0%;
+    right: 3%;
+    top: 9%;
   }
 
   .header-bottom-icon {
@@ -624,7 +625,12 @@
   }
 
   .Top_bar-fixed {
-    padding-top: 5px;
+    padding-top: 9px;
+  }
+
+  .header-bottom-mobile {
+    position: absolute;
+    left: 3%;
   }
 }
 .body-sale .body-sale-text {
@@ -1709,8 +1715,15 @@
 }
 
 @media only screen and (max-width: 1025px) {
+  .review-image-slider .slick-dots {
+    left: 38% !important;
+  }
+
+  .body-time .time-content-img img {
+    width: unset !important;
+  }
   .body-time .time-content-content {
-    top: 0 !important;
+    top: 20% !important;
     left: 29% !important;
   }
   .body-time .time-content-content .time-content-item {
@@ -1925,6 +1938,27 @@
     font-size: 14px;
     top: 32%;
     left: 23%;
+  }
+
+  .body-review-content .slick-dots {
+    left: 29% !important;
+  }
+
+  .body-time .time-content-img img {
+    height: 400px !important;
+  }
+  .body-time .time-content-content {
+    left: -5% !important;
+    top: 12% !important;
+  }
+  .body-time .time-content-content .time-content-item {
+    text-align: center !important;
+  }
+  .body-time .time-content-content .droptime p {
+    font-size: 43px !important;
+  }
+  .body-time .time-content-shop {
+    margin-left: 28% !important;
   }
 }
 #fixed {

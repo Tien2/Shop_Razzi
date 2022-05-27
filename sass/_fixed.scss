@@ -65,16 +65,6 @@
   transform: translateX(0px);
   transition: all 0.5s ease-in-out;
 }
-// .fixed-shop {
-//   display: none;
-// }
-// .fixed-shop.sticky-top {
-//   display: block;
-//   position: fixed;
-//   top: 0;
-//   z-index: 900;
-//   width: 100%;
-// }
 
 @media only screen and (max-width: 1025px) {
   #fixed {
@@ -86,12 +76,6 @@
     right: 35%;
   }
 }
-// @media only screen and (max-width: 768px) {
-//   #fixed {
-//     // display: none;
-//     bottom: 50% !important;
-//   }
-// }
 @media only screen and (max-width: 450px) {
   #fixed {
     display: none;

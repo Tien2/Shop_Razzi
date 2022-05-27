@@ -1138,9 +1138,19 @@
 }
 // STYLE CSS ALL
 @media only screen and (max-width: 1025px) {
+  .review-image-slider {
+    .slick-dots {
+      left: 38% !important;
+    }
+  }
   .body-time {
+    .time-content-img {
+      img {
+        width: unset !important;
+      }
+    }
     .time-content-content {
-      top: 0 !important;
+      top: 20% !important;
       left: 29% !important;
       .time-content-item {
         margin-left: 58px;
@@ -1353,6 +1363,33 @@
       font-size: 14px;
       top: 32%;
       left: 23%;
+    }
+  }
+  .body-review-content {
+    .slick-dots {
+      left: 29% !important ;
+    }
+  }
+  .body-time {
+    .time-content-img {
+      img {
+        height: 400px !important;
+      }
+    }
+    .time-content-content {
+      left: -5% !important;
+      top: 12% !important;
+      .time-content-item {
+        text-align: center !important;
+      }
+      .droptime {
+        p {
+          font-size: 43px !important;
+        }
+      }
+    }
+    .time-content-shop {
+      margin-left: 28% !important;
     }
   }
 }

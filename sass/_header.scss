@@ -367,7 +367,7 @@
       position: relative;
       .header-top-left {
         position: absolute;
-        left: 25%;
+        left: 27%;
       }
     }
   }
@@ -379,7 +379,8 @@
       }
       .header-bottom-icon {
         position: absolute;
-        right: 0%;
+        right: 3%;
+        top: 9%;
       }
     }
   }
@@ -387,6 +388,10 @@
     padding-left: unset !important;
   }
   .Top_bar-fixed {
-    padding-top: 5px;
+    padding-top: 9px;
+  }
+  .header-bottom-mobile {
+    position: absolute;
+    left: 3%;
   }
 }

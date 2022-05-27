@@ -8,17 +8,17 @@ $(document).ready(function () {
     dots: true,
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1026,
         settings: {
           slidesToShow: 2,
-          dots: false,
+          dots: true,
         },
       },
       {
         breakpoint: 668,
         settings: {
           slidesToShow: 1,
-          dots: false,
+          dots: true,
         },
       },
     ],
@@ -205,6 +205,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          dots: false,
         },
       },
     ],
