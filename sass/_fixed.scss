@@ -67,16 +67,16 @@
 }
 
 .to-top1 {
-  opacity: 0;
-  // display: none;
+  // opacity: 0;
+  display: none;
   position: fixed;
   top: 0;
   z-index: 99991;
   width: 100%;
 }
 .active1 {
-  // display: block;
-  opacity: 1;
+  display: block;
+  // opacity: 1;
   transition: all 0.2s ease-in;
 }
 @media only screen and (max-width: 1025px) {
