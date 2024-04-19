@@ -1,3 +1,3 @@
 # Shop_Razzi
 
-# fix github pages
+# Sửa lỗi deploy netlify
